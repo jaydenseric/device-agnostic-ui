@@ -1,0 +1,28 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="157"
+  height="100"
+  viewBox="0 0 157 100"
+>
+  <title>device-agnostic-design logo</title>
+  <defs>
+    <rect id="l" x="14" y="2" width="76" height="97" rx="10" />
+    <mask id="l-mask">
+      <use xlink:href="#l" fill="white" transform="translate(8, -8)" />
+    </mask>
+    <rect id="m" x="31" y="32" width="83" height="50" rx="10" />
+    <mask id="m-mask">
+      <use xlink:href="#m" fill="white" transform="translate(8, -8)" />
+    </mask>
+    <rect id="s" x="47" y="10" width="34" height="57" rx="10" />
+  </defs>
+  <g transform="translate(0, 50) scale(1, .5773) rotate(-45)">
+    <use xlink:href="#l" fill="hsla(0, 0%, 0%, 0.06)" transform="translate(-8, 8)" />
+    <use xlink:href="#l" fill="#2979FF" />
+    <use xlink:href="#m" fill="hsla(0, 0%, 0%, 0.12)" transform="translate(-8, 8)" mask="url(#l-mask)" />
+    <use xlink:href="#m" fill="#FF0266" />
+    <use xlink:href="#s" fill="hsla(0, 0%, 0%, 0.12)" transform="translate(-8, 8)" mask="url(#m-mask)" />
+    <use xlink:href="#s" fill="#00E676" />
+  </g>
+</svg>
