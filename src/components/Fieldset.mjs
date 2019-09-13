@@ -4,7 +4,7 @@ import React from 'react'
 export const Fieldset = React.forwardRef(
   ({ legend, children, ...props }, ref) => (
     <fieldset {...props} ref={ref}>
-      {!!legend && <legend>{legend}</legend>}
+      {legend && <legend>{legend}</legend>}
       <div>{children}</div>
       <style jsx>{`
         fieldset {
