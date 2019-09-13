@@ -24,6 +24,7 @@
   ],
   "main": "lib/cjs",
   "module": "lib/esm",
+  "sideEffects": false,
   "engines": {
     "node": ">=8.5"
   },
