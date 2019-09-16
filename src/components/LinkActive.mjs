@@ -16,5 +16,5 @@ export const LinkActive = ({ children, ...props }) => {
 
 LinkActive.propTypes = {
   href: PropTypes.string,
-  children: Link.propTypes.children
+  children: PropTypes.element.isRequired
 }
