@@ -4,7 +4,7 @@
 
 [![npm version](https://badgen.net/npm/v/device-agnostic-ui)](https://npm.im/device-agnostic-ui) [![CI status](https://github.com/jaydenseric/device-agnostic-ui/workflows/CI/badge.svg)](https://github.com/jaydenseric/device-agnostic-ui/actions)
 
-A device agnostic UI library for [Next.js](https://nextjs.org) projects.
+**Device agnostic** styles, components and hooks for [Next.js](https://nextjs.org).
 
 ## Setup
 

@@ -1,7 +1,7 @@
 {
   "name": "device-agnostic-ui",
   "version": "0.0.0",
-  "description": "A device agnostic UI library for Next.js projects.",
+  "description": "Device agnostic styles, components and hooks for Next.js.",
   "license": "MIT",
   "author": {
     "name": "Jayden Seric",
