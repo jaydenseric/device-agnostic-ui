@@ -21,7 +21,6 @@ Icon.displayName = 'Icon'
 
 Icon.propTypes = {
   size: PropTypes.string,
-  color: PropTypes.string,
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired
 }
