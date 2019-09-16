@@ -1,7 +1,7 @@
 import React from 'react'
 
 /**
- * A React hook that merges multiple refs.
+ * A React hook that merges multiple React refs into one to use on an element.
  * @see [GitHub comment](https://github.com/facebook/react/issues/13029#issuecomment-522632038)
  * @param {Array<string|object|Function|null>} refs React refs.
  * @returns {object} React ref.

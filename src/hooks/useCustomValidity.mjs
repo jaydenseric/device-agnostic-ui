@@ -1,9 +1,10 @@
 import React from 'react'
 
 /**
- * A React hook that sets a custom validation message on a HTML form element.
- * @param {object|null} ref React ref for the HTML form element.
- * @param {string} [validationMessage=''] Validation message for the HTML form element.
+ * A React hook that sets a custom validation message on a HTML form control
+ * element using the standard Constraint Validation API.
+ * @param {object|null} ref React ref for the HTML form control element.
+ * @param {string} [validationMessage=''] Validation message for the HTML form control element.
  */
 export function useCustomValidity(ref, validationMessage = '') {
   React.useEffect(() => {
