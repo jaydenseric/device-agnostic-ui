@@ -16,9 +16,10 @@ export const stylesGlobalTheme = css.global`
     --daui-highlight-hue: 72;
     --daui-highlight-saturation: 100%;
     --daui-highlight-lightness: 60%;
+    --daui-highlight-opacity: 0.75;
     --daui-interact-hue: 207;
-    --daui-interact-saturation: 98%;
-    --daui-interact-lightness: 40%;
+    --daui-interact-saturation: 100%;
+    --daui-interact-lightness: 38%;
     --daui-error-hue: 339;
     --daui-error-saturation: 100%;
     --daui-error-lightness: 50%;
@@ -39,10 +40,11 @@ export const stylesGlobalTheme = css.global`
     :root {
       --daui-foreground-lightness: 78%;
       --daui-background-lightness: 18%;
-      --daui-interact-saturation: 90%;
-      --daui-interact-lightness: 62%;
       --daui-shade-opacity: 0.2;
       --daui-shadow-opacity: 0.55;
+      --daui-highlight-opacity: 0.3;
+      --daui-interact-saturation: 90%;
+      --daui-interact-lightness: 62%;
     }
   }
 `
@@ -125,7 +127,7 @@ export const stylesGlobal = css.global`
       var(--daui-highlight-hue),
       var(--daui-highlight-saturation),
       var(--daui-highlight-lightness),
-      0.75
+      var(--daui-highlight-opacity)
     );
   }
 `
