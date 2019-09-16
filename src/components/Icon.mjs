@@ -8,7 +8,7 @@ export const Icon = React.forwardRef(
       {children}
       <style jsx>{`
         svg {
-          display: block;
+          vertical-align: middle;
           stroke: currentColor;
           fill: currentColor;
         }
