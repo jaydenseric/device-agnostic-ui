@@ -17,7 +17,7 @@ export const Toggle = React.forwardRef(
           <input {...inputProps} ref={inputRef} />
           <span className="tick">
             <span className="icon">
-              <IconTick size="0.8em" />
+              <IconTick />
             </span>
           </span>
         </span>
@@ -56,6 +56,7 @@ export const Toggle = React.forwardRef(
             border: 2px solid;
             border-radius: 5px;
             padding: 0.15em 0.35em 0.25em;
+            line-height: 1;
           }
           .icon {
             display: block;
