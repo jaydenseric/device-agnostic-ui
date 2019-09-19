@@ -1,5 +1,5 @@
 # device-agnostic-ui changelog
 
-## Next
+## 1.0.0
 
 Initial release.
