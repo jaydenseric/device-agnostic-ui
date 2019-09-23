@@ -4,8 +4,8 @@ import css from 'styled-jsx/css'
 import { stylesCode } from './Code'
 import { stylesHtml } from './Html'
 
-const SCROLL_SHADOW_WIDTH_EM = '1em'
-const SCROLL_FADE_WIDTH_EM = '4em'
+const SCROLL_SHADOW_WIDTH = '1rem'
+const SCROLL_FADE_WIDTH = '4rem'
 
 export const stylesPre = css.resolve`
   &,
@@ -37,18 +37,17 @@ export const stylesPre = css.resolve`
     background-image: linear-gradient(
         90deg,
         var(--daui-pre-background-opaque),
-        var(--daui-pre-background-transparent) ${SCROLL_FADE_WIDTH_EM},
-        var(--daui-pre-background-transparent)
-          calc(100% - ${SCROLL_FADE_WIDTH_EM}),
+        var(--daui-pre-background-transparent) ${SCROLL_FADE_WIDTH},
+        var(--daui-pre-background-transparent) calc(100% - ${SCROLL_FADE_WIDTH}),
         var(--daui-pre-background-opaque)
       ),
       radial-gradient(
-        ${SCROLL_SHADOW_WIDTH_EM} 50% at left center,
+        ${SCROLL_SHADOW_WIDTH} 50% at left center,
         hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
         hsla(0, 0%, 0%, 0)
       ),
       radial-gradient(
-        ${SCROLL_SHADOW_WIDTH_EM} 50% at right center,
+        ${SCROLL_SHADOW_WIDTH} 50% at right center,
         hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
         hsla(0, 0%, 0%, 0)
       );

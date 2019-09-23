@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const SCROLL_SHADOW_WIDTH_EM = '0.5em'
-const SCROLL_FADE_WIDTH_EM = '3em'
+const SCROLL_SHADOW_WIDTH = '0.5rem'
+const SCROLL_FADE_WIDTH = '3rem'
 
 export const Nav = React.forwardRef(({ children }, ref) => (
   <nav ref={ref}>
@@ -29,18 +29,18 @@ export const Nav = React.forwardRef(({ children }, ref) => (
         background-image: linear-gradient(
             90deg,
             var(--daui-nav-background-opaque),
-            var(--daui-nav-background-transparent) ${SCROLL_FADE_WIDTH_EM},
+            var(--daui-nav-background-transparent) ${SCROLL_FADE_WIDTH},
             var(--daui-nav-background-transparent)
-              calc(100% - ${SCROLL_FADE_WIDTH_EM}),
+              calc(100% - ${SCROLL_FADE_WIDTH}),
             var(--daui-nav-background-opaque)
           ),
           radial-gradient(
-            ${SCROLL_SHADOW_WIDTH_EM} 50% at left center,
+            ${SCROLL_SHADOW_WIDTH} 50% at left center,
             hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
             hsla(0, 0%, 0%, 0)
           ),
           radial-gradient(
-            ${SCROLL_SHADOW_WIDTH_EM} 50% at right center,
+            ${SCROLL_SHADOW_WIDTH} 50% at right center,
             hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
             hsla(0, 0%, 0%, 0)
           );

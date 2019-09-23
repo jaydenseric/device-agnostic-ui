@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const SCROLL_SHADOW_WIDTH_EM = '1em'
-const SCROLL_FADE_WIDTH_EM = '4em'
+const SCROLL_SHADOW_WIDTH = '1rem'
+const SCROLL_FADE_WIDTH = '4rem'
 
 export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
   <div className="scroll" {...props} ref={ref}>
@@ -29,18 +29,18 @@ export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
         background-image: linear-gradient(
             90deg,
             var(--daui-scroll-background-opaque),
-            var(--daui-scroll-background-transparent) ${SCROLL_FADE_WIDTH_EM},
+            var(--daui-scroll-background-transparent) ${SCROLL_FADE_WIDTH},
             var(--daui-scroll-background-transparent)
-              calc(100% - ${SCROLL_FADE_WIDTH_EM}),
+              calc(100% - ${SCROLL_FADE_WIDTH}),
             var(--daui-scroll-background-opaque)
           ),
           radial-gradient(
-            ${SCROLL_SHADOW_WIDTH_EM} 50% at left center,
+            ${SCROLL_SHADOW_WIDTH} 50% at left center,
             hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
             hsla(0, 0%, 0%, 0)
           ),
           radial-gradient(
-            ${SCROLL_SHADOW_WIDTH_EM} 50% at right center,
+            ${SCROLL_SHADOW_WIDTH} 50% at right center,
             hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
             hsla(0, 0%, 0%, 0)
           );
