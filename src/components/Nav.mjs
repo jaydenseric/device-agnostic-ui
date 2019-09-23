@@ -9,15 +9,16 @@ export const Nav = React.forwardRef(({ children }, ref) => (
     {children}
     <style jsx>{`
       nav {
+        --daui-nav-background-lightness: var(--daui-background-lightness);
         --daui-nav-background-opaque: hsl(
           var(--daui-background-hue),
           var(--daui-background-saturation),
-          var(--daui-background-lightness)
+          var(--daui-nav-background-lightness)
         );
         --daui-nav-background-transparent: hsla(
           var(--daui-background-hue),
           var(--daui-background-saturation),
-          var(--daui-background-lightness),
+          var(--daui-nav-background-lightness),
           0
         );
 
@@ -54,8 +55,8 @@ export const Nav = React.forwardRef(({ children }, ref) => (
 
       /* Some browsers (e.g. Firefox) make scrollable elements focusable. */
       nav:focus {
-        --daui-scroll-background-lightness: calc(
-          var(--daui-background-lightness) - 8%
+        --daui-nav-background-lightness: calc(
+          var(--daui-background-lightness) - 4%
         );
 
         outline: 0;

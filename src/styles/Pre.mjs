@@ -75,7 +75,7 @@ export const stylesPre = css.resolve`
   /* Some browsers (e.g. Firefox) make scrollable elements focusable. */
   :focus,
   :global(.${stylesHtml.className} pre:focus) {
-    --daui-scroll-background-lightness: calc(
+    --daui-pre-background-lightness: calc(
       var(--daui-background-lightness) - 8%
     );
 
