@@ -15,42 +15,49 @@ export const Nav = React.forwardRef(({ children }, ref) => (
           var(--daui-background-saturation),
           var(--daui-nav-background-lightness)
         );
-        --daui-nav-background-transparent: hsla(
-          var(--daui-background-hue),
-          var(--daui-background-saturation),
-          var(--daui-nav-background-lightness),
-          0
-        );
 
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: min-content;
         padding: 0 1rem;
-        background-image: linear-gradient(
-            90deg,
-            var(--daui-nav-background-opaque),
-            var(--daui-nav-background-transparent) ${SCROLL_FADE_WIDTH},
-            var(--daui-nav-background-transparent)
-              calc(100% - ${SCROLL_FADE_WIDTH}),
-            var(--daui-nav-background-opaque)
-          ),
-          radial-gradient(
-            ${SCROLL_SHADOW_WIDTH} 50% at left center,
-            hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
-            hsla(0, 0%, 0%, 0)
-          ),
-          radial-gradient(
-            ${SCROLL_SHADOW_WIDTH} 50% at right center,
-            hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
-            hsla(0, 0%, 0%, 0)
-          );
-        background-attachment: local, scroll, scroll;
         background-color: var(--daui-nav-background-opaque);
         overflow-x: auto;
         overflow-y: hidden;
         overscroll-behavior-x: contain;
         -ms-overflow-style: -ms-autohiding-scrollbar;
         -webkit-overflow-scrolling: touch;
+      }
+
+      @supports (overscroll-behavior-x: contain) and
+        (not (-webkit-overflow-scrolling: touch)) {
+        nav {
+          --daui-nav-background-transparent: hsla(
+            var(--daui-background-hue),
+            var(--daui-background-saturation),
+            var(--daui-nav-background-lightness),
+            0
+          );
+
+          background-image: linear-gradient(
+              90deg,
+              var(--daui-nav-background-opaque),
+              var(--daui-nav-background-transparent) ${SCROLL_FADE_WIDTH},
+              var(--daui-nav-background-transparent)
+                calc(100% - ${SCROLL_FADE_WIDTH}),
+              var(--daui-nav-background-opaque)
+            ),
+            radial-gradient(
+              ${SCROLL_SHADOW_WIDTH} 50% at left center,
+              hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
+              hsla(0, 0%, 0%, 0)
+            ),
+            radial-gradient(
+              ${SCROLL_SHADOW_WIDTH} 50% at right center,
+              hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
+              hsla(0, 0%, 0%, 0)
+            );
+          background-attachment: local, scroll, scroll;
+        }
       }
 
       /* Some browsers (e.g. Firefox) make scrollable elements focusable. */

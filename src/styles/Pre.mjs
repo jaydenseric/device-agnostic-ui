@@ -18,12 +18,6 @@ export const stylesPre = css.resolve`
       var(--daui-background-saturation),
       var(--daui-pre-background-lightness)
     );
-    --daui-pre-background-transparent: hsla(
-      var(--daui-background-hue),
-      var(--daui-background-saturation),
-      var(--daui-pre-background-lightness),
-      0
-    );
 
     margin-top: 1em;
     margin-bottom: 1em;
@@ -34,24 +28,6 @@ export const stylesPre = css.resolve`
     padding: 1em;
     text-align: left;
     line-height: var(--daui-line-height);
-    background-image: linear-gradient(
-        90deg,
-        var(--daui-pre-background-opaque),
-        var(--daui-pre-background-transparent) ${SCROLL_FADE_WIDTH},
-        var(--daui-pre-background-transparent) calc(100% - ${SCROLL_FADE_WIDTH}),
-        var(--daui-pre-background-opaque)
-      ),
-      radial-gradient(
-        ${SCROLL_SHADOW_WIDTH} 50% at left center,
-        hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
-        hsla(0, 0%, 0%, 0)
-      ),
-      radial-gradient(
-        ${SCROLL_SHADOW_WIDTH} 50% at right center,
-        hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
-        hsla(0, 0%, 0%, 0)
-      );
-    background-attachment: local, scroll, scroll;
     background-color: var(--daui-pre-background-opaque);
     overflow-wrap: normal;
     overflow-x: auto;
@@ -59,6 +35,39 @@ export const stylesPre = css.resolve`
     overscroll-behavior-x: contain;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
+  }
+
+  @supports (overscroll-behavior-x: contain) and
+    (not (-webkit-overflow-scrolling: touch)) {
+    &,
+    :global(.${stylesHtml.className} pre) {
+      --daui-pre-background-transparent: hsla(
+        var(--daui-background-hue),
+        var(--daui-background-saturation),
+        var(--daui-pre-background-lightness),
+        0
+      );
+
+      background-image: linear-gradient(
+          90deg,
+          var(--daui-pre-background-opaque),
+          var(--daui-pre-background-transparent) ${SCROLL_FADE_WIDTH},
+          var(--daui-pre-background-transparent)
+            calc(100% - ${SCROLL_FADE_WIDTH}),
+          var(--daui-pre-background-opaque)
+        ),
+        radial-gradient(
+          ${SCROLL_SHADOW_WIDTH} 50% at left center,
+          hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
+          hsla(0, 0%, 0%, 0)
+        ),
+        radial-gradient(
+          ${SCROLL_SHADOW_WIDTH} 50% at right center,
+          hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
+          hsla(0, 0%, 0%, 0)
+        );
+      background-attachment: local, scroll, scroll;
+    }
   }
 
   :first-child,
