@@ -1,5 +1,11 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Patch
+
+- Updated dev dependencies.
+
 ## 1.0.1
 
 ### Patch
