@@ -5,6 +5,7 @@
 ### Patch
 
 - Updated dev dependencies.
+- Alphabetically sort exports in index files.
 
 ## 1.0.1
 
