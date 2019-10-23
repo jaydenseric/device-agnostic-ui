@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { stylesBlockquote } from '../styles/Blockquote'
-import { stylesCode } from '../styles/Code'
-import { stylesHeading } from '../styles/Heading'
-import { stylesHtml } from '../styles/Html'
-import { stylesLinkText } from '../styles/LinkText'
-import { stylesList } from '../styles/List'
-import { stylesPara } from '../styles/Para'
-import { stylesPre } from '../styles/Pre'
-import { stylesTable } from '../styles/Table'
+import { stylesBlockquote } from '../styles/stylesBlockquote'
+import { stylesCode } from '../styles/stylesCode'
+import { stylesHeading } from '../styles/stylesHeading'
+import { stylesHtml } from '../styles/stylesHtml'
+import { stylesLinkText } from '../styles/stylesLinkText'
+import { stylesList } from '../styles/stylesList'
+import { stylesPara } from '../styles/stylesPara'
+import { stylesPre } from '../styles/stylesPre'
+import { stylesTable } from '../styles/stylesTable'
 
 export const Html = React.forwardRef(({ children, ...props }, ref) => {
   const childrenProp =

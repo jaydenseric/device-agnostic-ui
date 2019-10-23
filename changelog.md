@@ -5,6 +5,7 @@
 ### Patch
 
 - Updated dependencies.
+- Reorganized the files in `src/styles` so that filenames match their named export.
 - Alphabetically sort exports in index files.
 
 ## 1.0.1

@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import css from 'styled-jsx/css'
-import { stylesCode } from './Code'
-import { stylesHtml } from './Html'
+import { stylesCode } from './stylesCode'
+import { stylesHtml } from './stylesHtml'
 
 const SCROLL_SHADOW_WIDTH = '1rem'
 const SCROLL_FADE_WIDTH = '4rem'

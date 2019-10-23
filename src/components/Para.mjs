@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { stylesPara } from '../styles/Para'
+import { stylesPara } from '../styles/stylesPara'
 
 export const Para = React.forwardRef(
   ({ className, children, ...props }, ref) => (

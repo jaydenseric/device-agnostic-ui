@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { stylesHeading } from '../styles/Heading'
+import { stylesHeading } from '../styles/stylesHeading'
 import { LinkText } from './LinkText'
 
 export const Heading = React.forwardRef(({ id, children, ...props }, ref) => (

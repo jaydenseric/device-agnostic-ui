@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { stylesList } from '../styles/List'
+import { stylesList } from '../styles/stylesList'
 
 export const List = React.forwardRef(
   ({ ordered, className, children, ...props }, ref) => {

@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import css from 'styled-jsx/css'
-import { stylesHtml } from './Html'
+import { stylesHtml } from './stylesHtml'
 
 export const stylesHeading = css.resolve`
   &,

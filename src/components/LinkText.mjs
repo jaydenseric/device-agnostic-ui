@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { stylesLinkText } from '../styles/LinkText'
+import { stylesLinkText } from '../styles/stylesLinkText'
 
 export const LinkText = React.forwardRef(
   ({ className, children, ...props }, ref) => (
