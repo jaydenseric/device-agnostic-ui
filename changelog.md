@@ -2,6 +2,10 @@
 
 ## Next
 
+### Minor
+
+- Added the `stylesSyntaxHighlightingPrism` named export, for styling syntax highlighting HTML produced by [Prism](https://prismjs.com).
+
 ### Patch
 
 - Updated dependencies.
