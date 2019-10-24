@@ -4,7 +4,7 @@
 
 [![npm version](https://badgen.net/npm/v/device-agnostic-ui)](https://npm.im/device-agnostic-ui) [![CI status](https://github.com/jaydenseric/device-agnostic-ui/workflows/CI/badge.svg)](https://github.com/jaydenseric/device-agnostic-ui/actions)
 
-**Device agnostic** styles, components and hooks for [Next.js](https://nextjs.org) — [deviceagnosticui.com](https://deviceagnosticui.com).
+**Device agnostic** [styles](https://deviceagnosticui.com/styles), [components](https://deviceagnosticui.com/components) and [hooks](https://deviceagnosticui.com/hooks) for [Next.js](https://nextjs.org) — [deviceagnosticui.com](https://deviceagnosticui.com).
 
 - 📦 **Tiny bundle size.** [< 7 KB](https://bundlephobia.com/result?p=device-agnostic-ui) with tree shaking, [Size Limit](https://github.com/ai/size-limit) tested.
 - 📱 **Mobile first.** Intuitive layouts suitable for any screen size, _without media queries_.
