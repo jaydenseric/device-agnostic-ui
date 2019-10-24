@@ -10,7 +10,7 @@
 
 - Added the `stylesSyntaxHighlightingPrism` named export, for styling syntax highlighting HTML produced by [Prism](https://prismjs.com).
 - Added the `propTypeChildren` named export, for use in component `propTypes` to specify a prop (usually, but not necessarily `children`) should have a React node type, and if `.isRequired` is chained, must be populated unless the `dangerouslySetInnerHTML` prop is populated.
-- `Blockquote`, `Button`, `Code`, `Heading`, `Html`, `LinkCard`, `LinkNav`, `LinkText`, `List`, `Nav`, `Para`, `Pre`, `Select`, and `Table` components can now accept a `dangerouslySetInnerHTML` prop.
+- `Blockquote`, `Button`, `Code`, `Html`, `LinkCard`, `LinkNav`, `LinkText`, `List`, `Nav`, `Para`, `Pre`, `Select`, and `Table` components can now accept a `dangerouslySetInnerHTML` prop.
 - Additional `Nav` component props are now applied to the underlying `nav` element.
 
 ### Patch
