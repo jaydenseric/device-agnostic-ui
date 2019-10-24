@@ -1,12 +1,12 @@
-import PropTypes from 'prop-types'
 import React from 'react'
+import { propTypeChildren } from '../utils/propTypeChildren'
 
 const SCROLL_SHADOW_WIDTH = '0.5rem'
 const SCROLL_FADE_WIDTH = '3rem'
 
-export const Nav = React.forwardRef(({ children }, ref) => (
-  <nav ref={ref}>
-    {children}
+export const Nav = React.forwardRef((props, ref) => (
+  <>
+    <nav {...props} ref={ref} />
     <style jsx>{`
       nav {
         --daui-nav-background-lightness: var(--daui-background-lightness);
@@ -74,11 +74,11 @@ export const Nav = React.forwardRef(({ children }, ref) => (
         padding-right: inherit;
       }
     `}</style>
-  </nav>
+  </>
 ))
 
 Nav.displayName = 'Nav'
 
 Nav.propTypes = {
-  children: PropTypes.node
+  children: propTypeChildren.isRequired
 }

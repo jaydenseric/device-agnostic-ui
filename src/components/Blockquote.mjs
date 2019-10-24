@@ -1,25 +1,23 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { stylesBlockquote } from '../styles/stylesBlockquote'
+import { classNameProp } from '../utils/classNameProp'
+import { propTypeChildren } from '../utils/propTypeChildren'
 
-export const Blockquote = React.forwardRef(
-  ({ className, children, ...props }, ref) => (
+export const Blockquote = React.forwardRef(({ className, ...props }, ref) => (
+  <>
     <blockquote
-      className={`${stylesBlockquote.className}${
-        className ? ` ${className}` : ''
-      }`}
+      className={classNameProp(stylesBlockquote.className, className)}
       {...props}
       ref={ref}
-    >
-      {children}
-      {stylesBlockquote.styles}
-    </blockquote>
-  )
-)
+    />
+    {stylesBlockquote.styles}
+  </>
+))
 
 Blockquote.displayName = 'Blockquote'
 
 Blockquote.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: propTypeChildren.isRequired
 }

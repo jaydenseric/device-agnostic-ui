@@ -1,19 +1,21 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { stylesList } from '../styles/stylesList'
+import { classNameProp } from '../utils/classNameProp'
+import { propTypeChildren } from '../utils/propTypeChildren'
 
 export const List = React.forwardRef(
-  ({ ordered, className, children, ...props }, ref) => {
+  ({ ordered, className, ...props }, ref) => {
     const Element = ordered ? 'ol' : 'ul'
     return (
-      <Element
-        className={`${stylesList.className}${className ? ` ${className}` : ''}`}
-        {...props}
-        ref={ref}
-      >
-        {children}
+      <>
+        <Element
+          className={classNameProp(stylesList.className, className)}
+          {...props}
+          ref={ref}
+        />
         {stylesList.styles}
-      </Element>
+      </>
     )
   }
 )
@@ -23,5 +25,5 @@ List.displayName = 'List'
 List.propTypes = {
   ordered: PropTypes.bool,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: propTypeChildren.isRequired
 }

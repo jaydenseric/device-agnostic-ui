@@ -9,36 +9,31 @@ import { stylesList } from '../styles/stylesList'
 import { stylesPara } from '../styles/stylesPara'
 import { stylesPre } from '../styles/stylesPre'
 import { stylesTable } from '../styles/stylesTable'
+import { classNameProp } from '../utils/classNameProp'
+import { propTypeChildren } from '../utils/propTypeChildren'
 
-export const Html = React.forwardRef(({ children, ...props }, ref) => {
-  const childrenProp =
-    typeof children === 'string'
-      ? { dangerouslySetInnerHTML: { __html: children } }
-      : { children }
-
-  return (
-    <>
-      <div
-        className={stylesHtml.className}
-        {...childrenProp}
-        {...props}
-        ref={ref}
-      />
-      {stylesBlockquote.styles}
-      {stylesCode.styles}
-      {stylesHeading.styles}
-      {stylesHtml.styles}
-      {stylesLinkText.styles}
-      {stylesList.styles}
-      {stylesPara.styles}
-      {stylesPre.styles}
-      {stylesTable.styles}
-    </>
-  )
-})
+export const Html = React.forwardRef(({ className, ...props }, ref) => (
+  <>
+    <div
+      className={classNameProp(stylesHtml.className, className)}
+      {...props}
+      ref={ref}
+    />
+    {stylesBlockquote.styles}
+    {stylesCode.styles}
+    {stylesHeading.styles}
+    {stylesHtml.styles}
+    {stylesLinkText.styles}
+    {stylesList.styles}
+    {stylesPara.styles}
+    {stylesPre.styles}
+    {stylesTable.styles}
+  </>
+))
 
 Html.displayName = 'Html'
 
 Html.propTypes = {
-  children: PropTypes.node.isRequired
+  className: PropTypes.string,
+  children: propTypeChildren.isRequired
 }

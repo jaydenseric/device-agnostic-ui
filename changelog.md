@@ -2,15 +2,26 @@
 
 ## Next
 
+### Major
+
+- The `Html` component no longer renders a string value for the `children` prop with `dangerouslySetInnerHTML`. Instead, use the `dangerouslySetInnerHTML` prop directly.
+
 ### Minor
 
 - Added the `stylesSyntaxHighlightingPrism` named export, for styling syntax highlighting HTML produced by [Prism](https://prismjs.com).
+- Added the `classNameProp` named export, for creating a `className` prop value for multiple classes.
+- Added the `propTypeChildren` named export, for use in component `propTypes` to specify a prop (usually, but not necessarily `children`) should have a React node type, and if `.isRequired` is chained, must be populated unless the `dangerouslySetInnerHTML` prop is populated.
+- `Blockquote`, `Button`, `Code`, `Heading`, `Html`, `LinkCard`, `LinkNav`, `LinkText`, `List`, `Nav`, `Para`, `Pre`, `Select`, and `Table` components can now accept a `dangerouslySetInnerHTML` prop.
+- Additional `Nav` component props are now applied to the underlying `nav` element.
 
 ### Patch
 
 - Updated dependencies.
 - Reorganized the files in `src/styles` so that filenames match their named export.
 - Alphabetically sort exports in index files.
+- Fixed setting a `className` prop on `LinkCard` and `LinkNav` components from interfering with the `active` class.
+- The `children` prop of the `Nav` and `Table` components is now marked as required in `propTypes`.
+- The new `classNameProp` and `propTypeChildren` utils have been used in many components.
 
 ## 1.0.1
 

@@ -1,23 +1,23 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { stylesCode } from '../styles/stylesCode'
+import { classNameProp } from '../utils/classNameProp'
+import { propTypeChildren } from '../utils/propTypeChildren'
 
-export const Code = React.forwardRef(
-  ({ className, children, ...props }, ref) => (
+export const Code = React.forwardRef(({ className, ...props }, ref) => (
+  <>
     <code
-      className={`${stylesCode.className}${className ? ` ${className}` : ''}`}
+      className={classNameProp(stylesCode.className, className)}
       {...props}
       ref={ref}
-    >
-      {children}
-      {stylesCode.styles}
-    </code>
-  )
-)
+    />
+    {stylesCode.styles}
+  </>
+))
 
 Code.displayName = 'Code'
 
 Code.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: propTypeChildren.isRequired
 }

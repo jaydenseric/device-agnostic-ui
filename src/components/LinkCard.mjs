@@ -1,10 +1,16 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import { classNameProp } from '../utils/classNameProp'
+import { propTypeChildren } from '../utils/propTypeChildren'
 
 export const LinkCard = React.forwardRef(
-  ({ active, children, ...props }, ref) => (
-    <a className={active ? 'active' : undefined} {...props} ref={ref}>
-      {children}
+  ({ active, className, ...props }, ref) => (
+    <>
+      <a
+        className={classNameProp(className, active && 'active')}
+        {...props}
+        ref={ref}
+      />
       <style jsx>{`
         a {
           align-self: stretch;
@@ -47,7 +53,7 @@ export const LinkCard = React.forwardRef(
           );
         }
       `}</style>
-    </a>
+    </>
   )
 )
 
@@ -55,5 +61,6 @@ LinkCard.displayName = 'LinkCard'
 
 LinkCard.propTypes = {
   active: PropTypes.bool,
-  children: PropTypes.node.isRequired
+  className: PropTypes.string,
+  children: propTypeChildren.isRequired
 }

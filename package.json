@@ -66,7 +66,8 @@
     "prettier": "^1.18.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "styled-jsx": "^3.2.2"
+    "styled-jsx": "^3.2.2",
+    "test-director": "^1.0.0"
   },
   "scripts": {
     "prepare": "npm run prepare:clean && npm run prepare:esm && npm run prepare:cjs && npm run prepare:prettier",
@@ -78,6 +79,7 @@
     "test:eslint": "eslint . --ext mjs,js",
     "test:prettier": "prettier '**/*.{json,yml,md}' -l",
     "test:size": "size-limit",
+    "test:api": "node test",
     "prepublishOnly": "npm test"
   }
 }

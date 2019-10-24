@@ -1,23 +1,23 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { stylesTable } from '../styles/stylesTable'
+import { classNameProp } from '../utils/classNameProp'
+import { propTypeChildren } from '../utils/propTypeChildren'
 
-export const Table = React.forwardRef(
-  ({ className, children, ...props }, ref) => (
+export const Table = React.forwardRef(({ className, ...props }, ref) => (
+  <>
     <table
-      className={`${stylesTable.className}${className ? ` ${className}` : ''}`}
+      className={classNameProp(stylesTable.className, className)}
       {...props}
       ref={ref}
-    >
-      {children}
-      {stylesTable.styles}
-    </table>
-  )
-)
+    />
+    {stylesTable.styles}
+  </>
+))
 
 Table.displayName = 'Table'
 
 Table.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node
+  children: propTypeChildren.isRequired
 }
