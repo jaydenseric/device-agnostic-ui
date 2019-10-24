@@ -22,7 +22,7 @@
 - The `children` prop of the `Nav` and `Table` components is now marked as required in `propTypes`.
 - In many components, use the new `propTypeChildren` API.
 - In many components, use `classNameProp` from [`class-name-prop`](https://npm.im/class-name-prop) for creating a `className` prop value for multiple classes.
-- Improved the readme with [deviceagnosticui.com](https://deviceagnosticui.com) links, a list of features, better setup instructions, and a new “API” section.
+- Improved the readme with [deviceagnosticui.com](https://deviceagnosticui.com) links, an expanded intro with a list of features, better setup instructions, and a new “API” section.
 
 ## 1.0.1
 
