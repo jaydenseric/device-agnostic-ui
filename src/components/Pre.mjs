@@ -1,7 +1,7 @@
+import classNameProp from 'class-name-prop'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { stylesPre } from '../styles/stylesPre'
-import { classNameProp } from '../utils/classNameProp'
 import { propTypeChildren } from '../utils/propTypeChildren'
 
 export const Pre = React.forwardRef(({ className, ...props }, ref) => (

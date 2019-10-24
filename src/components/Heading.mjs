@@ -1,7 +1,7 @@
+import classNameProp from 'class-name-prop'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { stylesHeading } from '../styles/stylesHeading'
-import { classNameProp } from '../utils/classNameProp'
 import { LinkText } from './LinkText'
 
 export const Heading = React.forwardRef(

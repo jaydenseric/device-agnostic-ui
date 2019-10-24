@@ -1,7 +1,7 @@
+import classNameProp from 'class-name-prop'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { stylesBlockquote } from '../styles/stylesBlockquote'
-import { classNameProp } from '../utils/classNameProp'
 import { propTypeChildren } from '../utils/propTypeChildren'
 
 export const Blockquote = React.forwardRef(({ className, ...props }, ref) => (

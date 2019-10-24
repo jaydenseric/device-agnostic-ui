@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.6.3",
+    "class-name-prop": "^1.0.0",
     "object-assign": "^4.1.1",
     "prop-types": "^15.7.2"
   },
@@ -66,8 +67,7 @@
     "prettier": "^1.18.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "styled-jsx": "^3.2.2",
-    "test-director": "^1.0.0"
+    "styled-jsx": "^3.2.2"
   },
   "scripts": {
     "prepare": "npm run prepare:clean && npm run prepare:esm && npm run prepare:cjs && npm run prepare:prettier",
@@ -79,7 +79,6 @@
     "test:eslint": "eslint . --ext mjs,js",
     "test:prettier": "prettier '**/*.{json,yml,md}' -l",
     "test:size": "size-limit",
-    "test:api": "node test",
     "prepublishOnly": "npm test"
   }
 }

@@ -1,3 +1,4 @@
+import classNameProp from 'class-name-prop'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { stylesBlockquote } from '../styles/stylesBlockquote'
@@ -9,7 +10,6 @@ import { stylesList } from '../styles/stylesList'
 import { stylesPara } from '../styles/stylesPara'
 import { stylesPre } from '../styles/stylesPre'
 import { stylesTable } from '../styles/stylesTable'
-import { classNameProp } from '../utils/classNameProp'
 import { propTypeChildren } from '../utils/propTypeChildren'
 
 export const Html = React.forwardRef(({ className, ...props }, ref) => (

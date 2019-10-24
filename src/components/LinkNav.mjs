@@ -1,6 +1,6 @@
+import classNameProp from 'class-name-prop'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { classNameProp } from '../utils/classNameProp'
 import { propTypeChildren } from '../utils/propTypeChildren'
 
 export const LinkNav = React.forwardRef(
