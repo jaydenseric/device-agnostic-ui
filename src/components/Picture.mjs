@@ -12,7 +12,12 @@ export const Picture = React.forwardRef(
           display: block;
           width: ${width}px;
           max-width: 100%;
-          padding-top: ${(height / width) * 100}%;
+        }
+
+        picture::before {
+          content: '';
+          display: block;
+          padding-top: calc(100% * ${height} / ${width});
         }
 
         img {

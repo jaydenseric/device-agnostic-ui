@@ -1,5 +1,11 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Patch
+
+- Ensure the `Picture` component maintains aspect ratio when an inline style width is applied. Also, CSS `calc` is used instead of JS math so precision matches the browser’s capability, and for better inspectability.
+
 ## 2.0.0
 
 ### Major
