@@ -35,4 +35,4 @@ Then [setup the essential global styles](https://deviceagnosticui.com/styles#glo
 
 ## Support
 
-[Browserslist](https://github.com/browserslist/browserslist): [`Node >= 8.5, > 0.5%, not OperaMini all, not IE > 0, not dead`](https://browserl.ist/?q=Node+%3E%3D+8.5%2C+%3E+0.5%25%2C+not+OperaMini+all%2C+not+IE+%3E+0%2C+not+dead).
+[Browserslist](https://github.com/browserslist/browserslist): [`Node >= 8.10, > 0.5%, not OperaMini all, not IE > 0, not dead`](https://browserl.ist/?q=Node+%3E%3D+8.10%2C+%3E+0.5%25%2C+not+OperaMini+all%2C+not+IE+%3E+0%2C+not+dead).

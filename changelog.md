@@ -4,6 +4,7 @@
 
 ### Major
 
+- Updated the minimum supported Node.js version from v8.5 to v8.10, to match ESLint’s level of support.
 - Renamed several CSS variables, so that prefixes match the capitalization of the component name:
   - `--daui-nav-` → `--daui-Nav-`
   - `--daui-scroll-` → `--daui-Scroll-`
