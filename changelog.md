@@ -15,6 +15,10 @@
 - Added a new `Margin` component that wraps children in a `div` element, with a margin set via the `--daui-spacing` CSS variable.
 - Added a new optional `active` props for the `LinkText` component, for displaying active state.
 
+### Patch
+
+- Updated dev dependencies.
+
 ## 2.0.1
 
 ### Patch

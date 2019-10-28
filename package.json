@@ -51,9 +51,9 @@
     "@size-limit/preset-small-lib": "^2.1.6",
     "babel-eslint": "^10.0.3",
     "babel-plugin-transform-replace-object-assign": "^2.0.0",
-    "eslint": "^6.5.1",
+    "eslint": "^6.6.0",
     "eslint-config-env": "^10.0.0",
-    "eslint-config-prettier": "^6.4.0",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-import-order-alphabetical": "^1.0.0",
     "eslint-plugin-jsdoc": "^15.12.1",
@@ -67,7 +67,7 @@
     "prettier": "^1.18.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "styled-jsx": "^3.2.2"
+    "styled-jsx": "^3.2.3"
   },
   "scripts": {
     "prepare": "npm run prepare:clean && npm run prepare:esm && npm run prepare:cjs && npm run prepare:prettier",
