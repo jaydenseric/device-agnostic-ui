@@ -5,6 +5,7 @@
 ### Minor
 
 - Added a new `--daui-spacing` CSS variable, for global control of spacing between elements that are intended to visually align.
+- Added a new `Margin` component that wraps children in a `div` element, with a margin set via the `--daui-spacing` CSS variable.
 
 ## 2.0.1
 
