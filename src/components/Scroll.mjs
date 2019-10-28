@@ -74,8 +74,8 @@ export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         align-items: flex-start;
-        padding: 1.5rem;
-        grid-gap: 1.5rem;
+        padding: var(--daui-spacing);
+        grid-gap: var(--daui-spacing);
       }
     `}</style>
   </div>

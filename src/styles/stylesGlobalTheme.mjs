@@ -29,6 +29,7 @@ export const stylesGlobalTheme = css.global`
     --daui-emoji: emoji, 'Apple Color Emoji', 'Segoe UI Emoji',
       'Segoe UI Symbol';
     --daui-line-height: 1.3;
+    --daui-spacing: 1.5rem;
 
     /* Enable both light and dark browser color schemes.
      * See: https://drafts.csswg.org/css-color-adjust-1/#color-scheme-prop

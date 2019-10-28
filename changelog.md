@@ -1,5 +1,11 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Minor
+
+- Added a new `--daui-spacing` CSS variable, for global control of spacing between elements that are intended to visually align.
+
 ## 2.0.1
 
 ### Patch
