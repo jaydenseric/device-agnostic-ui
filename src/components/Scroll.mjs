@@ -9,18 +9,18 @@ export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
     <div className="grid">{children}</div>
     <style jsx>{`
       .scroll {
-        --daui-scroll-background-lightness: calc(
+        --daui-Scroll-background-lightness: calc(
           var(--daui-background-lightness) - 4%
         );
-        --daui-scroll-background-opaque: hsl(
+        --daui-Scroll-background-opaque: hsl(
           var(--daui-background-hue),
           var(--daui-background-saturation),
-          var(--daui-scroll-background-lightness)
+          var(--daui-Scroll-background-lightness)
         );
 
         display: grid;
         max-width: 100%;
-        background-color: var(--daui-scroll-background-opaque);
+        background-color: var(--daui-Scroll-background-opaque);
         overflow-x: auto;
         overflow-y: hidden;
         overscroll-behavior-x: contain;
@@ -31,20 +31,20 @@ export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
       @supports (overscroll-behavior-x: contain) and
         (not (-webkit-overflow-scrolling: touch)) {
         .scroll {
-          --daui-scroll-background-transparent: hsla(
+          --daui-Scroll-background-transparent: hsla(
             var(--daui-background-hue),
             var(--daui-background-saturation),
-            var(--daui-scroll-background-lightness),
+            var(--daui-Scroll-background-lightness),
             0
           );
 
           background-image: linear-gradient(
               90deg,
-              var(--daui-scroll-background-opaque),
-              var(--daui-scroll-background-transparent) ${SCROLL_FADE_WIDTH},
-              var(--daui-scroll-background-transparent)
+              var(--daui-Scroll-background-opaque),
+              var(--daui-Scroll-background-transparent) ${SCROLL_FADE_WIDTH},
+              var(--daui-Scroll-background-transparent)
                 calc(100% - ${SCROLL_FADE_WIDTH}),
-              var(--daui-scroll-background-opaque)
+              var(--daui-Scroll-background-opaque)
             ),
             radial-gradient(
               ${SCROLL_SHADOW_WIDTH} 50% at left center,
@@ -62,7 +62,7 @@ export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
 
       /* Some browsers (e.g. Firefox) make scrollable elements focusable. */
       .scroll:focus {
-        --daui-scroll-background-lightness: calc(
+        --daui-Scroll-background-lightness: calc(
           var(--daui-background-lightness) - 8%
         );
 

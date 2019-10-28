@@ -10,13 +10,13 @@ const SCROLL_FADE_WIDTH = '4rem'
 export const stylesPre = css.resolve`
   &,
   :global(.${stylesHtml.className} pre) {
-    --daui-pre-background-lightness: calc(
+    --daui-Pre-background-lightness: calc(
       var(--daui-background-lightness) - 4%
     );
-    --daui-pre-background-opaque: hsl(
+    --daui-Pre-background-opaque: hsl(
       var(--daui-background-hue),
       var(--daui-background-saturation),
-      var(--daui-pre-background-lightness)
+      var(--daui-Pre-background-lightness)
     );
 
     margin-top: 1em;
@@ -28,7 +28,7 @@ export const stylesPre = css.resolve`
     padding: 1em;
     text-align: left;
     line-height: var(--daui-line-height);
-    background-color: var(--daui-pre-background-opaque);
+    background-color: var(--daui-Pre-background-opaque);
     overflow-wrap: normal;
     overflow-x: auto;
     overflow-y: hidden;
@@ -41,20 +41,20 @@ export const stylesPre = css.resolve`
     (not (-webkit-overflow-scrolling: touch)) {
     &,
     :global(.${stylesHtml.className} pre) {
-      --daui-pre-background-transparent: hsla(
+      --daui-Pre-background-transparent: hsla(
         var(--daui-background-hue),
         var(--daui-background-saturation),
-        var(--daui-pre-background-lightness),
+        var(--daui-Pre-background-lightness),
         0
       );
 
       background-image: linear-gradient(
           90deg,
-          var(--daui-pre-background-opaque),
-          var(--daui-pre-background-transparent) ${SCROLL_FADE_WIDTH},
-          var(--daui-pre-background-transparent)
+          var(--daui-Pre-background-opaque),
+          var(--daui-Pre-background-transparent) ${SCROLL_FADE_WIDTH},
+          var(--daui-Pre-background-transparent)
             calc(100% - ${SCROLL_FADE_WIDTH}),
-          var(--daui-pre-background-opaque)
+          var(--daui-Pre-background-opaque)
         ),
         radial-gradient(
           ${SCROLL_SHADOW_WIDTH} 50% at left center,
@@ -83,7 +83,7 @@ export const stylesPre = css.resolve`
   /* Some browsers (e.g. Firefox) make scrollable elements focusable. */
   :focus,
   :global(.${stylesHtml.className} pre:focus) {
-    --daui-pre-background-lightness: calc(
+    --daui-Pre-background-lightness: calc(
       var(--daui-background-lightness) - 8%
     );
 

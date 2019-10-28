@@ -2,6 +2,13 @@
 
 ## Next
 
+### Major
+
+- Renamed several CSS variables, so that prefixes match the capitalization of the component name:
+  - `--daui-nav-` → `--daui-Nav-`
+  - `--daui-scroll-` → `--daui-Scroll-`
+  - `--daui-pre-` → `--daui-Pre-`
+
 ### Minor
 
 - Added a new `--daui-spacing` CSS variable, for global control of spacing between elements that are intended to visually align.

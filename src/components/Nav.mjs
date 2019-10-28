@@ -9,18 +9,18 @@ export const Nav = React.forwardRef((props, ref) => (
     <nav {...props} ref={ref} />
     <style jsx>{`
       nav {
-        --daui-nav-background-lightness: var(--daui-background-lightness);
-        --daui-nav-background-opaque: hsl(
+        --daui-Nav-background-lightness: var(--daui-background-lightness);
+        --daui-Nav-background-opaque: hsl(
           var(--daui-background-hue),
           var(--daui-background-saturation),
-          var(--daui-nav-background-lightness)
+          var(--daui-Nav-background-lightness)
         );
 
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: min-content;
         padding: 0 1rem;
-        background-color: var(--daui-nav-background-opaque);
+        background-color: var(--daui-Nav-background-opaque);
         overflow-x: auto;
         overflow-y: hidden;
         overscroll-behavior-x: contain;
@@ -31,20 +31,20 @@ export const Nav = React.forwardRef((props, ref) => (
       @supports (overscroll-behavior-x: contain) and
         (not (-webkit-overflow-scrolling: touch)) {
         nav {
-          --daui-nav-background-transparent: hsla(
+          --daui-Nav-background-transparent: hsla(
             var(--daui-background-hue),
             var(--daui-background-saturation),
-            var(--daui-nav-background-lightness),
+            var(--daui-Nav-background-lightness),
             0
           );
 
           background-image: linear-gradient(
               90deg,
-              var(--daui-nav-background-opaque),
-              var(--daui-nav-background-transparent) ${SCROLL_FADE_WIDTH},
-              var(--daui-nav-background-transparent)
+              var(--daui-Nav-background-opaque),
+              var(--daui-Nav-background-transparent) ${SCROLL_FADE_WIDTH},
+              var(--daui-Nav-background-transparent)
                 calc(100% - ${SCROLL_FADE_WIDTH}),
-              var(--daui-nav-background-opaque)
+              var(--daui-Nav-background-opaque)
             ),
             radial-gradient(
               ${SCROLL_SHADOW_WIDTH} 50% at left center,
@@ -62,7 +62,7 @@ export const Nav = React.forwardRef((props, ref) => (
 
       /* Some browsers (e.g. Firefox) make scrollable elements focusable. */
       nav:focus {
-        --daui-nav-background-lightness: calc(
+        --daui-Nav-background-lightness: calc(
           var(--daui-background-lightness) - 4%
         );
 
