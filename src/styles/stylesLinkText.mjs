@@ -15,13 +15,19 @@ export const stylesLinkText = css.resolve`
   }
 
   :focus,
+  .active,
+  :global(.${stylesHtml.className} a:focus),
+  :global(.${stylesHtml.className} a.active) {
+    box-shadow: 0 2px;
+  }
+
+  :focus,
   :global(.${stylesHtml.className} a:focus) {
     color: hsl(
       var(--daui-interact-hue),
       var(--daui-interact-saturation),
       calc(var(--daui-interact-lightness) + 10%)
     );
-    box-shadow: 0 2px;
     outline: 0;
   }
 
