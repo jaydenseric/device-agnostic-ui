@@ -20,6 +20,7 @@
 
 - Updated dev dependencies.
 - The `Button` component’s `button` element’s styles now inherits `font-variant`.
+- Reordered `Fieldset` component style rules for consistency with other components.
 
 ## 2.0.1
 

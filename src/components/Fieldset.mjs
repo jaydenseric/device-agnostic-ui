@@ -28,10 +28,10 @@ export const Fieldset = React.forwardRef(
           padding: 0;
           float: left;
           text-align: left;
-          line-height: var(--daui-line-height);
           font-size: 90%;
           font-weight: bold;
           font-style: italic;
+          line-height: var(--daui-line-height);
         }
 
         div {
