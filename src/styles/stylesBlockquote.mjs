@@ -11,7 +11,6 @@ export const stylesBlockquote = css.resolve`
     margin-left: 1.5em;
     max-width: 22em;
     line-height: var(--daui-line-height);
-    font-size: 1.1rem;
     font-style: italic;
     font-weight: 300;
     text-rendering: optimizeLegibility;

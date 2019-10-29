@@ -10,7 +10,6 @@ export const stylesList = css.resolve`
     margin-top: 1em;
     margin-bottom: 1.5em;
     padding-left: 2em;
-    font-size: 1.1rem;
   }
 
   :first-child,

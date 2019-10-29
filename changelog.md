@@ -9,6 +9,9 @@
   - `--daui-nav-` → `--daui-Nav-`
   - `--daui-scroll-` → `--daui-Scroll-`
   - `--daui-pre-` → `--daui-Pre-`
+- New font size approach:
+  - `Blockquote`, `List`, and `Para` components now inherit font size.
+  - `Heading`, `Select` and `Textbox` components now use `%` instead of `rem` for font size units.
 
 ### Minor
 

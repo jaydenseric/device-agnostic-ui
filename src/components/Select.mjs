@@ -29,7 +29,7 @@ export const Select = React.forwardRef(
             max-width: 100%;
             padding: ${PADDING_EM}em;
             font: inherit;
-            font-size: 1.15rem;
+            font-size: 115%;
             font-style: italic;
             line-height: var(--daui-line-height);
             color: inherit;

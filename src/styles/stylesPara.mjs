@@ -10,7 +10,6 @@ export const stylesPara = css.resolve`
     margin-bottom: 1em;
     max-width: 30em;
     line-height: var(--daui-line-height);
-    font-size: 1.1rem;
   }
 
   :first-child,
