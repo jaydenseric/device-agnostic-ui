@@ -21,9 +21,8 @@ export const Button = React.forwardRef(({ disabled, ...props }, ref) => {
           border-radius: 10em;
           max-width: 100%;
           padding: 0.7em 1.25em 0.75em;
+          font: inherit;
           line-height: var(--daui-line-height);
-          font-family: inherit;
-          font-size: inherit;
           color: hsl(
             var(--daui-background-hue),
             var(--daui-background-saturation),

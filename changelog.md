@@ -19,6 +19,7 @@
 ### Patch
 
 - Updated dev dependencies.
+- The `Button` component’s `button` element’s styles now inherits `font-variant`.
 
 ## 2.0.1
 
