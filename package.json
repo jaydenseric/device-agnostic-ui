@@ -67,7 +67,8 @@
     "prettier": "^1.18.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "styled-jsx": "^3.2.3"
+    "styled-jsx": "^3.2.3",
+    "test-director": "^1.0.0"
   },
   "scripts": {
     "prepare": "npm run prepare:clean && npm run prepare:esm && npm run prepare:cjs && npm run prepare:prettier",
@@ -75,9 +76,10 @@
     "prepare:esm": "BABEL_ESM=1 babel src -d lib/esm",
     "prepare:cjs": "babel src -d lib/cjs",
     "prepare:prettier": "prettier 'lib/**/*.{mjs,js}' readme.md --write",
-    "test": "npm run test:eslint && npm run test:prettier && npm run test:size",
+    "test": "npm run test:eslint && npm run test:prettier && npm run test:api && npm run test:size",
     "test:eslint": "eslint . --ext mjs,js",
     "test:prettier": "prettier '**/*.{json,yml,md}' -l",
+    "test:api": "node test",
     "test:size": "size-limit",
     "prepublishOnly": "npm test"
   }

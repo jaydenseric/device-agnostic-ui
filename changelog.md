@@ -15,6 +15,7 @@
 
 ### Minor
 
+- Added a new `splitWordBreaks` utility function and `WordBreaks` component, for rendering text with aesthetically pleasing word break opportunities.
 - Added a new `--daui-spacing` CSS variable, for global control of spacing between elements that are intended to visually align.
 - Added a new `Margin` component that wraps children in a `div` element, with a margin set via the `--daui-spacing` CSS variable.
 - Added a new optional `active` props for the `LinkText` component, for displaying active state.
