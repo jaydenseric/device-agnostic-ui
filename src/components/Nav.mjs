@@ -3,6 +3,7 @@ import { propTypeChildren } from '../utils/propTypeChildren'
 
 const SCROLL_SHADOW_WIDTH = '0.5rem'
 const SCROLL_FADE_WIDTH = '3rem'
+const GRID_GAP = '1em'
 
 export const Nav = React.forwardRef((props, ref) => (
   <>
@@ -19,7 +20,8 @@ export const Nav = React.forwardRef((props, ref) => (
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: min-content;
-        padding: 0 1rem;
+        grid-gap: ${GRID_GAP};
+        padding: 0.5em 0;
         background-color: var(--daui-Nav-background-opaque);
         overflow-x: auto;
         overflow-y: hidden;
@@ -70,9 +72,11 @@ export const Nav = React.forwardRef((props, ref) => (
         outline: 0;
       }
 
+      nav::before,
       nav::after {
         content: '';
-        padding-right: inherit;
+        align-self: stretch;
+        width: calc(var(--daui-spacing) - ${GRID_GAP});
       }
     `}</style>
   </>

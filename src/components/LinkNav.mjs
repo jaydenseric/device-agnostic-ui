@@ -14,9 +14,8 @@ export const LinkNav = React.forwardRef(
       <style jsx>{`
         a {
           display: flex;
-          align-items: center;
-          padding: 0.65em 0.25em;
-          margin: 0.35em;
+          align-items: flex-end;
+          padding: 0.5em 0;
           white-space: nowrap;
           text-decoration: none;
           color: hsl(
