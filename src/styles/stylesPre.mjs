@@ -33,6 +33,7 @@ export const stylesPre = css.resolve`
     overflow-x: auto;
     overflow-y: hidden;
     overscroll-behavior-x: contain;
+    scrollbar-width: thin;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
   }
