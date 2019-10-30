@@ -23,6 +23,7 @@
 ### Patch
 
 - Updated dev dependencies.
+- Updated the package `homepage` field.
 - The `Button` component’s `button` element’s styles now inherits `font-variant`.
 - Added `scrollbar-width: thin` styles to `Nav` and `Pre` components.
 - Updated `LinkNav` and `Nav` component styles:
