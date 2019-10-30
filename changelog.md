@@ -29,6 +29,7 @@
   - The content of links now vertically aligns to the bottom.
   - More compact spacing to fit more links into a narrow viewport.
   - `Nav` horizontal inner spacing uses the `--dui-spacing` CSS variable, and no longer has extra spacing on the right.
+- Updated the `Scroll` component to use a single `div` element and removed the `max-width: 100%` style.
 - Reordered `Fieldset` component style rules for consistency with other components.
 
 ## 2.0.1

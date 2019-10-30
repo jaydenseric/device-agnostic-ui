@@ -4,11 +4,11 @@ import React from 'react'
 const SCROLL_SHADOW_WIDTH = '1rem'
 const SCROLL_FADE_WIDTH = '4rem'
 
-export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
-  <div className="scroll" {...props} ref={ref}>
-    <div className="grid">{children}</div>
+export const Scroll = React.forwardRef((props, ref) => (
+  <>
+    <div {...props} ref={ref} />
     <style jsx>{`
-      .scroll {
+      div {
         --daui-Scroll-background-lightness: calc(
           var(--daui-background-lightness) - 4%
         );
@@ -19,7 +19,11 @@ export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
         );
 
         display: grid;
-        max-width: 100%;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        align-items: flex-start;
+        grid-gap: var(--daui-spacing);
+        padding: var(--daui-spacing) 0;
         background-color: var(--daui-Scroll-background-opaque);
         overflow-x: auto;
         overflow-y: hidden;
@@ -30,7 +34,7 @@ export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
 
       @supports (overscroll-behavior-x: contain) and
         (not (-webkit-overflow-scrolling: touch)) {
-        .scroll {
+        div {
           --daui-Scroll-background-transparent: hsla(
             var(--daui-background-hue),
             var(--daui-background-saturation),
@@ -61,7 +65,7 @@ export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
       }
 
       /* Some browsers (e.g. Firefox) make scrollable elements focusable. */
-      .scroll:focus {
+      div:focus {
         --daui-Scroll-background-lightness: calc(
           var(--daui-background-lightness) - 8%
         );
@@ -69,16 +73,19 @@ export const Scroll = React.forwardRef(({ children, ...props }, ref) => (
         outline: 0;
       }
 
-      .grid {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: max-content;
-        align-items: flex-start;
-        padding: var(--daui-spacing);
-        grid-gap: var(--daui-spacing);
+      div::before,
+      div::after {
+        content: '';
+        align-self: stretch;
+      }
+
+      /* If the last grid item has 0 width it doesn’t render. */
+      div::after {
+        width: 1px;
+        margin-left: -1px;
       }
     `}</style>
-  </div>
+  </>
 ))
 
 Scroll.displayName = 'Scroll'
