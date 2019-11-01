@@ -1,6 +1,6 @@
 # device-agnostic-ui changelog
 
-## Next
+## 3.0.1
 
 ### Patch
 
