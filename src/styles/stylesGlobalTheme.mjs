@@ -23,11 +23,11 @@ export const stylesGlobalTheme = css.global`
     --daui-error-hue: 339;
     --daui-error-saturation: 100%;
     --daui-error-lightness: 50%;
-    --daui-sans-serif: -apple-system, BlinkMacSystemFont, sans-serif;
+    --daui-sans-serif: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+      Arial, sans-serif;
     --daui-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo,
       monospace;
-    --daui-emoji: emoji, 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol';
+    --daui-emoji: Apple Color Emoji, Segoe UI Emoji, emoji;
     --daui-line-height: 1.3;
     --daui-spacing: 1.5rem;
 

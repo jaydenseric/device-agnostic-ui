@@ -4,6 +4,7 @@
 
 ### Patch
 
+- Updated the `--daui-sans-serif` and `-daui-emoji` CSS variable font stacks defined in `stylesGlobalTheme`, for cross-device consistency. They are now similar to the GitHub font stacks.
 - Changelog typo fix.
 
 ## 3.0.0
