@@ -5,6 +5,7 @@
 ### Patch
 
 - Updated dev dependencies.
+- Tidied `Toggle` component CSS whitespace.
 
 ## 3.0.1
 

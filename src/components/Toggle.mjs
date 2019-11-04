@@ -34,9 +34,11 @@ export const Toggle = React.forwardRef(
             position: relative;
             cursor: pointer;
           }
+
           .toggle {
             position: relative;
           }
+
           input {
             position: absolute;
             left: 0;
@@ -51,6 +53,7 @@ export const Toggle = React.forwardRef(
             opacity: 0;
             pointer-events: none;
           }
+
           .tick {
             display: block;
             border: 2px solid;
@@ -58,20 +61,25 @@ export const Toggle = React.forwardRef(
             padding: 0.15em 0.35em 0.25em;
             line-height: 1;
           }
+
           .icon {
             display: block;
             opacity: 0.08;
           }
+
           .label {
             padding: 0.5em 1.25em 0.5em 0.5em;
             font-style: italic;
           }
+
           :checked + .tick .icon {
             opacity: 1;
           }
+
           :active + .tick .icon {
             opacity: 0.5;
           }
+
           :invalid + .tick {
             border-color: hsl(
               var(--daui-error-hue),
@@ -79,11 +87,13 @@ export const Toggle = React.forwardRef(
               var(--daui-error-lightness)
             );
           }
+
           :not(:active):not(:focus) + .tick {
             border-left-color: transparent;
             border-right-color: transparent;
             border-top-color: transparent;
           }
+
           :disabled + .tick {
             opacity: 0.5;
           }
