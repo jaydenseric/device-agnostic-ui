@@ -22,12 +22,12 @@ export const Html = React.forwardRef(({ className, ...props }, ref) => (
     {stylesBlockquote.styles}
     {stylesCode.styles}
     {stylesHeading.styles}
-    {stylesHtml.styles}
     {stylesLinkText.styles}
     {stylesList.styles}
     {stylesPara.styles}
     {stylesPre.styles}
     {stylesTable.styles}
+    {stylesHtml.styles}
   </>
 ))
 

@@ -19,6 +19,7 @@
 - Updated dev dependencies.
 - Tidied `Toggle` component CSS whitespace.
 - Set the `Picture` component static and dynamic styles via separate `style` tags for efficiency.
+- Reordered `Html` component styles so that the `stylesHtml` CSS comes last, indicating higher specificity.
 
 ## 3.0.1
 
