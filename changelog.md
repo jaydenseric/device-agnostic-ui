@@ -2,10 +2,19 @@
 
 ## Next
 
+### Major
+
+- `Picture` component changes:
+  - An `img` element must now be manually declared via the `children` prop.
+  - It can now accept a `dangerouslySetInnerHTML` prop.
+  - The `alt`, `src`, and `round` props have been deprecated.
+  - The `width` prop no longer sets a CSS pixel `width` value on the `picture` element.
+
 ### Patch
 
 - Updated dev dependencies.
 - Tidied `Toggle` component CSS whitespace.
+- Set the `Picture` component static and dynamic styles via separate `style` tags for efficiency.
 
 ## 3.0.1
 
