@@ -10,4 +10,9 @@ export const stylesHtml = css.resolve`
   & :global(h2) {
     font-size: calc(150% + 1.5vw);
   }
+
+  & :global(img) {
+    max-width: 100%;
+    height: auto;
+  }
 `

@@ -10,6 +10,10 @@
   - The `alt`, `src`, and `round` props have been deprecated.
   - The `width` prop no longer sets a CSS pixel `width` value on the `picture` element.
 
+### Minor
+
+- Support `img` elements in the `Html` component, by ensuring they are responsive with `max-width: 100%` and `height: auto` styles.
+
 ### Patch
 
 - Updated dev dependencies.
