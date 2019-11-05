@@ -28,6 +28,12 @@ export const stylesGlobalTheme = css.global`
     --daui-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo,
       monospace;
     --daui-emoji: Apple Color Emoji, Segoe UI Emoji, emoji;
+    --daui-h1-font-size: calc(200% + 3vw);
+    --daui-h2-font-size: calc(150% + 1.5vw);
+    --daui-h3-font-size: calc(130% + 0.75vw);
+    --daui-h4-font-size: calc(120% + 0.3vw);
+    --daui-h5-font-size: calc(110% + 0.15vw);
+    --daui-h6-font-size: 100%;
     --daui-line-height: 1.3;
     --daui-spacing: 1.5rem;
 

@@ -2,6 +2,21 @@
 
 ## Next
 
+### Major
+
+- The `Heading` component’s `h1` element no longer has a default CSS `font-size` rule. All `Heading` uses should have an inline style (or `className`) that sets a `font-size`; using one of the new CSS variables (see below) or a custom value.
+
+### Minor
+
+- Added new CSS variables for global control of heading font sizes, used by the `Heading` and `Html` components:
+  1. `--daui-h1-font-size`
+  2. `--daui-h2-font-size`
+  3. `--daui-h3-font-size`
+  4. `--daui-h4-font-size`
+  5. `--daui-h5-font-size`
+  6. `--daui-h6-font-size`
+- `Html` component children `h3`, `h4`, `h5`, and `h6` elements are now styled with specific `font-size` rules via the new CSS variables.
+
 ### Patch
 
 - Changelog typo fix.

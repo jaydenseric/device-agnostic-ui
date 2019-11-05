@@ -15,7 +15,6 @@ export const stylesHeading = css.resolve`
     margin-bottom: 0.5em;
     max-width: 12em;
     line-height: 0.85;
-    font-size: 150%;
     font-weight: 700;
     letter-spacing: -0.02em;
     text-rendering: optimizeLegibility;

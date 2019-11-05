@@ -4,11 +4,27 @@ import css from 'styled-jsx/css'
 
 export const stylesHtml = css.resolve`
   & :global(h1) {
-    font-size: calc(200% + 3vw);
+    font-size: var(--daui-h1-font-size);
   }
 
   & :global(h2) {
-    font-size: calc(150% + 1.5vw);
+    font-size: var(--daui-h2-font-size);
+  }
+
+  & :global(h3) {
+    font-size: var(--daui-h3-font-size);
+  }
+
+  & :global(h4) {
+    font-size: var(--daui-h4-font-size);
+  }
+
+  & :global(h5) {
+    font-size: var(--daui-h5-font-size);
+  }
+
+  & :global(h6) {
+    font-size: var(--daui-h6-font-size);
   }
 
   & :global(img) {
