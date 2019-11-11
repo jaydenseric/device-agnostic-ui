@@ -63,7 +63,8 @@ export const stylesSyntaxHighlightingPrism = css.resolve`
     color: hsl(148, 100%, 23%);
   }
 
-  & :global(.token.keyword) {
+  & :global(.token.keyword),
+  & :global(.token.atrule > .rule) {
     color: hsl(339, 100%, 50%);
   }
 

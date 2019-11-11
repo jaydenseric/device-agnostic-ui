@@ -5,6 +5,7 @@
 ### Patch
 
 - Updated dependencies.
+- Updated `stylesSyntaxHighlightingPrism` to syntax highlight CSS at-rules.
 
 ## 5.0.0
 
