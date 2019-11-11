@@ -5,7 +5,9 @@
 ### Patch
 
 - Updated dependencies.
-- Updated `stylesSyntaxHighlightingPrism` to syntax highlight CSS at-rules.
+- Updated `stylesSyntaxHighlightingPrism` styles:
+  - Only set the base color on `code` elements (and relevant descendant tokens, as before).
+  - Syntax highlight CSS at-rules.
 
 ## 5.0.0
 

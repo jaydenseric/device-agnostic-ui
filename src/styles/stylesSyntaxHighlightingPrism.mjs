@@ -3,7 +3,8 @@ import React from 'react'
 import css from 'styled-jsx/css'
 
 export const stylesSyntaxHighlightingPrism = css.resolve`
-  &,
+  code,
+  & :global(code),
   & :global(.token.plain-text),
   & :global(.token.content),
   & :global(.token.attr-value),
