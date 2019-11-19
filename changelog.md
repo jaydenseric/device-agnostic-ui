@@ -4,6 +4,7 @@
 
 ### Patch
 
+- Updated dev dependencies.
 - Increased the bundle size limit from 7 KB to 8 KB.
 - `Textbox` component `type` prop types now also allow `date`, `datetime-local`, `email`, `month`, `password`, `search`, `tel`, `time`, `url` and `week` values.
 
