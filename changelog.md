@@ -1,5 +1,11 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Patch
+
+- Increased the bundle size limit from 7 KB to 8 KB.
+
 ## 5.0.1
 
 ### Patch
