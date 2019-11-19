@@ -89,6 +89,23 @@ export const Textbox = React.forwardRef(
 Textbox.displayName = 'Textbox'
 
 Textbox.propTypes = {
-  type: PropTypes.oneOf(['textarea', 'text', 'number']),
+  type: PropTypes.oneOf([
+    // Standard:
+    'date',
+    'datetime-local',
+    'email',
+    'month',
+    'number',
+    'password',
+    'search',
+    'tel',
+    'text',
+    'time',
+    'url',
+    'week',
+
+    // Non standard:
+    'textarea'
+  ]),
   validationMessage: PropTypes.string
 }
