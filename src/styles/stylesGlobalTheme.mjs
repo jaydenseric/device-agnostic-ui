@@ -48,7 +48,7 @@ export const stylesGlobalTheme = css.global`
       --daui-foreground-lightness: 78%;
       --daui-background-lightness: 18%;
       --daui-shade-opacity: 0.2;
-      --daui-shadow-opacity: 0.55;
+      --daui-shadow-opacity: 0.3;
       --daui-highlight-opacity: 0.3;
       --daui-interact-saturation: 90%;
       --daui-interact-lightness: 62%;
