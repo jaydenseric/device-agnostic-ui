@@ -81,4 +81,12 @@ export const stylesGlobal = css.global`
       var(--daui-highlight-opacity)
     );
   }
+
+  [data-daui-color-scheme='light'] {
+    color-scheme: light;
+  }
+
+  [data-daui-color-scheme='dark'] {
+    color-scheme: dark;
+  }
 `

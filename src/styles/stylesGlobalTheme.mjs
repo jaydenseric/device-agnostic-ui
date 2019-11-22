@@ -54,4 +54,24 @@ export const stylesGlobalTheme = css.global`
       --daui-interact-lightness: 62%;
     }
   }
+
+  [data-daui-color-scheme='light'] {
+    --daui-foreground-lightness: 0%;
+    --daui-background-lightness: 100%;
+    --daui-shade-opacity: 0.08;
+    --daui-shadow-opacity: 0.12;
+    --daui-highlight-opacity: 0.75;
+    --daui-interact-saturation: 100%;
+    --daui-interact-lightness: 38%;
+  }
+
+  [data-daui-color-scheme='dark'] {
+    --daui-foreground-lightness: 78%;
+    --daui-background-lightness: 18%;
+    --daui-shade-opacity: 0.2;
+    --daui-shadow-opacity: 0.3;
+    --daui-highlight-opacity: 0.3;
+    --daui-interact-saturation: 90%;
+    --daui-interact-lightness: 62%;
+  }
 `

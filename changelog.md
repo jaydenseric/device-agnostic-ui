@@ -2,6 +2,10 @@
 
 ## Next
 
+### Minor
+
+- The color scheme can now be set for specific elements using a `data-daui-color-scheme` attribute with a `light` or `dark` value. This is useful for implementing a global color scheme switch, or to force a legible scheme when UI is overlaying an element known to always be light or dark.
+
 ### Patch
 
 - Reduced the opacity of shadows in dark mode.
