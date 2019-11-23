@@ -11,6 +11,7 @@
 
 ### Patch
 
+- Updated dev dependencies.
 - Reduced the opacity of shadows in dark mode.
 
 ## 5.0.2
