@@ -1,5 +1,11 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Patch
+
+- Removed peer dependencies from the `ignore` field of `.size-limit.json`, as they are ignored by default.
+
 ## 5.1.0
 
 ### Minor

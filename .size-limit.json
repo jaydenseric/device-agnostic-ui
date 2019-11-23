@@ -2,6 +2,6 @@
   {
     "path": "lib/esm/index.js",
     "limit": "8 KB",
-    "ignore": ["react", "prop-types", "object-assign", "next"]
+    "ignore": ["prop-types", "object-assign"]
   }
 ]
