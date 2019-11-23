@@ -5,6 +5,7 @@
 ### Patch
 
 - Removed peer dependencies from the `ignore` field of `.size-limit.json`, as they are ignored by default.
+- Removed the CSS `align-self: stretch` rule from the `LinkCard` component.
 
 ## 5.1.0
 

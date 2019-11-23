@@ -13,7 +13,6 @@ export const LinkCard = React.forwardRef(
       />
       <style jsx>{`
         a {
-          align-self: stretch;
           position: relative;
           display: block;
           border: 2px solid transparent;
