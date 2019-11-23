@@ -5,6 +5,9 @@
 ### Minor
 
 - The color scheme can now be set for specific elements using a `data-daui-color-scheme` attribute with a `light` or `dark` value. This is useful for implementing a global color scheme switch, or to force a legible scheme when UI is overlaying an element known to always be light or dark.
+- The `Heading` component has new props:
+  - `level` sets the heading element used, e.g. `h1`.
+  - `size` sets the CSS `font-size` via a global theme CSS variable, e.g. `--daui-h1-font-size`.
 
 ### Patch
 
