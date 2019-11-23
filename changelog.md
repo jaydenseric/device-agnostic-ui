@@ -12,6 +12,7 @@
 ### Patch
 
 - Updated dev dependencies.
+- Loosened the semver range for the [`@babel/runtime`](https://npm.im/@babel/runtime) dependency, to avoid duplication in `node_modules` in projects using the oldest supported Next.js version.
 - Reduced the opacity of shadows in dark mode.
 
 ## 5.0.2

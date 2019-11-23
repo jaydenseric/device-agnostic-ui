@@ -36,7 +36,7 @@
     "styled-jsx": "^3.0.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.7.2",
+    "@babel/runtime": "^7.4.5",
     "class-name-prop": "^1.0.0",
     "object-assign": "^4.1.1",
     "prop-types": "^15.7.2"
