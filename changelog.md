@@ -1,5 +1,11 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Patch
+
+- Also run GitHub Actions with Node.js v13 and v14.
+
 ## 5.1.1
 
 ### Patch
