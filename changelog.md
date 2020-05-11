@@ -5,6 +5,7 @@
 ### Patch
 
 - Also run GitHub Actions with Node.js v13 and v14.
+- Ensure GitHub Actions run on pull request.
 
 ## 5.1.1
 
