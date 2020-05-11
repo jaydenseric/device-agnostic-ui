@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import PropTypes from 'prop-types';
+import React from 'react';
 
-const SCROLL_SHADOW_WIDTH = '1rem'
-const SCROLL_FADE_WIDTH = '4rem'
+const SCROLL_SHADOW_WIDTH = '1rem';
+const SCROLL_FADE_WIDTH = '4rem';
 
 export const Scroll = React.forwardRef((props, ref) => (
   <>
@@ -86,10 +86,10 @@ export const Scroll = React.forwardRef((props, ref) => (
       }
     `}</style>
   </>
-))
+));
 
-Scroll.displayName = 'Scroll'
+Scroll.displayName = 'Scroll';
 
 Scroll.propTypes = {
-  children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};

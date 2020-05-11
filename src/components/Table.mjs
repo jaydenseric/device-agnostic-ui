@@ -1,8 +1,8 @@
-import classNameProp from 'class-name-prop'
-import PropTypes from 'prop-types'
-import React from 'react'
-import { stylesTable } from '../styles/stylesTable'
-import { propTypeChildren } from '../utils/propTypeChildren'
+import classNameProp from 'class-name-prop';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { stylesTable } from '../styles/stylesTable';
+import { propTypeChildren } from '../utils/propTypeChildren';
 
 export const Table = React.forwardRef(({ className, ...props }, ref) => (
   <>
@@ -13,11 +13,11 @@ export const Table = React.forwardRef(({ className, ...props }, ref) => (
     />
     {stylesTable.styles}
   </>
-))
+));
 
-Table.displayName = 'Table'
+Table.displayName = 'Table';
 
 Table.propTypes = {
   className: PropTypes.string,
-  children: propTypeChildren.isRequired
-}
+  children: propTypeChildren.isRequired,
+};

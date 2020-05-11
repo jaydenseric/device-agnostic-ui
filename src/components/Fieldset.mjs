@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import PropTypes from 'prop-types';
+import React from 'react';
 
 export const Fieldset = React.forwardRef(
   ({ legend, children, ...props }, ref) => (
@@ -40,11 +40,11 @@ export const Fieldset = React.forwardRef(
       `}</style>
     </fieldset>
   )
-)
+);
 
-Fieldset.displayName = 'Fieldset'
+Fieldset.displayName = 'Fieldset';
 
 Fieldset.propTypes = {
   legend: PropTypes.node,
-  children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};

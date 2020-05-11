@@ -1,19 +1,19 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { useCustomValidity } from '../hooks/useCustomValidity'
-import { useMergedRef } from '../hooks/useMergedRef'
-import { useOnFocusReportValidity } from '../hooks/useOnFocusReportValidity'
-import { propTypeChildren } from '../utils/propTypeChildren'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { useCustomValidity } from '../hooks/useCustomValidity';
+import { useMergedRef } from '../hooks/useMergedRef';
+import { useOnFocusReportValidity } from '../hooks/useOnFocusReportValidity';
+import { propTypeChildren } from '../utils/propTypeChildren';
 
-const PADDING_EM = 0.3
-const ARROW_WIDTH_EM = 0.55
+const PADDING_EM = 0.3;
+const ARROW_WIDTH_EM = 0.55;
 
 export const Select = React.forwardRef(
   ({ validationMessage, ...props }, ref) => {
-    const selectRef = useMergedRef([ref])
+    const selectRef = useMergedRef([ref]);
 
-    useCustomValidity(selectRef, validationMessage)
-    useOnFocusReportValidity(selectRef)
+    useCustomValidity(selectRef, validationMessage);
+    useOnFocusReportValidity(selectRef);
 
     return (
       <>
@@ -95,13 +95,13 @@ export const Select = React.forwardRef(
           }
         `}</style>
       </>
-    )
+    );
   }
-)
+);
 
-Select.displayName = 'Select'
+Select.displayName = 'Select';
 
 Select.propTypes = {
   validationMessage: PropTypes.string,
-  children: propTypeChildren.isRequired
-}
+  children: propTypeChildren.isRequired,
+};

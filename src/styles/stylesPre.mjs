@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import css from 'styled-jsx/css'
-import { stylesCode } from './stylesCode'
-import { stylesHtml } from './stylesHtml'
+import React from 'react';
+import css from 'styled-jsx/css';
+import { stylesCode } from './stylesCode';
+import { stylesHtml } from './stylesHtml';
 
-const SCROLL_SHADOW_WIDTH = '1rem'
-const SCROLL_FADE_WIDTH = '4rem'
+const SCROLL_SHADOW_WIDTH = '1rem';
+const SCROLL_FADE_WIDTH = '4rem';
 
 export const stylesPre = css.resolve`
   &,
@@ -96,4 +96,4 @@ export const stylesPre = css.resolve`
     padding: 0;
     background-color: transparent;
   }
-`
+`;

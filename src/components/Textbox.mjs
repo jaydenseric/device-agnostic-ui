@@ -1,18 +1,18 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { useCustomValidity } from '../hooks/useCustomValidity'
-import { useMergedRef } from '../hooks/useMergedRef'
-import { useOnFocusReportValidity } from '../hooks/useOnFocusReportValidity'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { useCustomValidity } from '../hooks/useCustomValidity';
+import { useMergedRef } from '../hooks/useMergedRef';
+import { useOnFocusReportValidity } from '../hooks/useOnFocusReportValidity';
 
-const BORDER_SIZE_PX = 2
-const PADDING_EM = 0.3
+const BORDER_SIZE_PX = 2;
+const PADDING_EM = 0.3;
 
 export const Textbox = React.forwardRef(
   ({ validationMessage, type = 'text', ...props }, ref) => {
-    const fieldRef = useMergedRef([ref])
+    const fieldRef = useMergedRef([ref]);
 
-    useCustomValidity(fieldRef, validationMessage)
-    useOnFocusReportValidity(fieldRef)
+    useCustomValidity(fieldRef, validationMessage);
+    useOnFocusReportValidity(fieldRef);
 
     return (
       <>
@@ -82,11 +82,11 @@ export const Textbox = React.forwardRef(
           }
         `}</style>
       </>
-    )
+    );
   }
-)
+);
 
-Textbox.displayName = 'Textbox'
+Textbox.displayName = 'Textbox';
 
 Textbox.propTypes = {
   type: PropTypes.oneOf([
@@ -105,7 +105,7 @@ Textbox.propTypes = {
     'week',
 
     // Non standard:
-    'textarea'
+    'textarea',
   ]),
-  validationMessage: PropTypes.string
-}
+  validationMessage: PropTypes.string,
+};

@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { propTypeChildren } from '../utils/propTypeChildren'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { propTypeChildren } from '../utils/propTypeChildren';
 
 export const Picture = React.forwardRef(({ width, height, ...props }, ref) => (
   <>
@@ -31,13 +31,13 @@ export const Picture = React.forwardRef(({ width, height, ...props }, ref) => (
       }
     `}</style>
   </>
-))
+));
 
-Picture.displayName = 'Picture'
+Picture.displayName = 'Picture';
 
 Picture.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
   className: PropTypes.string,
-  children: propTypeChildren.isRequired
-}
+  children: propTypeChildren.isRequired,
+};

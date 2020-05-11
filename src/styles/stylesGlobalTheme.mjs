@@ -1,4 +1,4 @@
-import css from 'styled-jsx/css'
+import css from 'styled-jsx/css';
 
 export const stylesGlobalTheme = css.global`
   :root {
@@ -74,4 +74,4 @@ export const stylesGlobalTheme = css.global`
     --daui-interact-saturation: 90%;
     --daui-interact-lightness: 62%;
   }
-`
+`;

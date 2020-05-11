@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import css from 'styled-jsx/css'
-import { stylesHtml } from './stylesHtml'
+import React from 'react';
+import css from 'styled-jsx/css';
+import { stylesHtml } from './stylesHtml';
 
 export const stylesLinkText = css.resolve`
   &,
@@ -39,4 +39,4 @@ export const stylesLinkText = css.resolve`
       calc(var(--daui-interact-lightness) + 20%)
     );
   }
-`
+`;

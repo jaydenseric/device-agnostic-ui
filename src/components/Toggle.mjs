@@ -1,15 +1,15 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { useCustomValidity } from '../hooks/useCustomValidity'
-import { useMergedRef } from '../hooks/useMergedRef'
-import { useOnFocusReportValidity } from '../hooks/useOnFocusReportValidity'
-import { IconTick } from './IconTick'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { useCustomValidity } from '../hooks/useCustomValidity';
+import { useMergedRef } from '../hooks/useMergedRef';
+import { useOnFocusReportValidity } from '../hooks/useOnFocusReportValidity';
+import { IconTick } from './IconTick';
 
 export const Toggle = React.forwardRef(
   ({ validationMessage, inputProps = {}, children, ...props }, ref) => {
-    const inputRef = useMergedRef([inputProps.ref])
-    useCustomValidity(inputRef, validationMessage)
-    useOnFocusReportValidity(inputRef)
+    const inputRef = useMergedRef([inputProps.ref]);
+    useCustomValidity(inputRef, validationMessage);
+    useOnFocusReportValidity(inputRef);
 
     return (
       <label {...props} ref={ref}>
@@ -99,11 +99,11 @@ export const Toggle = React.forwardRef(
           }
         `}</style>
       </label>
-    )
+    );
   }
-)
+);
 
-Toggle.displayName = 'Toggle'
+Toggle.displayName = 'Toggle';
 
 Toggle.propTypes = {
   validationMessage: PropTypes.string,
@@ -111,8 +111,8 @@ Toggle.propTypes = {
     type: PropTypes.oneOf(['checkbox', 'radio']).isRequired,
     ref: PropTypes.oneOfType([
       PropTypes.func,
-      PropTypes.shape({ current: PropTypes.elementType })
-    ])
+      PropTypes.shape({ current: PropTypes.elementType }),
+    ]),
   }).isRequired,
-  children: PropTypes.node
-}
+  children: PropTypes.node,
+};

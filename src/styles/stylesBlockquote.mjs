@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import css from 'styled-jsx/css'
-import { stylesHtml } from './stylesHtml'
+import React from 'react';
+import css from 'styled-jsx/css';
+import { stylesHtml } from './stylesHtml';
 
 export const stylesBlockquote = css.resolve`
   &,
@@ -25,4 +25,4 @@ export const stylesBlockquote = css.resolve`
   :global(.${stylesHtml.className}:last-child) {
     margin-bottom: 0;
   }
-`
+`;

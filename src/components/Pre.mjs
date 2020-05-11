@@ -1,8 +1,8 @@
-import classNameProp from 'class-name-prop'
-import PropTypes from 'prop-types'
-import React from 'react'
-import { stylesPre } from '../styles/stylesPre'
-import { propTypeChildren } from '../utils/propTypeChildren'
+import classNameProp from 'class-name-prop';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { stylesPre } from '../styles/stylesPre';
+import { propTypeChildren } from '../utils/propTypeChildren';
 
 export const Pre = React.forwardRef(({ className, ...props }, ref) => (
   <>
@@ -13,11 +13,11 @@ export const Pre = React.forwardRef(({ className, ...props }, ref) => (
     />
     {stylesPre.styles}
   </>
-))
+));
 
-Pre.displayName = 'Pre'
+Pre.displayName = 'Pre';
 
 Pre.propTypes = {
   className: PropTypes.string,
-  children: propTypeChildren.isRequired
-}
+  children: propTypeChildren.isRequired,
+};

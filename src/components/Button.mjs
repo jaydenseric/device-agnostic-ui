@@ -1,13 +1,13 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { propTypeChildren } from '../utils/propTypeChildren'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { propTypeChildren } from '../utils/propTypeChildren';
 
 export const Button = React.forwardRef(({ disabled, ...props }, ref) => {
-  const [isMounted, setIsMounted] = React.useState(false)
+  const [isMounted, setIsMounted] = React.useState(false);
 
   React.useEffect(() => {
-    setIsMounted(true)
-  }, [])
+    setIsMounted(true);
+  }, []);
 
   return (
     <>
@@ -64,12 +64,12 @@ export const Button = React.forwardRef(({ disabled, ...props }, ref) => {
         }
       `}</style>
     </>
-  )
-})
+  );
+});
 
-Button.displayName = 'Button'
+Button.displayName = 'Button';
 
 Button.propTypes = {
   disabled: PropTypes.bool,
-  children: propTypeChildren.isRequired
-}
+  children: propTypeChildren.isRequired,
+};

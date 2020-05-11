@@ -1,11 +1,11 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import PropTypes from 'prop-types';
+import React from 'react';
 
-const VIEW_BOX_SIZE = 100
-const STROKE_WIDTH = 12
+const VIEW_BOX_SIZE = 100;
+const STROKE_WIDTH = 12;
 
-const circleRadius = 50 - STROKE_WIDTH / 2
-const circleCircumference = Math.PI * circleRadius * 2
+const circleRadius = 50 - STROKE_WIDTH / 2;
+const circleCircumference = Math.PI * circleRadius * 2;
 
 export const Loading = React.forwardRef(
   ({ size = '1em', title = 'Loading', ...props }, ref) => (
@@ -51,11 +51,11 @@ export const Loading = React.forwardRef(
       `}</style>
     </svg>
   )
-)
+);
 
-Loading.displayName = 'Loading'
+Loading.displayName = 'Loading';
 
 Loading.propTypes = {
   size: PropTypes.string,
-  title: PropTypes.string
-}
+  title: PropTypes.string,
+};

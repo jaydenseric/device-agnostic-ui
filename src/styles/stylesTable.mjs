@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import css from 'styled-jsx/css'
-import { stylesHtml } from './stylesHtml'
+import React from 'react';
+import css from 'styled-jsx/css';
+import { stylesHtml } from './stylesHtml';
 
 export const stylesTable = css.resolve`
   &,
@@ -41,4 +41,4 @@ export const stylesTable = css.resolve`
     text-align: left;
     line-height: var(--daui-line-height);
   }
-`
+`;

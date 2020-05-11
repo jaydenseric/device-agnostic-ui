@@ -1,5 +1,5 @@
-import React from 'react'
-import { propTypeChildren } from '../utils/propTypeChildren'
+import React from 'react';
+import { propTypeChildren } from '../utils/propTypeChildren';
 
 export const Margin = React.forwardRef((props, ref) => (
   <>
@@ -10,10 +10,10 @@ export const Margin = React.forwardRef((props, ref) => (
       }
     `}</style>
   </>
-))
+));
 
-Margin.displayName = 'Margin'
+Margin.displayName = 'Margin';
 
 Margin.propTypes = {
-  children: propTypeChildren.isRequired
-}
+  children: propTypeChildren.isRequired,
+};

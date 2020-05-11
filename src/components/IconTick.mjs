@@ -1,5 +1,5 @@
-import React from 'react'
-import { Icon } from './Icon'
+import React from 'react';
+import { Icon } from './Icon';
 
 export const IconTick = React.forwardRef((props, ref) => (
   <Icon title="Tick" {...props} ref={ref}>
@@ -10,6 +10,6 @@ export const IconTick = React.forwardRef((props, ref) => (
       fill="none"
     />
   </Icon>
-))
+));
 
-IconTick.displayName = 'IconTick'
+IconTick.displayName = 'IconTick';

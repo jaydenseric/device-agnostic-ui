@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { Button } from './Button'
-import { IconTick } from './IconTick'
-import { Loading } from './Loading'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Button } from './Button';
+import { IconTick } from './IconTick';
+import { Loading } from './Loading';
 
 export const ButtonSubmit = React.forwardRef(
   ({ loading, success, disabled, children, ...props }, ref) => (
@@ -23,13 +23,13 @@ export const ButtonSubmit = React.forwardRef(
       `}</style>
     </Button>
   )
-)
+);
 
-ButtonSubmit.displayName = 'ButtonSubmit'
+ButtonSubmit.displayName = 'ButtonSubmit';
 
 ButtonSubmit.propTypes = {
   loading: PropTypes.bool,
   success: PropTypes.bool,
   disabled: PropTypes.bool,
-  children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};

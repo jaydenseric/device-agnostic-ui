@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 /**
  * A React hook that merges multiple React refs into one to use on an element.
@@ -7,19 +7,19 @@ import React from 'react'
  * @returns {object} React ref.
  */
 export function useMergedRef(refs) {
-  const mergedRef = React.useRef()
+  const mergedRef = React.useRef();
 
   React.useEffect(
     () => {
-      refs.forEach(ref => {
-        if (!ref) return
-        if (typeof ref === 'function') ref(mergedRef.current)
-        else ref.current = mergedRef.current
-      })
+      refs.forEach((ref) => {
+        if (!ref) return;
+        if (typeof ref === 'function') ref(mergedRef.current);
+        else ref.current = mergedRef.current;
+      });
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     refs
-  )
+  );
 
-  return mergedRef
+  return mergedRef;
 }

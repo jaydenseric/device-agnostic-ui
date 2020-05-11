@@ -1,10 +1,10 @@
-'use strict'
+'use strict';
 
-const { deepStrictEqual } = require('assert')
-const { TestDirector } = require('test-director')
-const { splitWordBreaks } = require('.')
+const { deepStrictEqual } = require('assert');
+const { TestDirector } = require('test-director');
+const { splitWordBreaks } = require('.');
 
-const tests = new TestDirector()
+const tests = new TestDirector();
 
 tests.add('`splitWordBreaks`', () => {
   deepStrictEqual(splitWordBreaks('learnHTML5WithUs'), [
@@ -12,17 +12,17 @@ tests.add('`splitWordBreaks`', () => {
     'HTML',
     '5',
     'With',
-    'Us'
-  ])
+    'Us',
+  ]);
 
   deepStrictEqual(splitWordBreaks('learn HTML 5 With Us'), [
-    'learn HTML 5 With Us'
-  ])
+    'learn HTML 5 With Us',
+  ]);
 
   deepStrictEqual(splitWordBreaks('Foo <wbr /> barBaz', '_'), [
     'Foo <wbr /> bar',
-    'Baz'
-  ])
-})
+    'Baz',
+  ]);
+});
 
-tests.run()
+tests.run();

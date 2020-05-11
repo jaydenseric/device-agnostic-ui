@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   comments: false,
@@ -9,14 +9,14 @@ module.exports = {
       {
         modules: process.env.BABEL_ESM ? false : 'commonjs',
         shippedProposals: true,
-        loose: true
-      }
+        loose: true,
+      },
     ],
-    ['@babel/react', { useBuiltIns: true }]
+    ['@babel/react', { useBuiltIns: true }],
   ],
   plugins: [
     ['@babel/proposal-object-rest-spread', { loose: true, useBuiltIns: true }],
     '@babel/transform-runtime',
-    'styled-jsx/babel'
-  ]
-}
+    'styled-jsx/babel',
+  ],
+};

@@ -17,4 +17,4 @@ export const splitWordBreaks = (string, placeholder = '<wbr />') =>
     .replace(new RegExp(`(^|\\s)(${placeholder})`, 'gm'), '$1')
 
     // Split the string at the final word break opportunities.
-    .split(placeholder)
+    .split(placeholder);

@@ -1,7 +1,7 @@
-import classNameProp from 'class-name-prop'
-import PropTypes from 'prop-types'
-import React from 'react'
-import { propTypeChildren } from '../utils/propTypeChildren'
+import classNameProp from 'class-name-prop';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { propTypeChildren } from '../utils/propTypeChildren';
 
 export const LinkNav = React.forwardRef(
   ({ active, className, ...props }, ref) => (
@@ -49,12 +49,12 @@ export const LinkNav = React.forwardRef(
       `}</style>
     </>
   )
-)
+);
 
-LinkNav.displayName = 'LinkNav'
+LinkNav.displayName = 'LinkNav';
 
 LinkNav.propTypes = {
   active: PropTypes.bool,
   className: PropTypes.string,
-  children: propTypeChildren.isRequired
-}
+  children: propTypeChildren.isRequired,
+};

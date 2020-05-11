@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import PropTypes from 'prop-types';
+import React from 'react';
 
 export const Icon = React.forwardRef(
   ({ size = '1em', title, children, ...props }, ref) => (
@@ -15,12 +15,12 @@ export const Icon = React.forwardRef(
       `}</style>
     </svg>
   )
-)
+);
 
-Icon.displayName = 'Icon'
+Icon.displayName = 'Icon';
 
 Icon.propTypes = {
   size: PropTypes.string,
   title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};

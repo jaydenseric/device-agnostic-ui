@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 /**
  * A React hook that sets a custom validation message on a HTML form control
@@ -8,6 +8,6 @@ import React from 'react'
  */
 export function useCustomValidity(ref, validationMessage = '') {
   React.useEffect(() => {
-    if (ref.current) ref.current.setCustomValidity(validationMessage)
-  }, [ref, validationMessage])
+    if (ref.current) ref.current.setCustomValidity(validationMessage);
+  }, [ref, validationMessage]);
 }

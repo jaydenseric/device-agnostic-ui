@@ -1,12 +1,12 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { splitWordBreaks } from '../utils/splitWordBreaks'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { splitWordBreaks } from '../utils/splitWordBreaks';
 
 export const WordBreaks = ({ placeholder, children }) => {
   const split = React.useMemo(() => splitWordBreaks(children, placeholder), [
     children,
-    placeholder
-  ])
+    placeholder,
+  ]);
 
   return split.length
     ? split.map((part, index) => (
@@ -15,10 +15,10 @@ export const WordBreaks = ({ placeholder, children }) => {
           {part}
         </React.Fragment>
       ))
-    : children
-}
+    : children;
+};
 
 WordBreaks.propTypes = {
   placeholder: PropTypes.string,
-  children: PropTypes.string.isRequired
-}
+  children: PropTypes.string.isRequired,
+};

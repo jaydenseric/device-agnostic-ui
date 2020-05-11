@@ -1,2 +1,2 @@
-export { propTypeChildren } from './propTypeChildren'
-export { splitWordBreaks } from './splitWordBreaks'
+export { propTypeChildren } from './propTypeChildren';
+export { splitWordBreaks } from './splitWordBreaks';

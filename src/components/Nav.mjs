@@ -1,9 +1,9 @@
-import React from 'react'
-import { propTypeChildren } from '../utils/propTypeChildren'
+import React from 'react';
+import { propTypeChildren } from '../utils/propTypeChildren';
 
-const SCROLL_SHADOW_WIDTH = '0.5rem'
-const SCROLL_FADE_WIDTH = '3rem'
-const GRID_GAP = '1em'
+const SCROLL_SHADOW_WIDTH = '0.5rem';
+const SCROLL_FADE_WIDTH = '3rem';
+const GRID_GAP = '1em';
 
 export const Nav = React.forwardRef((props, ref) => (
   <>
@@ -80,10 +80,10 @@ export const Nav = React.forwardRef((props, ref) => (
       }
     `}</style>
   </>
-))
+));
 
-Nav.displayName = 'Nav'
+Nav.displayName = 'Nav';
 
 Nav.propTypes = {
-  children: propTypeChildren.isRequired
-}
+  children: propTypeChildren.isRequired,
+};

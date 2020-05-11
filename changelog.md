@@ -13,6 +13,9 @@
 - Also run GitHub Actions with Node.js v13 and v14.
 - Ensure GitHub Actions run on pull request.
 - Use strict mode for scripts.
+- Improved the package `prepare:prettier` and `test:prettier` scripts.
+- Reordered the package `test:eslint` script args for consistency with `test:prettier`.
+- Configured Prettier option `semi` to the default, `true`.
 
 ## 5.1.1
 

@@ -1,4 +1,4 @@
-import css from 'styled-jsx/css'
+import css from 'styled-jsx/css';
 
 export const stylesGlobal = css.global`
   :root {
@@ -89,4 +89,4 @@ export const stylesGlobal = css.global`
   [data-daui-color-scheme='dark'] {
     color-scheme: dark;
   }
-`
+`;

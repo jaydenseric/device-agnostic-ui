@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import css from 'styled-jsx/css'
+import React from 'react';
+import css from 'styled-jsx/css';
 
 export const stylesSyntaxHighlightingPrism = css.resolve`
   code,
@@ -80,4 +80,4 @@ export const stylesSyntaxHighlightingPrism = css.resolve`
       color: hsl(148, 100%, 32%);
     }
   }
-`
+`;
