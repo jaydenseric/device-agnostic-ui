@@ -7,6 +7,7 @@
 - Stop using [`husky`](https://npm.im/husky) and [`lint-staged`](https://npm.im/lint-staged).
 - Also run GitHub Actions with Node.js v13 and v14.
 - Ensure GitHub Actions run on pull request.
+- Use strict mode for scripts.
 
 ## 5.1.1
 

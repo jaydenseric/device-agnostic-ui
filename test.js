@@ -1,3 +1,5 @@
+'use strict'
+
 const { deepStrictEqual } = require('assert')
 const { TestDirector } = require('test-director')
 const { splitWordBreaks } = require('.')
