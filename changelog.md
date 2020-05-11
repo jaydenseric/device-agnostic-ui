@@ -2,6 +2,11 @@
 
 ## Next
 
+### Major
+
+- Updated dependencies, some of which require newer Node.js versions than were previously supported.
+- Updated Node.js support from v8.10+ to `10 - 12 || >= 13.7`.
+
 ### Patch
 
 - Stop using [`husky`](https://npm.im/husky) and [`lint-staged`](https://npm.im/lint-staged).
