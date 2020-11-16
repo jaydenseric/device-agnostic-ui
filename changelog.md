@@ -16,6 +16,7 @@
 - Improved the package `prepare:prettier` and `test:prettier` scripts.
 - Reordered the package `test:eslint` script args for consistency with `test:prettier`.
 - Configured Prettier option `semi` to the default, `true`.
+- Updated the `.editorconfig` file.
 
 ## 5.1.1
 
