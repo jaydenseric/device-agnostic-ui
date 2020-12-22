@@ -10,8 +10,9 @@
 ### Patch
 
 - Stop using [`husky`](https://npm.im/husky) and [`lint-staged`](https://npm.im/lint-staged).
-- Also run GitHub Actions with Node.js v13 and v14.
-- Ensure GitHub Actions run on pull request.
+- Ensure GitHub Actions CI runs on pull request.
+- Also run GitHub Actions CI with Node.js v13 and v14.
+- Simplified the GitHub Actions CI config with the [`npm install-test`](https://docs.npmjs.com/cli/v7/commands/npm-install-test) command.
 - Use strict mode for scripts.
 - Improved the package `prepare:prettier` and `test:prettier` scripts.
 - Reordered the package `test:eslint` script args for consistency with `test:prettier`.
