@@ -21,12 +21,13 @@ const LinkText = React.forwardRef(({ active, className, ...props }, ref) => (
   </>
 ));
 
-LinkText.displayName = 'LinkText';
-
-LinkText.propTypes = {
-  active: PropTypes.bool,
-  className: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  LinkText.displayName = 'LinkText';
+  LinkText.propTypes = {
+    active: PropTypes.bool,
+    className: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = LinkText;

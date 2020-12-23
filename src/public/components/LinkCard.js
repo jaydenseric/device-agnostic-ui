@@ -56,12 +56,13 @@ const LinkCard = React.forwardRef(({ active, className, ...props }, ref) => (
   </>
 ));
 
-LinkCard.displayName = 'LinkCard';
-
-LinkCard.propTypes = {
-  active: PropTypes.bool,
-  className: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  LinkCard.displayName = 'LinkCard';
+  LinkCard.propTypes = {
+    active: PropTypes.bool,
+    className: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = LinkCard;

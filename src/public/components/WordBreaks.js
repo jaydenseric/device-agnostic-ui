@@ -23,9 +23,10 @@ const WordBreaks = ({ placeholder, children }) => {
     : children;
 };
 
-WordBreaks.propTypes = {
-  placeholder: PropTypes.string,
-  children: PropTypes.string.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production')
+  WordBreaks.propTypes = {
+    placeholder: PropTypes.string,
+    children: PropTypes.string.isRequired,
+  };
 
 module.exports = WordBreaks;

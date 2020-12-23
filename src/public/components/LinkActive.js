@@ -16,9 +16,10 @@ const LinkActive = ({ children, ...props }) => {
   );
 };
 
-LinkActive.propTypes = {
-  href: PropTypes.string,
-  children: PropTypes.element.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production')
+  LinkActive.propTypes = {
+    href: PropTypes.string,
+    children: PropTypes.element.isRequired,
+  };
 
 module.exports = LinkActive;

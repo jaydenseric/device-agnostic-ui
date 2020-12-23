@@ -17,11 +17,12 @@ const Pre = React.forwardRef(({ className, ...props }, ref) => (
   </>
 ));
 
-Pre.displayName = 'Pre';
-
-Pre.propTypes = {
-  className: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Pre.displayName = 'Pre';
+  Pre.propTypes = {
+    className: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = Pre;

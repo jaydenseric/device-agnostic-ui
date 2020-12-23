@@ -35,13 +35,14 @@ const Picture = React.forwardRef(({ width, height, ...props }, ref) => (
   </>
 ));
 
-Picture.displayName = 'Picture';
-
-Picture.propTypes = {
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired,
-  className: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Picture.displayName = 'Picture';
+  Picture.propTypes = {
+    width: PropTypes.number.isRequired,
+    height: PropTypes.number.isRequired,
+    className: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = Picture;

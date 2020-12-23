@@ -17,11 +17,12 @@ const Table = React.forwardRef(({ className, ...props }, ref) => (
   </>
 ));
 
-Table.displayName = 'Table';
-
-Table.propTypes = {
-  className: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Table.displayName = 'Table';
+  Table.propTypes = {
+    className: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = Table;

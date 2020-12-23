@@ -51,12 +51,13 @@ const LinkNav = React.forwardRef(({ active, className, ...props }, ref) => (
   </>
 ));
 
-LinkNav.displayName = 'LinkNav';
-
-LinkNav.propTypes = {
-  active: PropTypes.bool,
-  className: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  LinkNav.displayName = 'LinkNav';
+  LinkNav.propTypes = {
+    active: PropTypes.bool,
+    className: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = LinkNav;

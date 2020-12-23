@@ -90,10 +90,11 @@ const Scroll = React.forwardRef((props, ref) => (
   </>
 ));
 
-Scroll.displayName = 'Scroll';
-
-Scroll.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Scroll.displayName = 'Scroll';
+  Scroll.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+}
 
 module.exports = Scroll;

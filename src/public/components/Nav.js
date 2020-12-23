@@ -84,10 +84,11 @@ const Nav = React.forwardRef((props, ref) => (
   </>
 ));
 
-Nav.displayName = 'Nav';
-
-Nav.propTypes = {
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Nav.displayName = 'Nav';
+  Nav.propTypes = {
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = Nav;

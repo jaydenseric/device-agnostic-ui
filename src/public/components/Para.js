@@ -17,11 +17,12 @@ const Para = React.forwardRef(({ className, ...props }, ref) => (
   </>
 ));
 
-Para.displayName = 'Para';
-
-Para.propTypes = {
-  className: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Para.displayName = 'Para';
+  Para.propTypes = {
+    className: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = Para;

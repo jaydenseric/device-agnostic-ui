@@ -69,11 +69,12 @@ const Button = React.forwardRef(({ disabled, ...props }, ref) => {
   );
 });
 
-Button.displayName = 'Button';
-
-Button.propTypes = {
-  disabled: PropTypes.bool,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Button.displayName = 'Button';
+  Button.propTypes = {
+    disabled: PropTypes.bool,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = Button;

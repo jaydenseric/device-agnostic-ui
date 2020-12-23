@@ -19,12 +19,13 @@ const Icon = React.forwardRef(
   )
 );
 
-Icon.displayName = 'Icon';
-
-Icon.propTypes = {
-  size: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Icon.displayName = 'Icon';
+  Icon.propTypes = {
+    size: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
+  };
+}
 
 module.exports = Icon;

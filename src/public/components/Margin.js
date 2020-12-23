@@ -14,10 +14,11 @@ const Margin = React.forwardRef((props, ref) => (
   </>
 ));
 
-Margin.displayName = 'Margin';
-
-Margin.propTypes = {
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Margin.displayName = 'Margin';
+  Margin.propTypes = {
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = Margin;

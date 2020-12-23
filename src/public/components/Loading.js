@@ -55,11 +55,12 @@ const Loading = React.forwardRef(
   )
 );
 
-Loading.displayName = 'Loading';
-
-Loading.propTypes = {
-  size: PropTypes.string,
-  title: PropTypes.string,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Loading.displayName = 'Loading';
+  Loading.propTypes = {
+    size: PropTypes.string,
+    title: PropTypes.string,
+  };
+}
 
 module.exports = Loading;

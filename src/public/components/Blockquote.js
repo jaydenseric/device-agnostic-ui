@@ -17,11 +17,12 @@ const Blockquote = React.forwardRef(({ className, ...props }, ref) => (
   </>
 ));
 
-Blockquote.displayName = 'Blockquote';
-
-Blockquote.propTypes = {
-  className: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Blockquote.displayName = 'Blockquote';
+  Blockquote.propTypes = {
+    className: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = Blockquote;

@@ -20,12 +20,13 @@ const List = React.forwardRef(({ ordered, className, ...props }, ref) => {
   );
 });
 
-List.displayName = 'List';
-
-List.propTypes = {
-  ordered: PropTypes.bool,
-  className: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  List.displayName = 'List';
+  List.propTypes = {
+    ordered: PropTypes.bool,
+    className: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = List;

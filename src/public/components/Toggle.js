@@ -105,18 +105,19 @@ const Toggle = React.forwardRef(
   }
 );
 
-Toggle.displayName = 'Toggle';
-
-Toggle.propTypes = {
-  validationMessage: PropTypes.string,
-  inputProps: PropTypes.shape({
-    type: PropTypes.oneOf(['checkbox', 'radio']).isRequired,
-    ref: PropTypes.oneOfType([
-      PropTypes.func,
-      PropTypes.shape({ current: PropTypes.elementType }),
-    ]),
-  }).isRequired,
-  children: PropTypes.node,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Toggle.displayName = 'Toggle';
+  Toggle.propTypes = {
+    validationMessage: PropTypes.string,
+    inputProps: PropTypes.shape({
+      type: PropTypes.oneOf(['checkbox', 'radio']).isRequired,
+      ref: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.shape({ current: PropTypes.elementType }),
+      ]),
+    }).isRequired,
+    children: PropTypes.node,
+  };
+}
 
 module.exports = Toggle;

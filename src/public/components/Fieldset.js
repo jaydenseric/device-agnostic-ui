@@ -42,11 +42,12 @@ const Fieldset = React.forwardRef(({ legend, children, ...props }, ref) => (
   </fieldset>
 ));
 
-Fieldset.displayName = 'Fieldset';
-
-Fieldset.propTypes = {
-  legend: PropTypes.node,
-  children: PropTypes.node.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Fieldset.displayName = 'Fieldset';
+  Fieldset.propTypes = {
+    legend: PropTypes.node,
+    children: PropTypes.node.isRequired,
+  };
+}
 
 module.exports = Fieldset;

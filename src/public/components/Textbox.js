@@ -88,28 +88,29 @@ const Textbox = React.forwardRef(
   }
 );
 
-Textbox.displayName = 'Textbox';
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Textbox.displayName = 'Textbox';
+  Textbox.propTypes = {
+    type: PropTypes.oneOf([
+      // Standard:
+      'date',
+      'datetime-local',
+      'email',
+      'month',
+      'number',
+      'password',
+      'search',
+      'tel',
+      'text',
+      'time',
+      'url',
+      'week',
 
-Textbox.propTypes = {
-  type: PropTypes.oneOf([
-    // Standard:
-    'date',
-    'datetime-local',
-    'email',
-    'month',
-    'number',
-    'password',
-    'search',
-    'tel',
-    'text',
-    'time',
-    'url',
-    'week',
-
-    // Non standard:
-    'textarea',
-  ]),
-  validationMessage: PropTypes.string,
-};
+      // Non standard:
+      'textarea',
+    ]),
+    validationMessage: PropTypes.string,
+  };
+}
 
 module.exports = Textbox;

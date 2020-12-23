@@ -33,11 +33,12 @@ const Html = React.forwardRef(({ className, ...props }, ref) => (
   </>
 ));
 
-Html.displayName = 'Html';
-
-Html.propTypes = {
-  className: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Html.displayName = 'Html';
+  Html.propTypes = {
+    className: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = Html;

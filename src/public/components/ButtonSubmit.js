@@ -27,13 +27,14 @@ const ButtonSubmit = React.forwardRef(
   )
 );
 
-ButtonSubmit.displayName = 'ButtonSubmit';
-
-ButtonSubmit.propTypes = {
-  loading: PropTypes.bool,
-  success: PropTypes.bool,
-  disabled: PropTypes.bool,
-  children: PropTypes.node.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  ButtonSubmit.displayName = 'ButtonSubmit';
+  ButtonSubmit.propTypes = {
+    loading: PropTypes.bool,
+    success: PropTypes.bool,
+    disabled: PropTypes.bool,
+    children: PropTypes.node.isRequired,
+  };
+}
 
 module.exports = ButtonSubmit;

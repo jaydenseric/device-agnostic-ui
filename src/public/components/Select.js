@@ -97,11 +97,12 @@ const Select = React.forwardRef(({ validationMessage, ...props }, ref) => {
   );
 });
 
-Select.displayName = 'Select';
-
-Select.propTypes = {
-  validationMessage: PropTypes.string,
-  children: propTypeChildren.isRequired,
-};
+if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
+  Select.displayName = 'Select';
+  Select.propTypes = {
+    validationMessage: PropTypes.string,
+    children: propTypeChildren.isRequired,
+  };
+}
 
 module.exports = Select;
