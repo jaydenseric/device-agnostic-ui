@@ -16,6 +16,7 @@
 - Update the [`next`](https://npm.im/next) peer dependency to `9.0.4 - 10`.
 - Stop using [`husky`](https://npm.im/husky) and [`lint-staged`](https://npm.im/lint-staged).
 - Stop using [`size-limit`](https://npm.im/size-limit) temporarily due to [ai/size-limit#205](https://github.com/ai/size-limit/issues/205).
+- Use [`coverage-node`](https://npm.im/coverage-node) to enforce 100% code coverage for tests.
 - Ensure GitHub Actions CI runs on pull request.
 - Also run GitHub Actions CI with Node.js v13 and v14.
 - Simplified the GitHub Actions CI config with the [`npm install-test`](https://docs.npmjs.com/cli/v7/commands/npm-install-test) command.

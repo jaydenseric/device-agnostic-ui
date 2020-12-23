@@ -58,6 +58,7 @@
     "@babel/preset-react": "^7.12.10",
     "babel-eslint": "^10.1.0",
     "babel-plugin-transform-replace-object-assign": "^2.0.0",
+    "coverage-node": "^4.0.0",
     "eslint": "^7.16.0",
     "eslint-config-env": "^15.0.1",
     "eslint-config-prettier": "^7.1.0",
@@ -82,7 +83,7 @@
     "test": "npm run test:eslint && npm run test:prettier && npm run test:api",
     "test:eslint": "eslint --ext mjs,js .",
     "test:prettier": "prettier -c .",
-    "test:api": "node test",
+    "test:api": "coverage-node test",
     "prepublishOnly": "npm test"
   }
 }
