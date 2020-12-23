@@ -1,0 +1,40 @@
+{
+  "comments": false,
+  "plugins": [
+    [
+      "@babel/proposal-object-rest-spread",
+      {
+        "loose": true,
+        "useBuiltIns": true
+      }
+    ],
+    "transform-replace-object-assign",
+    "@babel/transform-runtime",
+    "../babelPluginStyledJsxHacksBefore.js",
+    "styled-jsx/babel",
+    "../babelPluginStyledJsxHacksAfter.js"
+  ],
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "modules": false,
+        "shippedProposals": true,
+        "loose": true,
+        "exclude": ["proposal-object-rest-spread"]
+      }
+    ],
+    [
+      "@babel/react",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ],
+  "overrides": [
+    {
+      "test": "**/*.js",
+      "sourceType": "script"
+    }
+  ]
+}

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "lib/esm/index.js",
-    "limit": "8 KB",
-    "ignore": ["prop-types", "object-assign"]
-  }
-]

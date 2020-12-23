@@ -2,7 +2,7 @@
 
 const { deepStrictEqual } = require('assert');
 const { TestDirector } = require('test-director');
-const { splitWordBreaks } = require('.');
+const splitWordBreaks = require('./public/utils/splitWordBreaks');
 
 const tests = new TestDirector();
 
