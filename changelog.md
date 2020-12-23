@@ -10,6 +10,7 @@
 - Removed the package `module` field.
 - Added a [package `exports` field](https://nodejs.org/api/packages.html#packages_exports) with [conditional exports](https://nodejs.org/api/packages.html#packages_conditional_exports) to support native ESM in Node.js and keep internal code private, whilst avoiding [the dual package hazard](https://nodejs.org/api/packages.html#packages_dual_package_hazard). Published files have been reorganized and most are now CJS instead of ESM, so previously undocumented deep imports will need to be rewritten.
 - Updated the Babel config to use [the new JSX transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) and removed now redundant `React` requires.
+- Ensure using the `data-daui-color-scheme` HTML attribute also updates the element’s font color to match the specified color scheme.
 
 ### Minor
 

@@ -4,11 +4,6 @@ const css = require('styled-jsx/css');
 
 const stylesGlobal = css.global`
   :root {
-    color: hsl(
-      var(--daui-foreground-hue),
-      var(--daui-foreground-saturation),
-      var(--daui-foreground-lightness)
-    );
     background-color: hsl(
       var(--daui-background-hue),
       var(--daui-background-saturation),
@@ -81,6 +76,15 @@ const stylesGlobal = css.global`
       var(--daui-highlight-saturation),
       var(--daui-highlight-lightness),
       var(--daui-highlight-opacity)
+    );
+  }
+
+  :root,
+  [data-daui-color-scheme] {
+    color: hsl(
+      var(--daui-foreground-hue),
+      var(--daui-foreground-saturation),
+      var(--daui-foreground-lightness)
     );
   }
 
