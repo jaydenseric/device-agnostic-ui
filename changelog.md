@@ -25,9 +25,13 @@
 - Stop using [`husky`](https://npm.im/husky) and [`lint-staged`](https://npm.im/lint-staged).
 - Stop using [`size-limit`](https://npm.im/size-limit) temporarily due to [ai/size-limit#205](https://github.com/ai/size-limit/issues/205).
 - Use [`coverage-node`](https://npm.im/coverage-node) to enforce 100% code coverage for tests.
-- Ensure GitHub Actions CI runs on pull request.
-- Also run GitHub Actions CI with Node.js v14 and v15.
-- Simplified the GitHub Actions CI config with the [`npm install-test`](https://docs.npmjs.com/cli/v7/commands/npm-install-test) command.
+- Updated GitHub Actions CI config:
+  - Ensure it also runs on pull request.
+  - Updated `actions/checkout` to v2.
+  - Updated `actions/setup-node` to v2.
+  - Also test Node.js v14 and v15.
+  - Simplified config with the [`npm install-test`](https://docs.npmjs.com/cli/v7/commands/npm-install-test) command.
+  - Don’t specify the `CI` environment variable as it’s set by default.
 - Use strict mode for scripts.
 - Custom Babel plugins now run before and after the `styled-jsx/babel` plugin, to workaround [vercel/styled-jsx#680](https://github.com/vercel/styled-jsx/issues/680) and [vercel/styled-jsx#689](https://github.com/vercel/styled-jsx/issues/689).
 - Improved the package `prepare:prettier` and `test:prettier` scripts.
