@@ -13,11 +13,11 @@ module.exports = function splitWordBreaks(string, placeholder = '<wbr />') {
     string
       // Mark aesthetically pleasing word break opportunities, e.g.
       // `learnHTML5WithUs` → `learn<wbr />HTML<wbr />5<wbr />With<wbr />Us`.
-      .replace(/(\d+|[A-Z]+(?![a-z])|[A-Z][a-z])/g, `${placeholder}$1`)
+      .replace(/(\d+|[A-Z]+(?![a-z])|[A-Z][a-z])/gu, `${placeholder}$1`)
 
       // Remove word break opportunities at redundant locations: At the start of
       // a line, or after whitespace.
-      .replace(new RegExp(`(^|\\s)(${placeholder})`, 'gm'), '$1')
+      .replace(new RegExp(`(^|\\s)(${placeholder})`, 'gmu'), '$1')
 
       // Split the string at the final word break opportunities.
       .split(placeholder)

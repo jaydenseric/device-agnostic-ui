@@ -6,6 +6,7 @@
 
 - Updated dependencies.
 - Fixed invalid nesting of a HTML `div` element inside a `button` within the `ButtonSubmit` component.
+- Use regex `u` mode within the function `splitWordBreaks`.
 
 ## 6.0.0
 
