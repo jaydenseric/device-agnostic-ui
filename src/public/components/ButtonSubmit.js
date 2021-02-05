@@ -9,13 +9,13 @@ const Loading = require('./Loading');
 const ButtonSubmit = React.forwardRef(
   ({ loading, success, disabled, children, ...props }, ref) => (
     <Button disabled={disabled || loading} {...props} ref={ref}>
-      <div>
+      <span className="grid">
         <span>{children}</span>
         {loading && <Loading />}
         {!loading && success && <IconTick size="0.8em" />}
-      </div>
+      </span>
       <style jsx>{`
-        div {
+        .grid {
           display: grid;
           grid-auto-flow: column;
           grid-auto-columns: max-content;

@@ -5,6 +5,7 @@
 ### Patch
 
 - Updated dependencies.
+- Fixed invalid nesting of a HTML `div` element inside a `button` within the `ButtonSubmit` component.
 
 ## 6.0.0
 
