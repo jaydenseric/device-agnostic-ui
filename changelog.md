@@ -5,6 +5,7 @@
 ### Patch
 
 - Updated dependencies.
+- Replaced the [`babel-eslint`](https://npm.im/babel-eslint) dev dependency with [`@babel/eslint-parser`](https://npm.im/@babel/eslint-parser).
 - Fixed invalid nesting of a HTML `div` element inside a `button` within the `ButtonSubmit` component.
 - Use regex `u` mode within the function `splitWordBreaks`.
 
