@@ -11,6 +11,7 @@
 - Use regex `u` mode within the function `splitWordBreaks`.
 - Quote CSS `font-family` names containing spaces.
 - Fixed `Html` component first and last child `blockquote` element CSS top and bottom margins.
+- Fixed `Html` component child `ol` element first child `li` element CSS top margins.
 
 ## 6.0.0
 

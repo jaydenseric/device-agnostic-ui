@@ -34,7 +34,7 @@ const stylesList = css.resolve`
 
   & > :global(li):first-child,
   :global(.${stylesHtml.className} ul > li:first-child),
-  :global(.${stylesHtml.className} ul > li:first-child) {
+  :global(.${stylesHtml.className} ol > li:first-child) {
     margin-top: 0;
   }
 
