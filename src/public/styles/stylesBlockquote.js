@@ -17,12 +17,12 @@ const stylesBlockquote = css.resolve`
   }
 
   :first-child,
-  :global(.${stylesHtml.className}:first-child) {
+  :global(.${stylesHtml.className} blockquote:first-child) {
     margin-top: 0;
   }
 
   :last-child,
-  :global(.${stylesHtml.className}:last-child) {
+  :global(.${stylesHtml.className} blockquote:last-child) {
     margin-bottom: 0;
   }
 `;

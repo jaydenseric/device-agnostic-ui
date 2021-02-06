@@ -10,6 +10,7 @@
 - Fixed invalid nesting of a HTML `div` element inside a `button` within the `ButtonSubmit` component.
 - Use regex `u` mode within the function `splitWordBreaks`.
 - Quote CSS `font-family` names containing spaces.
+- Fixed `Html` component first and last child `blockquote` element CSS top and bottom margins.
 
 ## 6.0.0
 
