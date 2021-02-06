@@ -9,6 +9,7 @@
 - Updated the Browserslist query to exclude all IE versions from the list of supported browsers.
 - Fixed invalid nesting of a HTML `div` element inside a `button` within the `ButtonSubmit` component.
 - Use regex `u` mode within the function `splitWordBreaks`.
+- Quote CSS `font-family` names containing spaces.
 
 ## 6.0.0
 

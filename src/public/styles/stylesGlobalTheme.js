@@ -25,11 +25,11 @@ const stylesGlobalTheme = css.global`
     --daui-error-hue: 339;
     --daui-error-saturation: 100%;
     --daui-error-lightness: 50%;
-    --daui-sans-serif: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+    --daui-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
       Arial, sans-serif;
-    --daui-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo,
+    --daui-monospace: SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
       monospace;
-    --daui-emoji: Apple Color Emoji, Segoe UI Emoji, emoji;
+    --daui-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', emoji;
     --daui-h1-font-size: calc(200% + 3vw);
     --daui-h2-font-size: calc(150% + 1.5vw);
     --daui-h3-font-size: calc(130% + 0.75vw);
