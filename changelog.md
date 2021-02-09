@@ -5,6 +5,7 @@
 ### Patch
 
 - Updated the package description to mention React.
+- Updated the package `keywords` field.
 
 ## 6.0.1
 

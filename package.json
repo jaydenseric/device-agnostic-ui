@@ -18,7 +18,8 @@
     "ui",
     "react",
     "styled-jsx",
-    "next"
+    "next",
+    "css"
   ],
   "files": [
     "public"
