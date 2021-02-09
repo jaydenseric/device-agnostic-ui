@@ -1,5 +1,11 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Patch
+
+- Fixed `Select` component arrow styles that were accidentally broken in v7.0.0.
+
 ## 7.0.0
 
 ### Major

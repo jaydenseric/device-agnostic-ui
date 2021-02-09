@@ -54,7 +54,7 @@
   background-size: calc(var(--daui-Select-arrow-width) / 2)
     calc(var(--daui-Select-arrow-width) / 2);
   background-position: calc(
-        100% - var(--daui-Select-arrow-width) / 2 + var(--daui-Select-padding)
+        100% - (var(--daui-Select-arrow-width) / 2 + var(--daui-Select-padding))
       )
       center,
     calc(100% - var(--daui-Select-padding)) center;
