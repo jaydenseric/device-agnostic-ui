@@ -1,0 +1,74 @@
+/* The input must exactly cover the toggle area, so that native validation
+ * tooltips appear to point at the toggle.
+ */
+
+.daui-Toggle {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.daui-Toggle__toggle {
+  position: relative;
+}
+
+.daui-Toggle__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  line-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.daui-Toggle__tick {
+  display: block;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 0.15em 0.35em 0.25em;
+  line-height: 1;
+}
+
+.daui-Toggle__icon {
+  display: block;
+  opacity: 0.08;
+}
+
+.daui-Toggle__label {
+  padding: 0.5em 1.25em 0.5em 0.5em;
+  font-style: italic;
+}
+
+:checked + .daui-Toggle__tick .daui-Toggle__icon {
+  opacity: 1;
+}
+
+:active + .daui-Toggle__tick .daui-Toggle__icon {
+  opacity: 0.5;
+}
+
+:invalid + .daui-Toggle__tick {
+  border-color: hsl(
+    var(--daui-error-hue),
+    var(--daui-error-saturation),
+    var(--daui-error-lightness)
+  );
+}
+
+:disabled + .daui-Toggle__tick {
+  opacity: 0.5;
+}
+
+:not(:active):not(:focus) + .daui-Toggle__tick {
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}

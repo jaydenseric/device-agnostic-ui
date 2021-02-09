@@ -1,0 +1,77 @@
+code.daui--syntax-highlighting-prism,
+.daui--syntax-highlighting-prism code,
+.daui--syntax-highlighting-prism .token.plain-text,
+.daui--syntax-highlighting-prism .token.content,
+.daui--syntax-highlighting-prism .token.attr-value,
+.daui--syntax-highlighting-prism .token.string {
+  color: hsla(
+    var(--daui-foreground-hue),
+    var(--daui-foreground-saturation),
+    var(--daui-foreground-lightness),
+    0.8
+  );
+}
+
+.daui--syntax-highlighting-prism .token.comment {
+  font-style: italic;
+  color: hsla(
+    var(--daui-foreground-hue),
+    var(--daui-foreground-saturation),
+    var(--daui-foreground-lightness),
+    0.35
+  );
+}
+
+.daui--syntax-highlighting-prism .token.operator,
+.daui--syntax-highlighting-prism .token.punctuation,
+.daui--syntax-highlighting-prism .token.template-punctuation,
+.daui--syntax-highlighting-prism .token.interpolation-punctuation {
+  color: hsla(
+    var(--daui-foreground-hue),
+    var(--daui-foreground-saturation),
+    var(--daui-foreground-lightness),
+    0.45
+  );
+}
+
+.daui--syntax-highlighting-prism .token.url,
+.daui--syntax-highlighting-prism .token.selector {
+  color: hsl(
+    var(--daui-interact-hue),
+    var(--daui-interact-saturation),
+    var(--daui-interact-lightness)
+  );
+}
+
+.daui--syntax-highlighting-prism .token.boolean,
+.daui--syntax-highlighting-prism .token.number {
+  color: hsl(280, 100%, 65%);
+}
+
+.daui--syntax-highlighting-prism .token.attr-name,
+.daui--syntax-highlighting-prism .token.property {
+  color: hsl(10, 100%, 60%);
+}
+
+.daui--syntax-highlighting-prism .token.class-name,
+.daui--syntax-highlighting-prism .token.function,
+.daui--syntax-highlighting-prism .token.tag > .tag {
+  color: hsl(148, 100%, 23%);
+}
+
+.daui--syntax-highlighting-prism .token.keyword,
+.daui--syntax-highlighting-prism .token.atrule > .rule {
+  color: hsl(339, 100%, 50%);
+}
+
+.daui--syntax-highlighting-prism .token.important {
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+  .daui--syntax-highlighting-prism .token.class-name,
+  .daui--syntax-highlighting-prism .token.function,
+  .daui--syntax-highlighting-prism .token.tag > .tag {
+    color: hsl(148, 100%, 32%);
+  }
+}

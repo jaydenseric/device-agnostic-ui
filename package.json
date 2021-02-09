@@ -17,7 +17,6 @@
     "agnostic",
     "ui",
     "react",
-    "styled-jsx",
     "next",
     "css"
   ],
@@ -42,8 +41,7 @@
   "peerDependencies": {
     "next": "9.0.4 - 10",
     "react": "16.14.0 - 17",
-    "react-dom": "16.14.0 - 17",
-    "styled-jsx": "^3.0.0"
+    "react-dom": "16.14.0 - 17"
   },
   "dependencies": {
     "@babel/runtime": "^7.12.13",
@@ -59,8 +57,10 @@
     "@babel/plugin-transform-runtime": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
+    "autoprefixer": "^10.2.4",
     "babel-plugin-transform-replace-object-assign": "^2.0.0",
     "coverage-node": "^4.0.0",
+    "disposable-directory": "^3.0.0",
     "eslint": "^7.19.0",
     "eslint-config-env": "^18.0.1",
     "eslint-config-prettier": "^7.2.0",
@@ -70,20 +70,28 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gzip-size": "^6.0.0",
     "next": "^10.0.6",
+    "postcss-cli": "^8.3.1",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "styled-jsx": "^3.4.1",
-    "test-director": "^5.0.0"
+    "stylelint": "^13.9.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "test-director": "^5.0.0",
+    "webpack": "^5.21.2"
   },
   "scripts": {
-    "prepare": "npm run prepare:clean && npm run prepare:babel && npm run prepare:prettier",
+    "prepare": "npm run prepare:clean && npm run prepare:babel && npm run prepare:postcss && npm run prepare:prettier",
     "prepare:clean": "rm -rf public",
     "prepare:babel": "babel src -d . --keep-file-extension",
+    "prepare:postcss": "postcss 'src/**/*.css' --base src -d .",
     "prepare:prettier": "prettier --write public readme.md",
-    "test": "npm run test:eslint && npm run test:prettier && npm run test:api",
+    "test": "npm run test:eslint && npm run test:stylelint && npm run test:prettier && npm run test:api",
     "test:eslint": "eslint --ext mjs,js .",
+    "test:stylelint": "stylelint 'src/**/*.css'",
     "test:prettier": "prettier -c .",
     "test:api": "coverage-node test",
     "prepublishOnly": "npm test"

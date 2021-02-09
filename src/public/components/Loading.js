@@ -1,56 +1,35 @@
 'use strict';
 
+const classNameProp = require('class-name-prop');
 const PropTypes = require('prop-types');
 const React = require('react');
 
 const VIEW_BOX_SIZE = 100;
-const STROKE_WIDTH = 12;
+const CIRCLE_STROKE_WIDTH = 12;
 
-const circleRadius = 50 - STROKE_WIDTH / 2;
+const circleRadius = VIEW_BOX_SIZE / 2 - CIRCLE_STROKE_WIDTH / 2;
 const circleCircumference = Math.PI * circleRadius * 2;
 
 const Loading = React.forwardRef(
-  ({ size = '1em', title = 'Loading', ...props }, ref) => (
+  ({ size = '1em', title = 'Loading', className, ...props }, ref) => (
     <svg
+      className={classNameProp('daui-Loading', className)}
+      {...props}
       width={size}
       height={size}
       viewBox={`0 0 ${VIEW_BOX_SIZE} ${VIEW_BOX_SIZE}`}
-      {...props}
       ref={ref}
     >
       <title>{title}</title>
-      <circle cx="50%" cy="50%" r={circleRadius} />
-      <style jsx>{`
-        @keyframes loop {
-          80% {
-            stroke-dashoffset: ${circleCircumference * 0.8};
-          }
-          100% {
-            transform: rotate(${360 * 2}deg);
-          }
-        }
-
-        @keyframes entry {
-          from {
-            opacity: 0;
-          }
-        }
-
-        svg {
-          vertical-align: middle;
-        }
-
-        circle {
-          fill: none;
-          stroke: currentColor;
-          stroke-width: ${STROKE_WIDTH};
-          stroke-dasharray: ${circleCircumference};
-          stroke-dashoffset: ${circleCircumference * 0.15};
-          stroke-linecap: round;
-          transform-origin: center;
-          animation: entry 0.25s, loop 1.4s linear infinite;
-        }
-      `}</style>
+      <circle
+        cx="50%"
+        cy="50%"
+        r={circleRadius}
+        style={{
+          '--daui-Loading-circle-stroke-width': `${CIRCLE_STROKE_WIDTH}px`,
+          '--daui-Loading-circle-circumference': `${circleCircumference}px`,
+        }}
+      />
     </svg>
   )
 );
@@ -60,6 +39,7 @@ if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
   Loading.propTypes = {
     size: PropTypes.string,
     title: PropTypes.string,
+    className: PropTypes.string,
   };
 }
 

@@ -1,0 +1,35 @@
+.daui-Heading,
+.daui-Html h1,
+.daui-Html h2,
+.daui-Html h3,
+.daui-Html h4,
+.daui-Html h5,
+.daui-Html h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  max-width: 12em;
+  line-height: 0.85;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-rendering: optimizeLegibility;
+}
+
+.daui-Heading:first-child,
+.daui-Html h1:first-child,
+.daui-Html h2:first-child,
+.daui-Html h3:first-child,
+.daui-Html h4:first-child,
+.daui-Html h5:first-child,
+.daui-Html h6:first-child {
+  margin-top: 0;
+}
+
+.daui-Heading:last-child,
+.daui-Html h1:last-child,
+.daui-Html h2:last-child,
+.daui-Html h3:last-child,
+.daui-Html h4:last-child,
+.daui-Html h5:last-child,
+.daui-Html h6:last-child {
+  margin-bottom: 0;
+}

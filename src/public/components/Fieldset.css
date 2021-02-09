@@ -1,0 +1,30 @@
+.daui-Fieldset {
+  margin: 1.5em 0;
+  border: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+.daui-Fieldset:first-child {
+  margin-top: 0;
+}
+
+.daui-Fieldset:last-child {
+  margin-bottom: 0;
+}
+
+.daui-Fieldset__legend {
+  margin-bottom: 0.3em;
+  width: 100%;
+  padding: 0;
+  float: left;
+  text-align: left;
+  font-size: 90%;
+  font-weight: bold;
+  font-style: italic;
+  line-height: var(--daui-line-height);
+}
+
+.daui-Fieldset__children {
+  clear: left;
+}

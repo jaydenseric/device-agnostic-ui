@@ -3,18 +3,10 @@
 const classNameProp = require('class-name-prop');
 const PropTypes = require('prop-types');
 const React = require('react');
-const stylesPara = require('../styles/stylesPara');
 const propTypeChildren = require('../utils/propTypeChildren');
 
 const Para = React.forwardRef(({ className, ...props }, ref) => (
-  <>
-    <p
-      className={classNameProp(stylesPara.className, className)}
-      {...props}
-      ref={ref}
-    />
-    {stylesPara.styles}
-  </>
+  <p className={classNameProp('daui-Para', className)} {...props} ref={ref} />
 ));
 
 if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {

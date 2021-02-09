@@ -31,20 +31,6 @@ export { default as useCustomValidity } from './hooks/useCustomValidity.js';
 export { default as useMergedRef } from './hooks/useMergedRef.js';
 export { default as useOnFocusReportValidity } from './hooks/useOnFocusReportValidity.js';
 
-// styled-jsx styles.
-export { default as stylesBlockquote } from './styles/stylesBlockquote.js';
-export { default as stylesCode } from './styles/stylesCode.js';
-export { default as stylesGlobal } from './styles/stylesGlobal.js';
-export { default as stylesGlobalTheme } from './styles/stylesGlobalTheme.js';
-export { default as stylesHeading } from './styles/stylesHeading.js';
-export { default as stylesHtml } from './styles/stylesHtml.js';
-export { default as stylesLinkText } from './styles/stylesLinkText.js';
-export { default as stylesList } from './styles/stylesList.js';
-export { default as stylesPara } from './styles/stylesPara.js';
-export { default as stylesPre } from './styles/stylesPre.js';
-export { default as stylesSyntaxHighlightingPrism } from './styles/stylesSyntaxHighlightingPrism.js';
-export { default as stylesTable } from './styles/stylesTable.js';
-
 // Utilities.
 export { default as propTypeChildren } from './utils/propTypeChildren.js';
 export { default as splitWordBreaks } from './utils/splitWordBreaks.js';

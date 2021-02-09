@@ -9,20 +9,11 @@ const Loading = require('./Loading');
 const ButtonSubmit = React.forwardRef(
   ({ loading, success, disabled, children, ...props }, ref) => (
     <Button disabled={disabled || loading} {...props} ref={ref}>
-      <span className="grid">
+      <span className="daui-ButtonSubmit__grid">
         <span>{children}</span>
         {loading && <Loading />}
         {!loading && success && <IconTick size="0.8em" />}
       </span>
-      <style jsx>{`
-        .grid {
-          display: grid;
-          grid-auto-flow: column;
-          grid-auto-columns: max-content;
-          grid-gap: 0.5em;
-          align-items: center;
-        }
-      `}</style>
     </Button>
   )
 );

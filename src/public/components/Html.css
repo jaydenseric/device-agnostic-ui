@@ -1,0 +1,28 @@
+.daui-Html h1 {
+  font-size: var(--daui-h1-font-size);
+}
+
+.daui-Html h2 {
+  font-size: var(--daui-h2-font-size);
+}
+
+.daui-Html h3 {
+  font-size: var(--daui-h3-font-size);
+}
+
+.daui-Html h4 {
+  font-size: var(--daui-h4-font-size);
+}
+
+.daui-Html h5 {
+  font-size: var(--daui-h5-font-size);
+}
+
+.daui-Html h6 {
+  font-size: var(--daui-h6-font-size);
+}
+
+.daui-Html img {
+  max-width: 100%;
+  height: auto;
+}

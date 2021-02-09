@@ -3,22 +3,18 @@
 const classNameProp = require('class-name-prop');
 const PropTypes = require('prop-types');
 const React = require('react');
-const stylesLinkText = require('../styles/stylesLinkText');
 const propTypeChildren = require('../utils/propTypeChildren');
 
 const LinkText = React.forwardRef(({ active, className, ...props }, ref) => (
-  <>
-    <a
-      className={classNameProp(
-        stylesLinkText.className,
-        className,
-        active && 'active'
-      )}
-      {...props}
-      ref={ref}
-    />
-    {stylesLinkText.styles}
-  </>
+  <a
+    className={classNameProp(
+      'daui-LinkText',
+      active && 'daui-LinkText--active',
+      className
+    )}
+    {...props}
+    ref={ref}
+  />
 ));
 
 if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {

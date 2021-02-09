@@ -3,20 +3,16 @@
 const classNameProp = require('class-name-prop');
 const PropTypes = require('prop-types');
 const React = require('react');
-const stylesList = require('../styles/stylesList');
 const propTypeChildren = require('../utils/propTypeChildren');
 
 const List = React.forwardRef(({ ordered, className, ...props }, ref) => {
   const Element = ordered ? 'ol' : 'ul';
   return (
-    <>
-      <Element
-        className={classNameProp(stylesList.className, className)}
-        {...props}
-        ref={ref}
-      />
-      {stylesList.styles}
-    </>
+    <Element
+      className={classNameProp('daui-List', className)}
+      {...props}
+      ref={ref}
+    />
   );
 });
 

@@ -1,0 +1,17 @@
+.daui-Para,
+.daui-Html p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  max-width: 30em;
+  line-height: var(--daui-line-height);
+}
+
+.daui-Para:first-child,
+.daui-Html p:first-child {
+  margin-top: 0;
+}
+
+.daui-Para:last-child,
+.daui-Html p:last-child {
+  margin-bottom: 0;
+}

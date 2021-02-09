@@ -1,0 +1,74 @@
+.daui-Select {
+  --daui-Select-padding: 0.3em;
+  --daui-Select-arrow-width: 0.55em;
+
+  appearance: none;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  border: 2px solid;
+  border-radius: 5px;
+  max-width: 100%;
+  padding: var(--daui-Select-padding);
+  font: inherit;
+  font-size: 115%;
+  font-style: italic;
+  line-height: var(--daui-line-height);
+  color: inherit;
+  background-color: transparent;
+  box-shadow: none;
+  outline: 0;
+}
+
+.daui-Select:invalid {
+  border-color: hsl(
+    var(--daui-error-hue),
+    var(--daui-error-saturation),
+    var(--daui-error-lightness)
+  );
+}
+
+.daui-Select:not(:focus) {
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.daui-Select:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.daui-Select::-ms-expand {
+  display: none;
+}
+
+/* Single option visible: */
+.daui-Select:not([multiple]):not([size]),
+.daui-Select[size='1']:not([multiple]) {
+  padding-right: calc(
+    var(--daui-Select-padding) * 2 + var(--daui-Select-arrow-width)
+  );
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(-45deg, transparent 50%, currentColor 50%);
+  background-size: calc(var(--daui-Select-arrow-width) / 2)
+    calc(var(--daui-Select-arrow-width) / 2);
+  background-position: calc(
+        100% - var(--daui-Select-arrow-width) / 2 + var(--daui-Select-padding)
+      )
+      center,
+    calc(100% - var(--daui-Select-padding)) center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Multiple options visible: */
+.daui-Select[multiple]:not([size]) {
+  overflow-y: auto;
+  resize: vertical;
+}
+
+.daui-Select[multiple] option,
+.daui-Select[size]:not([size='1']) option {
+  cursor: pointer;
+}

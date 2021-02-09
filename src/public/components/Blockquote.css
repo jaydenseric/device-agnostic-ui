@@ -1,0 +1,21 @@
+.daui-Blockquote,
+.daui-Html blockquote {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+  max-width: 22em;
+  line-height: var(--daui-line-height);
+  font-style: italic;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+.daui-Blockquote:first-child,
+.daui-Html blockquote:first-child {
+  margin-top: 0;
+}
+
+.daui-Blockquote:last-child,
+.daui-Html blockquote:last-child {
+  margin-bottom: 0;
+}

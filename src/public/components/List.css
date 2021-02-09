@@ -1,0 +1,40 @@
+.daui-List,
+.daui-Html ul,
+.daui-Html ol {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  padding-left: 2em;
+}
+
+.daui-List:first-child,
+.daui-Html ul:first-child,
+.daui-Html ol:first-child {
+  margin-top: 0;
+}
+
+.daui-List:last-child,
+.daui-Html ul:last-child,
+.daui-Html ol:last-child {
+  margin-bottom: 0;
+}
+
+.daui-List > li,
+.daui-Html ul > li,
+.daui-Html ol > li {
+  margin: 0.5em 0;
+  max-width: 30em;
+  line-height: var(--daui-line-height);
+}
+
+.daui-List > li:first-child,
+.daui-Html ul > li:first-child,
+.daui-Html ol > li:first-child {
+  margin-top: 0;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.daui-List > li:last-child,
+.daui-Html ul > li:last-child,
+.daui-Html ol > li:last-child {
+  margin-bottom: 0;
+}

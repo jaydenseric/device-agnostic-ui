@@ -1,22 +1,22 @@
 'use strict';
 
+const classNameProp = require('class-name-prop');
+const PropTypes = require('prop-types');
 const React = require('react');
 const propTypeChildren = require('../utils/propTypeChildren');
 
-const Margin = React.forwardRef((props, ref) => (
-  <>
-    <div {...props} ref={ref} />
-    <style jsx>{`
-      div {
-        margin: var(--daui-spacing);
-      }
-    `}</style>
-  </>
+const Margin = React.forwardRef(({ className, ...props }, ref) => (
+  <div
+    className={classNameProp('daui-Margin', className)}
+    {...props}
+    ref={ref}
+  />
 ));
 
 if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
   Margin.displayName = 'Margin';
   Margin.propTypes = {
+    className: PropTypes.string,
     children: propTypeChildren.isRequired,
   };
 }

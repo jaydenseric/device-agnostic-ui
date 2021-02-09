@@ -1,0 +1,30 @@
+@keyframes daui-Loading-loop {
+  80% {
+    stroke-dashoffset: calc(var(--daui-Loading-circle-circumference) * 0.8);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes daui-Loading-entry {
+  from {
+    opacity: 0;
+  }
+}
+
+.daui-Loading {
+  vertical-align: middle;
+}
+
+.daui-Loading circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: var(--daui-Loading-circle-stroke-width);
+  stroke-dasharray: var(--daui-Loading-circle-circumference);
+  stroke-dashoffset: calc(var(--daui-Loading-circle-circumference) * 0.15);
+  stroke-linecap: round;
+  transform-origin: center;
+  animation: daui-Loading-entry 0.25s, daui-Loading-loop 1.4s linear infinite;
+}

@@ -9,10 +9,7 @@
       }
     ],
     "transform-replace-object-assign",
-    "@babel/transform-runtime",
-    "../babelPluginStyledJsxHacksBefore.js",
-    "styled-jsx/babel",
-    "../babelPluginStyledJsxHacksAfter.js"
+    "@babel/transform-runtime"
   ],
   "presets": [
     [

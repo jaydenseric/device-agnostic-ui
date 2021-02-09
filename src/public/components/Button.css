@@ -1,0 +1,49 @@
+.daui-Button {
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  border-radius: 10em;
+  max-width: 100%;
+  padding: 0.7em 1.25em 0.75em;
+  font: inherit;
+  line-height: var(--daui-line-height);
+  color: hsl(
+    var(--daui-background-hue),
+    var(--daui-background-saturation),
+    var(--daui-background-lightness)
+  );
+  background-color: hsl(
+    var(--daui-foreground-hue),
+    var(--daui-foreground-saturation),
+    var(--daui-foreground-lightness)
+  );
+  box-shadow: 0 0.25em 1em hsla(0, 0%, 0%, var(--daui-shadow-opacity));
+  cursor: pointer;
+}
+
+.daui-Button::-moz-focus-inner {
+  border: 0;
+}
+
+.daui-Button:focus {
+  background-color: hsl(
+    var(--daui-interact-hue),
+    var(--daui-interact-saturation),
+    calc(var(--daui-interact-lightness) + 10%)
+  );
+  outline: 0;
+}
+
+.daui-Button:active {
+  background-color: hsl(
+    var(--daui-interact-hue),
+    var(--daui-interact-saturation),
+    calc(var(--daui-interact-lightness) + 20%)
+  );
+}
+
+.daui-Button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}

@@ -1,0 +1,13 @@
+.daui-Code,
+.daui-Html code {
+  border-radius: 1em;
+  padding: 0.125em 0.5em;
+  font-size: 85%;
+  font-family: var(--daui-monospace);
+  background-color: hsla(
+    var(--daui-shade-hue),
+    var(--daui-shade-saturation),
+    var(--daui-shade-lightness),
+    var(--daui-shade-opacity)
+  );
+}

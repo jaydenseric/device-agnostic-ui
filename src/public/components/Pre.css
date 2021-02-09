@@ -1,0 +1,86 @@
+.daui-Pre,
+.daui-Html pre {
+  --daui-Pre-background-lightness: calc(var(--daui-background-lightness) - 4%);
+  --daui-Pre-background-opaque: hsl(
+    var(--daui-background-hue),
+    var(--daui-background-saturation),
+    var(--daui-Pre-background-lightness)
+  );
+  --daui-Pre-shadow-width: 1rem;
+  --daui-Pre-fade-width: 4rem;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.75em;
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 100%;
+  padding: 1em;
+  text-align: left;
+  line-height: var(--daui-line-height);
+  background-color: var(--daui-Pre-background-opaque);
+  overflow-wrap: normal;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+}
+
+@supports (overscroll-behavior-x: contain) and
+  (not (-webkit-overflow-scrolling: touch)) {
+  .daui-Pre,
+  .daui-Html pre {
+    --daui-Pre-background-transparent: hsla(
+      var(--daui-background-hue),
+      var(--daui-background-saturation),
+      var(--daui-Pre-background-lightness),
+      0
+    );
+
+    background-image: linear-gradient(
+        90deg,
+        var(--daui-Pre-background-opaque),
+        var(--daui-Pre-background-transparent) var(--daui-Pre-fade-width),
+        var(--daui-Pre-background-transparent)
+          calc(100% - var(--daui-Pre-fade-width)),
+        var(--daui-Pre-background-opaque)
+      ),
+      radial-gradient(
+        var(--daui-Pre-shadow-width) 50% at left center,
+        hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
+        hsla(0, 0%, 0%, 0)
+      ),
+      radial-gradient(
+        var(--daui-Pre-shadow-width) 50% at right center,
+        hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
+        hsla(0, 0%, 0%, 0)
+      );
+    background-attachment: local, scroll, scroll;
+  }
+}
+
+.daui-Pre:first-child,
+.daui-Html pre:first-child {
+  margin-top: 0;
+}
+
+.daui-Pre:last-child,
+.daui-Html pre:last-child {
+  margin-bottom: 0;
+}
+
+/* Some browsers (e.g. Firefox) make scrollable elements focusable. */
+.daui-Pre:focus,
+.daui-Html pre:focus {
+  --daui-Pre-background-lightness: calc(var(--daui-background-lightness) - 8%);
+
+  outline: 0;
+}
+
+.daui-Pre > .daui-Code,
+.daui-Html pre > code {
+  padding: 0;
+  background-color: transparent;
+}

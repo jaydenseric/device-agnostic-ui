@@ -1,0 +1,34 @@
+.daui-LinkText,
+.daui-Html a {
+  text-decoration: none;
+  color: hsl(
+    var(--daui-interact-hue),
+    var(--daui-interact-saturation),
+    var(--daui-interact-lightness)
+  );
+}
+
+.daui-LinkText:focus,
+.daui-LinkText--active,
+.daui-Html a:focus {
+  box-shadow: 0 2px;
+}
+
+.daui-LinkText:focus,
+.daui-Html a:focus {
+  color: hsl(
+    var(--daui-interact-hue),
+    var(--daui-interact-saturation),
+    calc(var(--daui-interact-lightness) + 10%)
+  );
+  outline: 0;
+}
+
+.daui-LinkText:active,
+.daui-Html a:active {
+  color: hsl(
+    var(--daui-interact-hue),
+    var(--daui-interact-saturation),
+    calc(var(--daui-interact-lightness) + 20%)
+  );
+}

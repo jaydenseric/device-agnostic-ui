@@ -2,10 +2,15 @@
 
 ## Next
 
+### Major
+
+- Replaced [`styled-jsx`](https://npm.im/styled-jsx) CSS-in-JS styling with vanilla CSS files, using the [BEM class naming convention](https://en.bem.info/methodology/naming-convention). The necessary CSS files (depending on the components used) must be manually loaded in your app.
+
 ### Patch
 
 - Updated the package description to mention React.
 - Updated the package `keywords` field.
+- Added a [`webpack`](https://npm.im/webpack) v5 bundle test, asserting the minified and gzipped size is < 3 kB.
 
 ## 6.0.1
 

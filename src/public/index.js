@@ -33,20 +33,6 @@ exports.useCustomValidity = require('./hooks/useCustomValidity');
 exports.useMergedRef = require('./hooks/useMergedRef');
 exports.useOnFocusReportValidity = require('./hooks/useOnFocusReportValidity');
 
-// styled-jsx styles.
-exports.stylesBlockquote = require('./styles/stylesBlockquote');
-exports.stylesCode = require('./styles/stylesCode');
-exports.stylesGlobal = require('./styles/stylesGlobal');
-exports.stylesGlobalTheme = require('./styles/stylesGlobalTheme');
-exports.stylesHeading = require('./styles/stylesHeading');
-exports.stylesHtml = require('./styles/stylesHtml');
-exports.stylesLinkText = require('./styles/stylesLinkText');
-exports.stylesList = require('./styles/stylesList');
-exports.stylesPara = require('./styles/stylesPara');
-exports.stylesPre = require('./styles/stylesPre');
-exports.stylesSyntaxHighlightingPrism = require('./styles/stylesSyntaxHighlightingPrism');
-exports.stylesTable = require('./styles/stylesTable');
-
 // Utilities.
 exports.propTypeChildren = require('./utils/propTypeChildren');
 exports.splitWordBreaks = require('./utils/splitWordBreaks');

@@ -1,0 +1,70 @@
+.daui-Nav {
+  --daui-Nav-background-lightness: var(--daui-background-lightness);
+  --daui-Nav-background-opaque: hsl(
+    var(--daui-background-hue),
+    var(--daui-background-saturation),
+    var(--daui-Nav-background-lightness)
+  );
+  --daui-Nav-shadow-width: 0.5rem;
+  --daui-Nav-fade-width: 3rem;
+  --daui-Nav-grid-gap: 1em;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  grid-gap: var(--daui-Nav-grid-gap);
+  padding: 0.5em 0;
+  background-color: var(--daui-Nav-background-opaque);
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+}
+
+@supports (overscroll-behavior-x: contain) and
+  (not (-webkit-overflow-scrolling: touch)) {
+  .daui-Nav {
+    --daui-Nav-background-transparent: hsla(
+      var(--daui-background-hue),
+      var(--daui-background-saturation),
+      var(--daui-Nav-background-lightness),
+      0
+    );
+
+    background-image: linear-gradient(
+        90deg,
+        var(--daui-Nav-background-opaque),
+        var(--daui-Nav-background-transparent) var(--daui-Nav-fade-width),
+        var(--daui-Nav-background-transparent)
+          calc(100% - var(--daui-Nav-fade-width)),
+        var(--daui-Nav-background-opaque)
+      ),
+      radial-gradient(
+        var(--daui-Nav-shadow-width) 50% at left center,
+        hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
+        hsla(0, 0%, 0%, 0)
+      ),
+      radial-gradient(
+        var(--daui-Nav-shadow-width) 50% at right center,
+        hsla(0, 0%, 0%, var(--daui-shadow-opacity)),
+        hsla(0, 0%, 0%, 0)
+      );
+    background-attachment: local, scroll, scroll;
+  }
+}
+
+/* Some browsers (e.g. Firefox) make scrollable elements focusable. */
+.daui-Nav:focus {
+  --daui-Nav-background-lightness: calc(var(--daui-background-lightness) - 4%);
+
+  outline: 0;
+}
+
+.daui-Nav::before,
+.daui-Nav::after {
+  content: '';
+  align-self: stretch;
+  width: calc(var(--daui-spacing) - var(--daui-Nav-grid-gap));
+}
