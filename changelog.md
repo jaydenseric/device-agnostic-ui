@@ -1,5 +1,11 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Patch
+
+- Updated the package description to mention React.
+
 ## 6.0.1
 
 ### Patch
