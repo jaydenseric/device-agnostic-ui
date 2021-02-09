@@ -1,6 +1,6 @@
 # device-agnostic-ui changelog
 
-## Next
+## 7.0.1
 
 ### Patch
 
