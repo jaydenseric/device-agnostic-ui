@@ -6,6 +6,10 @@
 
 - Replaced [`styled-jsx`](https://npm.im/styled-jsx) CSS-in-JS styling with vanilla CSS files, using the [BEM class naming convention](https://en.bem.info/methodology/naming-convention). The necessary CSS files (depending on the components used) must be manually loaded in your app.
 
+### Minor
+
+- Made the [`next`](https://npm.im/next) peer dependency optional via a new package `peerDependenciesMeta` field. Now React projects without Next.js installed can install this package and use non Next.js related components via deep imports.
+
 ### Patch
 
 - Updated the package description to mention React.

@@ -43,6 +43,11 @@
     "react": "16.14.0 - 17",
     "react-dom": "16.14.0 - 17"
   },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
   "dependencies": {
     "@babel/runtime": "^7.12.13",
     "class-name-prop": "^2.0.0",
