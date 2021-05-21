@@ -1,5 +1,16 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Major
+
+- Updated Node.js support to `^12.20 || >= 14.13`.
+
+### Patch
+
+- Updated the GitHub Actions CI config to run tests with Node.js v12, v14, v16.
+- Documentation improvements.
+
 ## 7.0.1
 
 ### Patch
