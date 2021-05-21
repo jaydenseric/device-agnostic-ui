@@ -98,7 +98,7 @@
     "test:eslint": "eslint --ext mjs,js .",
     "test:stylelint": "stylelint 'src/**/*.css'",
     "test:prettier": "prettier -c .",
-    "test:api": "coverage-node test.mjs",
+    "test:api": "coverage-node test/index.mjs",
     "prepublishOnly": "npm test"
   }
 }
