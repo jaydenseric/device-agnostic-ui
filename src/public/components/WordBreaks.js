@@ -5,10 +5,10 @@ const React = require('react');
 const splitWordBreaks = require('../utils/splitWordBreaks');
 
 const WordBreaks = ({ placeholder, children }) => {
-  const split = React.useMemo(() => splitWordBreaks(children, placeholder), [
-    children,
-    placeholder,
-  ]);
+  const split = React.useMemo(
+    () => splitWordBreaks(children, placeholder),
+    [children, placeholder]
+  );
 
   return split.length
     ? split.map((part, index) => (

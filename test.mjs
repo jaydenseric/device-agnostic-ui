@@ -1,14 +1,13 @@
-'use strict';
-
-const { deepStrictEqual, strictEqual } = require('assert');
-const fs = require('fs');
-const { join } = require('path');
-const { promisify } = require('util');
-const { disposableDirectory } = require('disposable-directory');
-const gzipSize = require('gzip-size');
-const { TestDirector } = require('test-director');
-const webpack = require('webpack');
-const splitWordBreaks = require('./public/utils/splitWordBreaks');
+import { deepStrictEqual, strictEqual } from 'assert';
+import fs from 'fs';
+import { join } from 'path';
+import { fileURLToPath } from 'url';
+import { promisify } from 'util';
+import disposableDirectory from 'disposable-directory';
+import gzipSize from 'gzip-size';
+import TestDirector from 'test-director';
+import webpack from 'webpack';
+import splitWordBreaks from './public/utils/splitWordBreaks.js';
 
 const tests = new TestDirector();
 
@@ -35,7 +34,7 @@ tests.add('Bundle.', async () => {
   await disposableDirectory(async (tempDirPath) => {
     const filename = 'bundle.cjs';
     const compiler = webpack({
-      context: __dirname,
+      context: fileURLToPath(new URL('./', import.meta.url)),
       entry: './public/index.js',
       output: {
         path: tempDirPath,
@@ -44,13 +43,14 @@ tests.add('Bundle.', async () => {
       },
       target: 'node',
       mode: 'production',
-      externals: /^(?:next|object-assign|prop-types|react|react-dom)(?:\/|\\|$)/u,
+      externals:
+        /^(?:next|object-assign|prop-types|react|react-dom)(?:\/|\\|$)/u,
     });
     const compile = promisify(compiler.run).bind(compiler);
     const stats = await compile();
-    const message = stats.toString('errors-warnings');
 
-    if (message) throw new Error(message);
+    if (stats.hasWarnings() || stats.hasErrors())
+      throw new Error(stats.toString('errors-warnings'));
 
     const bundleCode = await fs.promises.readFile(
       join(tempDirPath, filename),
