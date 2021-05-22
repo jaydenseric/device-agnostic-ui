@@ -1,7 +1,7 @@
 'use strict';
 
 const React = require('react');
-const Icon = require('./Icon');
+const Icon = require('./Icon.js');
 
 const IconTick = React.forwardRef((props, ref) => (
   <Icon title="Tick" {...props} ref={ref}>

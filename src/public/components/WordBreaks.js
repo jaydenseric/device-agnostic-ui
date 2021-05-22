@@ -2,7 +2,7 @@
 
 const PropTypes = require('prop-types');
 const React = require('react');
-const splitWordBreaks = require('../utils/splitWordBreaks');
+const splitWordBreaks = require('../utils/splitWordBreaks.js');
 
 const WordBreaks = ({ placeholder, children }) => {
   const split = React.useMemo(

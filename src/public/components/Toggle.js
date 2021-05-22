@@ -3,10 +3,10 @@
 const classNameProp = require('class-name-prop');
 const PropTypes = require('prop-types');
 const React = require('react');
-const useCustomValidity = require('../hooks/useCustomValidity');
-const useMergedRef = require('../hooks/useMergedRef');
-const useOnFocusReportValidity = require('../hooks/useOnFocusReportValidity');
-const IconTick = require('./IconTick');
+const useCustomValidity = require('../hooks/useCustomValidity.js');
+const useMergedRef = require('../hooks/useMergedRef.js');
+const useOnFocusReportValidity = require('../hooks/useOnFocusReportValidity.js');
+const IconTick = require('./IconTick.js');
 
 const Toggle = React.forwardRef(
   (

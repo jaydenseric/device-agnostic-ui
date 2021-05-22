@@ -3,9 +3,9 @@
 const classNameProp = require('class-name-prop');
 const PropTypes = require('prop-types');
 const React = require('react');
-const useCustomValidity = require('../hooks/useCustomValidity');
-const useMergedRef = require('../hooks/useMergedRef');
-const useOnFocusReportValidity = require('../hooks/useOnFocusReportValidity');
+const useCustomValidity = require('../hooks/useCustomValidity.js');
+const useMergedRef = require('../hooks/useMergedRef.js');
+const useOnFocusReportValidity = require('../hooks/useOnFocusReportValidity.js');
 
 const Textbox = React.forwardRef(
   ({ validationMessage, type = 'text', className, ...props }, ref) => {

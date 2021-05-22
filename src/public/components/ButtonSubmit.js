@@ -2,9 +2,9 @@
 
 const PropTypes = require('prop-types');
 const React = require('react');
-const Button = require('./Button');
-const IconTick = require('./IconTick');
-const Loading = require('./Loading');
+const Button = require('./Button.js');
+const IconTick = require('./IconTick.js');
+const Loading = require('./Loading.js');
 
 const ButtonSubmit = React.forwardRef(
   ({ loading, success, disabled, children, ...props }, ref) => (

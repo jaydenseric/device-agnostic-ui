@@ -14,6 +14,7 @@
 - Updated the GitHub Actions CI config to run tests with Node.js v12, v14, v16.
 - Test the bundle size using [`esbuild`](https://npm.im/esbuild) instead of [`webpack`](https://npm.im/webpack) and [`disposable-directory`](https://npm.im/disposable-directory).
 - Updated the documented bundle size.
+- Use the `.js` file extension in internal `require` paths.
 - Documentation improvements.
 
 ## 7.0.1

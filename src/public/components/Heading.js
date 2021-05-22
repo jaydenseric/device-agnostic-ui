@@ -3,7 +3,7 @@
 const classNameProp = require('class-name-prop');
 const PropTypes = require('prop-types');
 const React = require('react');
-const LinkText = require('./LinkText');
+const LinkText = require('./LinkText.js');
 
 const Heading = React.forwardRef(
   ({ level = 1, size, id, className, style, children, ...props }, ref) => {

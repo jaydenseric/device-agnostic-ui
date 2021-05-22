@@ -3,7 +3,7 @@
 const classNameProp = require('class-name-prop');
 const PropTypes = require('prop-types');
 const React = require('react');
-const propTypeChildren = require('../utils/propTypeChildren');
+const propTypeChildren = require('../utils/propTypeChildren.js');
 
 const Nav = React.forwardRef(({ className, ...props }, ref) => (
   <nav className={classNameProp('daui-Nav', className)} {...props} ref={ref} />

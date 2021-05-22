@@ -3,10 +3,10 @@
 const classNameProp = require('class-name-prop');
 const PropTypes = require('prop-types');
 const React = require('react');
-const useCustomValidity = require('../hooks/useCustomValidity');
-const useMergedRef = require('../hooks/useMergedRef');
-const useOnFocusReportValidity = require('../hooks/useOnFocusReportValidity');
-const propTypeChildren = require('../utils/propTypeChildren');
+const useCustomValidity = require('../hooks/useCustomValidity.js');
+const useMergedRef = require('../hooks/useMergedRef.js');
+const useOnFocusReportValidity = require('../hooks/useOnFocusReportValidity.js');
+const propTypeChildren = require('../utils/propTypeChildren.js');
 
 const Select = React.forwardRef(
   ({ validationMessage, className, ...props }, ref) => {
