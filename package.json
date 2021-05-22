@@ -65,7 +65,7 @@
     "autoprefixer": "^10.2.5",
     "babel-plugin-transform-replace-object-assign": "^2.0.0",
     "coverage-node": "^5.0.1",
-    "disposable-directory": "^4.0.0",
+    "esbuild": "^0.12.1",
     "eslint": "^7.26.0",
     "eslint-config-env": "^20.0.0",
     "eslint-config-prettier": "^8.3.0",
@@ -85,8 +85,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^5.0.0",
     "stylelint-prettier": "^1.2.0",
-    "test-director": "^6.0.0",
-    "webpack": "^5.37.1"
+    "test-director": "^6.0.0"
   },
   "scripts": {
     "prepare": "npm run prepare:clean && npm run prepare:babel && npm run prepare:postcss && npm run prepare:prettier",
