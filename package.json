@@ -23,8 +23,8 @@
   "files": [
     "public"
   ],
-  "main": "public",
   "sideEffects": false,
+  "main": "public",
   "exports": {
     ".": {
       "import": "./public/index.mjs",
