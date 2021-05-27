@@ -6,6 +6,7 @@
 
 - Updated dev dependencies.
 - Renamed imports in the test index module.
+- Amended the changelog entries for v6.0.0 and v8.0.0.
 
 ## 8.0.0
 
@@ -24,6 +25,7 @@
 - Updated the documented bundle size.
 - Use the `.js` file extension in internal `require` paths.
 - Documentation improvements.
+- The file `changelog.md` is no longer published.
 
 ## 7.0.1
 
@@ -68,7 +70,7 @@
 - Updated dependencies, some of which require newer Node.js versions than were previously supported.
 - Updated Node.js support from v8.10+ to `^10.17.0 || ^12.0.0 || >= 13.7.0`.
 - Removed the package `module` field.
-- Added a [package `exports` field](https://nodejs.org/api/packages.html#packages_exports) with [conditional exports](https://nodejs.org/api/packages.html#packages_conditional_exports) to support native ESM in Node.js and keep internal code private, whilst avoiding [the dual package hazard](https://nodejs.org/api/packages.html#packages_dual_package_hazard). Published files have been reorganized and most are now CJS instead of ESM, so previously undocumented deep imports will need to be rewritten.
+- Added a package [`exports`](https://nodejs.org/api/packages.html#packages_exports) field with [conditional exports](https://nodejs.org/api/packages.html#packages_conditional_exports) to support native ESM in Node.js and keep internal code private, whilst avoiding the [dual package hazard](https://nodejs.org/api/packages.html#packages_dual_package_hazard). Published files have been reorganized and most are now CJS instead of ESM, so previously undocumented deep imports will need to be rewritten.
 - Updated the Babel config to use [the new JSX transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) and removed now redundant `React` requires.
 - Ensure using the `data-daui-color-scheme` HTML attribute also updates the element’s font color to match the specified color scheme.
 
