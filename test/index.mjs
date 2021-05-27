@@ -1,10 +1,10 @@
 import TestDirector from 'test-director';
-import testBundle from './bundle.test.mjs';
-import testSplitWordBreaks from './public/utils/splitWordBreaks.test.mjs';
+import test_bundle from './bundle.test.mjs';
+import test_splitWordBreaks from './public/utils/splitWordBreaks.test.mjs';
 
 const tests = new TestDirector();
 
-testSplitWordBreaks(tests);
-testBundle(tests);
+test_splitWordBreaks(tests);
+test_bundle(tests);
 
 tests.run();

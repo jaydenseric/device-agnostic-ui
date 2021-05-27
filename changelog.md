@@ -5,6 +5,7 @@
 ### Patch
 
 - Updated dev dependencies.
+- Renamed imports in the test index module.
 
 ## 8.0.0
 
