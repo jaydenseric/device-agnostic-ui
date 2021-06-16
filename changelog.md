@@ -4,6 +4,7 @@
 
 ### Patch
 
+- Updated the [`next`](https://npm.im/next) peer dependency to `9.0.4 - 11`.
 - Updated dev dependencies.
 - Renamed imports in the test index module.
 - Amended the changelog entries for v6.0.0 and v8.0.0.
