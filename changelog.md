@@ -6,11 +6,16 @@
 
 - Updated Node.js support to `^12.22.0 || ^14.17.0 || >= 16.0.0`.
 - Updated dependencies, some of which require newer Node.js versions than previously supported.
+- More modern JavaScript syntax.
+- Removed some CSS vendor prefixes.
+- Switched back to using `React.createElement` instead of the [the new React JSX runtime](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html).
 
 ### Patch
 
 - Updated the [`next`](https://npm.im/next) peer dependency to `9.0.4 - 12`.
+- Removed the [`@babel/runtime`](https://npm.im/@babel/runtime) and [`object-assign`](https://npm.im/object-assign) dependencies.
 - Also run GitHub Actions CI with Node.js v17.
+- Removed the Babel and PostCSS build process.
 
 ## 8.0.1
 

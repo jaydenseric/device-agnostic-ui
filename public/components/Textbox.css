@@ -1,0 +1,57 @@
+.daui-Textbox {
+  --daui-Textbox-border-size: 2px;
+  --daui-Textbox-padding: 0.3em;
+
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  width: 14em;
+  max-width: 100%;
+  border: var(--daui-Textbox-border-size) solid;
+  border-radius: 5px;
+  padding: var(--daui-Textbox-padding);
+  font: inherit;
+  font-size: 115%;
+  font-style: italic;
+  line-height: var(--daui-line-height);
+  color: inherit;
+  background-color: transparent;
+  box-shadow: none;
+  outline: 0;
+  transition: color 0.25s;
+}
+
+.daui-Textbox::placeholder {
+  color: inherit;
+  opacity: 0.2;
+}
+
+.daui-Textbox:invalid {
+  border-color: hsl(
+    var(--daui-error-hue),
+    var(--daui-error-saturation),
+    var(--daui-error-lightness)
+  );
+}
+
+.daui-Textbox:not(:focus) {
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.daui-Textbox:disabled {
+  opacity: 0.5;
+}
+
+textarea.daui-Textbox {
+  /* Show 3 lines. */
+  min-height: calc(
+    1em * var(--daui-line-height) * 3 +
+      (var(--daui-Textbox-border-size) + var(--daui-Textbox-padding)) * 2
+  );
+  overflow-y: auto;
+  resize: vertical;
+}

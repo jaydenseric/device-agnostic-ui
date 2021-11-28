@@ -49,26 +49,16 @@
     }
   },
   "dependencies": {
-    "@babel/runtime": "^7.16.3",
     "class-name-prop": "^3.0.0",
-    "object-assign": "^4.1.1",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.0",
-    "@babel/eslint-parser": "^7.16.3",
-    "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
-    "@babel/plugin-transform-runtime": "^7.16.4",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-react": "^7.16.0",
-    "autoprefixer": "^10.4.0",
-    "babel-plugin-transform-replace-object-assign": "^2.0.0",
     "coverage-node": "^5.0.1",
     "esbuild": "^0.14.0",
     "eslint": "^8.3.0",
     "eslint-config-env": "^23.0.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-compat": "^4.0.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsdoc": "^37.0.3",
     "eslint-plugin-node": "^11.1.0",
@@ -77,7 +67,6 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "gzip-size": "^7.0.0",
     "next": "^12.0.4",
-    "postcss-cli": "^9.0.2",
     "prettier": "^2.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -88,14 +77,9 @@
     "test-director": "^7.0.0"
   },
   "scripts": {
-    "prepare": "npm run prepare:clean && npm run prepare:babel && npm run prepare:postcss && npm run prepare:prettier",
-    "prepare:clean": "rm -rf public",
-    "prepare:babel": "babel src -d . --keep-file-extension",
-    "prepare:postcss": "postcss 'src/**/*.css' --base src -d .",
-    "prepare:prettier": "prettier --write public readme.md",
     "test": "npm run test:eslint && npm run test:stylelint && npm run test:prettier && npm run test:api",
     "test:eslint": "eslint --ext mjs,js .",
-    "test:stylelint": "stylelint 'src/**/*.css'",
+    "test:stylelint": "stylelint '**/*.css'",
     "test:prettier": "prettier -c .",
     "test:api": "coverage-node test/index.mjs",
     "prepublishOnly": "npm test"
