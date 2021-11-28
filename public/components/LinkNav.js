@@ -1,15 +1,15 @@
-'use strict';
+"use strict";
 
-const classNameProp = require('class-name-prop');
-const PropTypes = require('prop-types');
-const React = require('react');
-const propTypeChildren = require('../utils/propTypeChildren.js');
+const classNameProp = require("class-name-prop");
+const PropTypes = require("prop-types");
+const React = require("react");
+const propTypeChildren = require("../utils/propTypeChildren.js");
 
 const LinkNav = React.forwardRef(({ active, className, ...props }, ref) =>
-  React.createElement('a', {
+  React.createElement("a", {
     className: classNameProp(
-      'daui-LinkNav',
-      active && 'daui-LinkNav--active',
+      "daui-LinkNav",
+      active && "daui-LinkNav--active",
       className
     ),
     ...props,
@@ -17,8 +17,8 @@ const LinkNav = React.forwardRef(({ active, className, ...props }, ref) =>
   })
 );
 
-if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
-  LinkNav.displayName = 'LinkNav';
+if (typeof process === "object" && process.env.NODE_ENV !== "production") {
+  LinkNav.displayName = "LinkNav";
   LinkNav.propTypes = {
     active: PropTypes.bool,
     className: PropTypes.string,

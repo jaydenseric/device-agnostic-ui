@@ -16,6 +16,7 @@
 - Removed the [`@babel/runtime`](https://npm.im/@babel/runtime) and [`object-assign`](https://npm.im/object-assign) dependencies.
 - Also run GitHub Actions CI with Node.js v17.
 - Removed the Babel and PostCSS build process.
+- Configured Prettier option `singleQuote` to the default, `false`.
 
 ## 8.0.1
 

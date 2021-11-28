@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-const PropTypes = require('prop-types');
-const React = require('react');
-const splitWordBreaks = require('../utils/splitWordBreaks.js');
+const PropTypes = require("prop-types");
+const React = require("react");
+const splitWordBreaks = require("../utils/splitWordBreaks.js");
 
 const WordBreaks = ({ placeholder, children }) => {
   const split = React.useMemo(
@@ -18,14 +18,14 @@ const WordBreaks = ({ placeholder, children }) => {
             // eslint-disable-next-line react/no-array-index-key
             key: index,
           },
-          !!index && React.createElement('wbr'),
+          !!index && React.createElement("wbr"),
           part
         )
       )
     : children;
 };
 
-if (typeof process === 'object' && process.env.NODE_ENV !== 'production')
+if (typeof process === "object" && process.env.NODE_ENV !== "production")
   WordBreaks.propTypes = {
     placeholder: PropTypes.string,
     children: PropTypes.string.isRequired,

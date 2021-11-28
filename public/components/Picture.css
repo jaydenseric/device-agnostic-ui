@@ -5,7 +5,7 @@
 }
 
 .daui-Picture::before {
-  content: '';
+  content: "";
   display: block;
   padding-top: calc(
     100% * var(--daui-Picture-height) / var(--daui-Picture-width)

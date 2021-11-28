@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const React = require('react');
+const React = require("react");
 
 /**
  * A React hook that displays an invalid HTML form control element’s validation
@@ -15,10 +15,10 @@ module.exports = function useOnFocusReportValidity(ref) {
         inputElement.reportValidity();
       };
 
-      inputElement.addEventListener('focus', onFocus);
+      inputElement.addEventListener("focus", onFocus);
 
       return () => {
-        inputElement.removeEventListener('focus', onFocus);
+        inputElement.removeEventListener("focus", onFocus);
       };
     }
   }, [ref]);

@@ -64,7 +64,7 @@
 
 .daui-Nav::before,
 .daui-Nav::after {
-  content: '';
+  content: "";
   align-self: stretch;
   width: calc(var(--daui-spacing) - var(--daui-Nav-grid-gap));
 }

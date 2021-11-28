@@ -46,7 +46,7 @@
 
 /* Single option visible: */
 .daui-Select:not([multiple]):not([size]),
-.daui-Select[size='1']:not([multiple]) {
+.daui-Select[size="1"]:not([multiple]) {
   padding-right: calc(
     var(--daui-Select-padding) * 2 + var(--daui-Select-arrow-width)
   );
@@ -70,6 +70,6 @@
 }
 
 .daui-Select[multiple] option,
-.daui-Select[size]:not([size='1']) option {
+.daui-Select[size]:not([size="1"]) option {
   cursor: pointer;
 }

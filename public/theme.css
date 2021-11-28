@@ -20,11 +20,11 @@
   --daui-error-hue: 339;
   --daui-error-saturation: 100%;
   --daui-error-lightness: 50%;
-  --daui-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+  --daui-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif;
-  --daui-monospace: SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+  --daui-monospace: SFMono-Regular, Consolas, "Liberation Mono", Menlo,
     monospace;
-  --daui-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', emoji;
+  --daui-emoji: "Apple Color Emoji", "Segoe UI Emoji", emoji;
   --daui-h1-font-size: calc(200% + 3vw);
   --daui-h2-font-size: calc(150% + 1.5vw);
   --daui-h3-font-size: calc(130% + 0.75vw);
@@ -52,7 +52,7 @@
   }
 }
 
-[data-daui-color-scheme='light'] {
+[data-daui-color-scheme="light"] {
   --daui-foreground-lightness: 0%;
   --daui-background-lightness: 100%;
   --daui-shade-opacity: 0.08;
@@ -62,7 +62,7 @@
   --daui-interact-lightness: 38%;
 }
 
-[data-daui-color-scheme='dark'] {
+[data-daui-color-scheme="dark"] {
   --daui-foreground-lightness: 78%;
   --daui-background-lightness: 18%;
   --daui-shade-opacity: 0.2;

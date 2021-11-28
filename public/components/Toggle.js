@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-const classNameProp = require('class-name-prop');
-const PropTypes = require('prop-types');
-const React = require('react');
-const useCustomValidity = require('../hooks/useCustomValidity.js');
-const useMergedRef = require('../hooks/useMergedRef.js');
-const useOnFocusReportValidity = require('../hooks/useOnFocusReportValidity.js');
-const IconTick = require('./IconTick.js');
+const classNameProp = require("class-name-prop");
+const PropTypes = require("prop-types");
+const React = require("react");
+const useCustomValidity = require("../hooks/useCustomValidity.js");
+const useMergedRef = require("../hooks/useMergedRef.js");
+const useOnFocusReportValidity = require("../hooks/useOnFocusReportValidity.js");
+const IconTick = require("./IconTick.js");
 
 const Toggle = React.forwardRef(
   (
@@ -25,46 +25,46 @@ const Toggle = React.forwardRef(
     useOnFocusReportValidity(inputRef);
 
     return React.createElement(
-      'label',
+      "label",
       {
-        className: classNameProp('daui-Toggle', className),
+        className: classNameProp("daui-Toggle", className),
         ...props,
         ref,
       },
       React.createElement(
-        'span',
-        { className: 'daui-Toggle__toggle' },
-        React.createElement('input', {
-          className: classNameProp('daui-Toggle__input', inputClassName),
+        "span",
+        { className: "daui-Toggle__toggle" },
+        React.createElement("input", {
+          className: classNameProp("daui-Toggle__input", inputClassName),
           ...inputProps,
           ref: inputRef,
         }),
         React.createElement(
-          'span',
-          { className: 'daui-Toggle__tick' },
+          "span",
+          { className: "daui-Toggle__tick" },
           React.createElement(
-            'span',
-            { className: 'daui-Toggle__icon' },
+            "span",
+            { className: "daui-Toggle__icon" },
             React.createElement(IconTick)
           )
         )
       ),
       children &&
         React.createElement(
-          'span',
-          { className: 'daui-Toggle__label' },
+          "span",
+          { className: "daui-Toggle__label" },
           children
         )
     );
   }
 );
 
-if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
-  Toggle.displayName = 'Toggle';
+if (typeof process === "object" && process.env.NODE_ENV !== "production") {
+  Toggle.displayName = "Toggle";
   Toggle.propTypes = {
     validationMessage: PropTypes.string,
     inputProps: PropTypes.shape({
-      type: PropTypes.oneOf(['checkbox', 'radio']).isRequired,
+      type: PropTypes.oneOf(["checkbox", "radio"]).isRequired,
       className: PropTypes.string,
       ref: PropTypes.oneOfType([
         PropTypes.func,

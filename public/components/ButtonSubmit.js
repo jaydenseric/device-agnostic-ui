@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-const PropTypes = require('prop-types');
-const React = require('react');
-const Button = require('./Button.js');
-const IconTick = require('./IconTick.js');
-const Loading = require('./Loading.js');
+const PropTypes = require("prop-types");
+const React = require("react");
+const Button = require("./Button.js");
+const IconTick = require("./IconTick.js");
+const Loading = require("./Loading.js");
 
 const ButtonSubmit = React.forwardRef(
   ({ loading, success, disabled, children, ...props }, ref) =>
@@ -16,19 +16,19 @@ const ButtonSubmit = React.forwardRef(
         ref,
       },
       React.createElement(
-        'span',
+        "span",
         {
-          className: 'daui-ButtonSubmit__grid',
+          className: "daui-ButtonSubmit__grid",
         },
-        React.createElement('span', null, children),
+        React.createElement("span", null, children),
         loading && React.createElement(Loading),
-        !loading && success && React.createElement(IconTick, { size: '0.8em' })
+        !loading && success && React.createElement(IconTick, { size: "0.8em" })
       )
     )
 );
 
-if (typeof process === 'object' && process.env.NODE_ENV !== 'production') {
-  ButtonSubmit.displayName = 'ButtonSubmit';
+if (typeof process === "object" && process.env.NODE_ENV !== "production") {
+  ButtonSubmit.displayName = "ButtonSubmit";
   ButtonSubmit.propTypes = {
     loading: PropTypes.bool,
     success: PropTypes.bool,

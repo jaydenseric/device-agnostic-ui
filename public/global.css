@@ -83,10 +83,10 @@ body {
   );
 }
 
-[data-daui-color-scheme='light'] {
+[data-daui-color-scheme="light"] {
   color-scheme: light;
 }
 
-[data-daui-color-scheme='dark'] {
+[data-daui-color-scheme="dark"] {
   color-scheme: dark;
 }

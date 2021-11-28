@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const React = require('react');
+const React = require("react");
 
 /**
  * A React hook that merges multiple React refs into one to use on an element.
@@ -15,7 +15,7 @@ module.exports = function useMergedRef(refs) {
     () => {
       refs.forEach((ref) => {
         if (!ref) return;
-        if (typeof ref === 'function') ref(mergedRef.current);
+        if (typeof ref === "function") ref(mergedRef.current);
         else ref.current = mergedRef.current;
       });
     },

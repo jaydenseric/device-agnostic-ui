@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
-const { default: Link } = require('next/link');
-const { useRouter } = require('next/router');
-const PropTypes = require('prop-types');
-const React = require('react');
+const { default: Link } = require("next/link");
+const { useRouter } = require("next/router");
+const PropTypes = require("prop-types");
+const React = require("react");
 
 const LinkActive = ({ children, ...props }) => {
   const { pathname } = useRouter();
@@ -16,7 +16,7 @@ const LinkActive = ({ children, ...props }) => {
   );
 };
 
-if (typeof process === 'object' && process.env.NODE_ENV !== 'production')
+if (typeof process === "object" && process.env.NODE_ENV !== "production")
   LinkActive.propTypes = {
     href: PropTypes.string,
     children: PropTypes.element.isRequired,

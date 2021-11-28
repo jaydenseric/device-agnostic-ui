@@ -1,6 +1,6 @@
-import TestDirector from 'test-director';
-import test_bundle from './bundle.test.mjs';
-import test_splitWordBreaks from './public/utils/splitWordBreaks.test.mjs';
+import TestDirector from "test-director";
+import test_bundle from "./bundle.test.mjs";
+import test_splitWordBreaks from "./public/utils/splitWordBreaks.test.mjs";
 
 const tests = new TestDirector();
 

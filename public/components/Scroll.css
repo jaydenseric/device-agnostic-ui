@@ -67,7 +67,7 @@
 
 .daui-Scroll::before,
 .daui-Scroll::after {
-  content: '';
+  content: "";
   align-self: stretch;
 }
 

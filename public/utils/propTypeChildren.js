@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const PropTypes = require('prop-types');
+const PropTypes = require("prop-types");
 
 const propTypeChildren = (...args) => PropTypes.node(...args);
 
