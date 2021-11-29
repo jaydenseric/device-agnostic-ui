@@ -17,7 +17,7 @@
 - 🧠 **Semantic markup.** Lean use of semantically appropriate HTML elements.
 - ⚛️ **Modern React.** Elegant use of [React](https://reactjs.org) [hooks](https://reactjs.org/docs/react-api.html#hooks), [refs](https://reactjs.org/docs/react-api.html#refs) and [fragments](https://reactjs.org/docs/react-api.html#fragments) makes for a great DX.
 
-## Setup
+## Installation
 
 To install with [npm](https://npmjs.com/get-npm), run:
 
@@ -27,13 +27,13 @@ npm install device-agnostic-ui
 
 Then load the [styles](https://deviceagnosticui.com/styles).
 
+## Requirements
+
+- [Node.js](https://nodejs.org): `^12.22.0 || ^14.17.0 || >= 16.0.0`
+- [Browsers](https://npm.im/browserslist): `> 0.5%, not OperaMini all, not IE > 0, not dead`
+
 ## API
 
 - [Styles](https://deviceagnosticui.com/styles)
 - [Components](https://deviceagnosticui.com/components)
 - [Hooks](https://deviceagnosticui.com/hooks)
-
-## Support
-
-- [Node.js](https://nodejs.org): `^12.22.0 || ^14.17.0 || >= 16.0.0`
-- [Browsers](https://npm.im/browserslist): `> 0.5%, not OperaMini all, not IE > 0, not dead`
