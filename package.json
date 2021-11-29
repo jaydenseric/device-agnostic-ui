@@ -81,8 +81,6 @@
   ],
   "sideEffects": false,
   "exports": {
-    "./package": "./package.json",
-    "./package.json": "./package.json",
     "./Blockquote.mjs": "./Blockquote.mjs",
     "./Button.mjs": "./Button.mjs",
     "./ButtonSubmit.mjs": "./ButtonSubmit.mjs",
@@ -100,6 +98,7 @@
     "./Loading.mjs": "./Loading.mjs",
     "./Margin.mjs": "./Margin.mjs",
     "./Nav.mjs": "./Nav.mjs",
+    "./package.json": "./package.json",
     "./Para.mjs": "./Para.mjs",
     "./Picture.mjs": "./Picture.mjs",
     "./Pre.mjs": "./Pre.mjs",

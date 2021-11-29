@@ -7,6 +7,7 @@
 - Updated Node.js support to `^12.22.0 || ^14.17.0 || >= 16.0.0`.
 - Updated dependencies, some of which require newer Node.js versions than previously supported.
 - Public modules are now individually listed in the package `files` and `exports` fields.
+- Removed `./package` from the package `exports` field; the full `package.json` filename must be used in a `require` path.
 - Removed the package main index module; deep imports must be used.
 - Shortened public module deep import paths, removing the `/public/`.
 - The API is now ESM in `.mjs` files instead of CJS in `.js` files, [accessible via `import` but not `require`](https://nodejs.org/dist/latest/docs/api/esm.html#require).
