@@ -13,7 +13,6 @@ const LinkText = React.forwardRef(({ active, className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  LinkText.displayName = "LinkText";
+LinkText.displayName = "LinkText";
 
 export default LinkText;

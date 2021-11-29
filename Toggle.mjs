@@ -56,7 +56,6 @@ const Toggle = React.forwardRef(
   }
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Toggle.displayName = "Toggle";
+Toggle.displayName = "Toggle";
 
 export default Toggle;

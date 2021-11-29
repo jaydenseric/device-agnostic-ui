@@ -24,7 +24,6 @@ const Heading = React.forwardRef(
     )
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Heading.displayName = "Heading";
+Heading.displayName = "Heading";
 
 export default Heading;

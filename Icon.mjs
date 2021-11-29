@@ -18,7 +18,6 @@ const Icon = React.forwardRef(
     )
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Icon.displayName = "Icon";
+Icon.displayName = "Icon";
 
 export default Icon;

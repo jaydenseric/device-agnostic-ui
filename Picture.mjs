@@ -15,7 +15,6 @@ const Picture = React.forwardRef(
     })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Picture.displayName = "Picture";
+Picture.displayName = "Picture";
 
 export default Picture;

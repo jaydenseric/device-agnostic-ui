@@ -16,7 +16,6 @@ const Button = React.forwardRef(({ disabled, className, ...props }, ref) => {
   });
 });
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Button.displayName = "Button";
+Button.displayName = "Button";
 
 export default Button;

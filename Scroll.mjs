@@ -9,7 +9,6 @@ const Scroll = React.forwardRef(({ className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Scroll.displayName = "Scroll";
+Scroll.displayName = "Scroll";
 
 export default Scroll;

@@ -9,7 +9,6 @@ const Nav = React.forwardRef(({ className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Nav.displayName = "Nav";
+Nav.displayName = "Nav";
 
 export default Nav;

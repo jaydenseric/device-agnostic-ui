@@ -18,7 +18,6 @@ const IconTick = React.forwardRef((props, ref) =>
   )
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  IconTick.displayName = "IconTick";
+IconTick.displayName = "IconTick";
 
 export default IconTick;

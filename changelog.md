@@ -25,6 +25,7 @@
 - Also run GitHub Actions CI with Node.js v17.
 - Simplified package scripts.
 - Removed the Babel and PostCSS build process.
+- Removed conditionality on the Node.js global `process.env.NODE_ENV`.
 - Reorganized the test file structure.
 - Test the bundle sizes for public modules individually.
 - Use a new `assertBundleSize` function to assert module bundle size in tests:

@@ -9,7 +9,6 @@ const Html = React.forwardRef(({ className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Html.displayName = "Html";
+Html.displayName = "Html";
 
 export default Html;

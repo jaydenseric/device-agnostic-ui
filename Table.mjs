@@ -9,7 +9,6 @@ const Table = React.forwardRef(({ className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Table.displayName = "Table";
+Table.displayName = "Table";
 
 export default Table;

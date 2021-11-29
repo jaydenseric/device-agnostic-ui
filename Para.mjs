@@ -9,7 +9,6 @@ const Para = React.forwardRef(({ className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Para.displayName = "Para";
+Para.displayName = "Para";
 
 export default Para;

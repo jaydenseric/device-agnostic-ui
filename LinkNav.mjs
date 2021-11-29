@@ -13,7 +13,6 @@ const LinkNav = React.forwardRef(({ active, className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  LinkNav.displayName = "LinkNav";
+LinkNav.displayName = "LinkNav";
 
 export default LinkNav;

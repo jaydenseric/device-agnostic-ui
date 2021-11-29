@@ -9,7 +9,6 @@ const Code = React.forwardRef(({ className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Code.displayName = "Code";
+Code.displayName = "Code";
 
 export default Code;

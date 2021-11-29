@@ -19,7 +19,6 @@ const Select = React.forwardRef(
   }
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Select.displayName = "Select";
+Select.displayName = "Select";
 
 export default Select;

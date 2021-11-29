@@ -24,7 +24,6 @@ const ButtonSubmit = React.forwardRef(
     )
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  ButtonSubmit.displayName = "ButtonSubmit";
+ButtonSubmit.displayName = "ButtonSubmit";
 
 export default ButtonSubmit;

@@ -9,7 +9,6 @@ const List = React.forwardRef(({ ordered, className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  List.displayName = "List";
+List.displayName = "List";
 
 export default List;

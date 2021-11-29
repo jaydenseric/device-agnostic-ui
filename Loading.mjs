@@ -32,7 +32,6 @@ const Loading = React.forwardRef(
     )
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Loading.displayName = "Loading";
+Loading.displayName = "Loading";
 
 export default Loading;

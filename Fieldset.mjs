@@ -24,7 +24,6 @@ const Fieldset = React.forwardRef(
     )
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Fieldset.displayName = "Fieldset";
+Fieldset.displayName = "Fieldset";
 
 export default Fieldset;

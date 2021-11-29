@@ -9,7 +9,6 @@ const Margin = React.forwardRef(({ className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Margin.displayName = "Margin";
+Margin.displayName = "Margin";
 
 export default Margin;

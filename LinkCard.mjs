@@ -13,7 +13,6 @@ const LinkCard = React.forwardRef(({ active, className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  LinkCard.displayName = "LinkCard";
+LinkCard.displayName = "LinkCard";
 
 export default LinkCard;

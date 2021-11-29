@@ -9,7 +9,6 @@ const Pre = React.forwardRef(({ className, ...props }, ref) =>
   })
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Pre.displayName = "Pre";
+Pre.displayName = "Pre";
 
 export default Pre;

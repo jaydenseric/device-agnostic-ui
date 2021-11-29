@@ -27,7 +27,6 @@ const Textbox = React.forwardRef(
   }
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  Textbox.displayName = "Textbox";
+Textbox.displayName = "Textbox";
 
 export default Textbox;
