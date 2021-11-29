@@ -1,7 +1,8 @@
 import React from "react";
 import splitWordBreaks from "./splitWordBreaks.mjs";
 
-const WordBreaks = ({ placeholder, children }) => {
+// eslint-disable-next-line jsdoc/require-jsdoc
+export default function WordBreaks({ placeholder, children }) {
   const split = React.useMemo(
     () => splitWordBreaks(children, placeholder),
     [children, placeholder]
@@ -20,6 +21,4 @@ const WordBreaks = ({ placeholder, children }) => {
         )
       )
     : children;
-};
-
-export default WordBreaks;
+}

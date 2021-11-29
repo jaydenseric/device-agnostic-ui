@@ -26,6 +26,7 @@
 - Simplified package scripts.
 - Removed the Babel and PostCSS build process.
 - Removed conditionality on the Node.js global `process.env.NODE_ENV`.
+- Made the `LinkActive` and `WordBreaks` React components named functions.
 - Reorganized the test file structure.
 - Test the bundle sizes for public modules individually.
 - Use a new `assertBundleSize` function to assert module bundle size in tests:
