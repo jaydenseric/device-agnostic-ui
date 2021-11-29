@@ -60,7 +60,6 @@
     "Picture.mjs",
     "Pre.css",
     "Pre.mjs",
-    "propTypeChildren.mjs",
     "Scroll.css",
     "Scroll.mjs",
     "Select.css",
@@ -102,7 +101,6 @@
     "./Para.mjs": "./Para.mjs",
     "./Picture.mjs": "./Picture.mjs",
     "./Pre.mjs": "./Pre.mjs",
-    "./propTypeChildren.mjs": "./propTypeChildren.mjs",
     "./Scroll.mjs": "./Scroll.mjs",
     "./Select.mjs": "./Select.mjs",
     "./splitWordBreaks.mjs": "./splitWordBreaks.mjs",
@@ -129,8 +127,7 @@
     }
   },
   "dependencies": {
-    "class-name-prop": "^4.0.0",
-    "prop-types": "^15.7.2"
+    "class-name-prop": "^4.0.0"
   },
   "devDependencies": {
     "coverage-node": "^5.0.1",

@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import Button from "./Button.mjs";
 import IconTick from "./IconTick.mjs";
@@ -25,14 +24,7 @@ const ButtonSubmit = React.forwardRef(
     )
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production") {
+if (typeof process === "object" && process.env.NODE_ENV !== "production")
   ButtonSubmit.displayName = "ButtonSubmit";
-  ButtonSubmit.propTypes = {
-    loading: PropTypes.bool,
-    success: PropTypes.bool,
-    disabled: PropTypes.bool,
-    children: PropTypes.node.isRequired,
-  };
-}
 
 export default ButtonSubmit;

@@ -1,5 +1,4 @@
 import classNameProp from "class-name-prop";
-import PropTypes from "prop-types";
 import React from "react";
 
 const Fieldset = React.forwardRef(
@@ -25,13 +24,7 @@ const Fieldset = React.forwardRef(
     )
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production") {
+if (typeof process === "object" && process.env.NODE_ENV !== "production")
   Fieldset.displayName = "Fieldset";
-  Fieldset.propTypes = {
-    legend: PropTypes.node,
-    className: PropTypes.string,
-    children: PropTypes.node.isRequired,
-  };
-}
 
 export default Fieldset;

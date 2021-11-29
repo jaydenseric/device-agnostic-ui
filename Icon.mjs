@@ -1,5 +1,4 @@
 import classNameProp from "class-name-prop";
-import PropTypes from "prop-types";
 import React from "react";
 
 const Icon = React.forwardRef(
@@ -19,14 +18,7 @@ const Icon = React.forwardRef(
     )
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production") {
+if (typeof process === "object" && process.env.NODE_ENV !== "production")
   Icon.displayName = "Icon";
-  Icon.propTypes = {
-    size: PropTypes.string,
-    title: PropTypes.string.isRequired,
-    className: PropTypes.string,
-    children: PropTypes.node.isRequired,
-  };
-}
 
 export default Icon;

@@ -1,5 +1,4 @@
 import classNameProp from "class-name-prop";
-import PropTypes from "prop-types";
 import React from "react";
 import IconTick from "./IconTick.mjs";
 import useCustomValidity from "./useCustomValidity.mjs";
@@ -57,21 +56,7 @@ const Toggle = React.forwardRef(
   }
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production") {
+if (typeof process === "object" && process.env.NODE_ENV !== "production")
   Toggle.displayName = "Toggle";
-  Toggle.propTypes = {
-    validationMessage: PropTypes.string,
-    inputProps: PropTypes.shape({
-      type: PropTypes.oneOf(["checkbox", "radio"]).isRequired,
-      className: PropTypes.string,
-      ref: PropTypes.oneOfType([
-        PropTypes.func,
-        PropTypes.shape({ current: PropTypes.elementType }),
-      ]),
-    }).isRequired,
-    className: PropTypes.string,
-    children: PropTypes.node,
-  };
-}
 
 export default Toggle;

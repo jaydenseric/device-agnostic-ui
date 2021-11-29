@@ -1,7 +1,5 @@
 import classNameProp from "class-name-prop";
-import PropTypes from "prop-types";
 import React from "react";
-import propTypeChildren from "./propTypeChildren.mjs";
 
 const Button = React.forwardRef(({ disabled, className, ...props }, ref) => {
   const [isMounted, setIsMounted] = React.useState(false);
@@ -18,13 +16,7 @@ const Button = React.forwardRef(({ disabled, className, ...props }, ref) => {
   });
 });
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production") {
+if (typeof process === "object" && process.env.NODE_ENV !== "production")
   Button.displayName = "Button";
-  Button.propTypes = {
-    disabled: PropTypes.bool,
-    className: PropTypes.string,
-    children: propTypeChildren.isRequired,
-  };
-}
 
 export default Button;

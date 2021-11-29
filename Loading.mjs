@@ -1,5 +1,4 @@
 import classNameProp from "class-name-prop";
-import PropTypes from "prop-types";
 import React from "react";
 
 const VIEW_BOX_SIZE = 100;
@@ -33,13 +32,7 @@ const Loading = React.forwardRef(
     )
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production") {
+if (typeof process === "object" && process.env.NODE_ENV !== "production")
   Loading.displayName = "Loading";
-  Loading.propTypes = {
-    size: PropTypes.string,
-    title: PropTypes.string,
-    className: PropTypes.string,
-  };
-}
 
 export default Loading;

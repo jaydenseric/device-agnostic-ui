@@ -1,5 +1,4 @@
 import classNameProp from "class-name-prop";
-import PropTypes from "prop-types";
 import React from "react";
 import useCustomValidity from "./useCustomValidity.mjs";
 import useMergedRef from "./useMergedRef.mjs";
@@ -28,30 +27,7 @@ const Textbox = React.forwardRef(
   }
 );
 
-if (typeof process === "object" && process.env.NODE_ENV !== "production") {
+if (typeof process === "object" && process.env.NODE_ENV !== "production")
   Textbox.displayName = "Textbox";
-  Textbox.propTypes = {
-    type: PropTypes.oneOf([
-      // Standard:
-      "date",
-      "datetime-local",
-      "email",
-      "month",
-      "number",
-      "password",
-      "search",
-      "tel",
-      "text",
-      "time",
-      "url",
-      "week",
-
-      // Non standard:
-      "textarea",
-    ]),
-    validationMessage: PropTypes.string,
-    className: PropTypes.string,
-  };
-}
 
 export default Textbox;

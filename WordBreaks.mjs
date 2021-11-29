@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import splitWordBreaks from "./splitWordBreaks.mjs";
 
@@ -22,11 +21,5 @@ const WordBreaks = ({ placeholder, children }) => {
       )
     : children;
 };
-
-if (typeof process === "object" && process.env.NODE_ENV !== "production")
-  WordBreaks.propTypes = {
-    placeholder: PropTypes.string,
-    children: PropTypes.string.isRequired,
-  };
 
 export default WordBreaks;
