@@ -1,6 +1,6 @@
 # device-agnostic-ui changelog
 
-## Next
+## 9.0.0
 
 ### Major
 
