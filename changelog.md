@@ -6,6 +6,10 @@
 
 - Updated Node.js support to `^12.22.0 || ^14.17.0 || >= 16.0.0`.
 - Updated dependencies, some of which require newer Node.js versions than previously supported.
+- Public modules are now individually listed in the package `files` and `exports` fields.
+- Removed the package main index module; deep imports must be used.
+- Shortened public module deep import paths, removing the `/public/`.
+- The API is now ESM in `.mjs` files instead of CJS in `.js` files, [accessible via `import` but not `require`](https://nodejs.org/dist/latest/docs/api/esm.html#require).
 - More modern JavaScript syntax.
 - Removed some CSS vendor prefixes.
 - Switched back to using `React.createElement` instead of the [the new React JSX runtime](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html).
@@ -16,6 +20,12 @@
 - Removed the [`@babel/runtime`](https://npm.im/@babel/runtime) and [`object-assign`](https://npm.im/object-assign) dependencies.
 - Also run GitHub Actions CI with Node.js v17.
 - Removed the Babel and PostCSS build process.
+- Reorganized the test file structure.
+- Test the bundle sizes for public modules individually.
+- Use a new `assertBundleSize` function to assert module bundle size in tests:
+  - Failure message contains details about the bundle size and how much the limit was exceeded.
+  - Errors when the surplus is greater than 25% of the limit, suggesting the limit should be reduced.
+  - Resolves the minified bundle and its gzipped size for debugging in tests.
 - Configured Prettier option `singleQuote` to the default, `false`.
 
 ## 8.0.1
