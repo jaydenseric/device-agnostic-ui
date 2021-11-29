@@ -20,6 +20,7 @@
 - Updated the [`next`](https://npm.im/next) peer dependency to `9.0.4 - 12`.
 - Removed the [`@babel/runtime`](https://npm.im/@babel/runtime) and [`object-assign`](https://npm.im/object-assign) dependencies.
 - Also run GitHub Actions CI with Node.js v17.
+- Simplified package scripts.
 - Removed the Babel and PostCSS build process.
 - Reorganized the test file structure.
 - Test the bundle sizes for public modules individually.

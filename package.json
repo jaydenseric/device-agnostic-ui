@@ -157,11 +157,11 @@
     "test-director": "^7.0.0"
   },
   "scripts": {
-    "test": "npm run test:eslint && npm run test:stylelint && npm run test:prettier && npm run test:api",
-    "test:eslint": "eslint --ext mjs,js .",
-    "test:stylelint": "stylelint '**/*.css'",
-    "test:prettier": "prettier -c .",
-    "test:api": "coverage-node test.mjs",
+    "eslint": "eslint .",
+    "stylelint": "stylelint '**/*.css'",
+    "prettier": "prettier -c .",
+    "tests": "coverage-node test.mjs",
+    "test": "npm run eslint && npm run stylelint && npm run prettier && npm run tests",
     "prepublishOnly": "npm test"
   }
 }
