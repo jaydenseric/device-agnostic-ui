@@ -153,31 +153,31 @@
     }
   },
   "dependencies": {
-    "class-name-prop": "^4.0.0"
+    "class-name-prop": "^5.0.0"
   },
   "devDependencies": {
     "coverage-node": "^5.0.1",
-    "esbuild": "^0.14.0",
-    "eslint": "^8.3.0",
-    "eslint-config-env": "^23.0.0",
+    "esbuild": "^0.14.13",
+    "eslint": "^8.7.0",
+    "eslint-config-env": "^23.0.2",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-compat": "^4.0.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsdoc": "^37.0.3",
+    "eslint-plugin-compat": "^4.0.1",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsdoc": "^37.6.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "gzip-size": "^7.0.0",
-    "next": "^12.0.4",
-    "prettier": "^2.5.0",
+    "next": "^12.0.8",
+    "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "stylelint": "^14.1.0",
+    "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^6.0.0",
     "stylelint-prettier": "^2.0.0",
-    "test-director": "^7.0.0"
+    "test-director": "^8.0.1"
   },
   "scripts": {
     "eslint": "eslint .",
