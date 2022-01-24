@@ -8,7 +8,7 @@ export default function WordBreaks({ placeholder, children }) {
     [children, placeholder]
   );
 
-  return split.length
+  return split.length > 1
     ? split.map((part, index) =>
         React.createElement(
           React.Fragment,

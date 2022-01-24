@@ -5,6 +5,8 @@
 ### Patch
 
 - Updated dependencies.
+- Added tests for the `WordBreaks` React component.
+- Fixed the `WordBreaks` React component not returning the original text string when no word breaks are inserted.
 
 ## 9.0.0
 
