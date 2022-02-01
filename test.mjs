@@ -1,4 +1,5 @@
 import TestDirector from "test-director";
+
 import test_Blockquote from "./Blockquote.test.mjs";
 import test_Button from "./Button.test.mjs";
 import test_ButtonSubmit from "./ButtonSubmit.test.mjs";
@@ -21,14 +22,14 @@ import test_Picture from "./Picture.test.mjs";
 import test_Pre from "./Pre.test.mjs";
 import test_Scroll from "./Scroll.test.mjs";
 import test_Select from "./Select.test.mjs";
+import test_splitWordBreaks from "./splitWordBreaks.test.mjs";
 import test_Table from "./Table.test.mjs";
 import test_Textbox from "./Textbox.test.mjs";
 import test_Toggle from "./Toggle.test.mjs";
-import test_WordBreaks from "./WordBreaks.test.mjs";
-import test_splitWordBreaks from "./splitWordBreaks.test.mjs";
 import test_useCustomValidity from "./useCustomValidity.test.mjs";
 import test_useMergedRef from "./useMergedRef.test.mjs";
 import test_useOnFocusReportValidity from "./useOnFocusReportValidity.test.mjs";
+import test_WordBreaks from "./WordBreaks.test.mjs";
 
 const tests = new TestDirector();
 

@@ -1,5 +1,6 @@
 import classNameProp from "class-name-prop";
 import React from "react";
+
 import IconTick from "./IconTick.mjs";
 import useCustomValidity from "./useCustomValidity.mjs";
 import useMergedRef from "./useMergedRef.mjs";

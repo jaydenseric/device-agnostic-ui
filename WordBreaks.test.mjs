@@ -1,8 +1,9 @@
 import { strictEqual } from "assert";
 import React from "react";
 import ReactDOMServer from "react-dom/server.js";
-import WordBreaks from "./WordBreaks.mjs";
+
 import assertBundleSize from "./test/assertBundleSize.mjs";
+import WordBreaks from "./WordBreaks.mjs";
 
 export default (tests) => {
   tests.add("`WordBreaks` bundle size.", async () => {

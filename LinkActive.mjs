@@ -2,7 +2,6 @@ import NextLink from "next/link.js";
 import NextRouter from "next/router.js";
 import React from "react";
 
-// eslint-disable-next-line jsdoc/require-jsdoc
 export default function LinkActive({ children, ...props }) {
   const { pathname } = NextRouter.useRouter();
 

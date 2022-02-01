@@ -1,4 +1,5 @@
 import { deepStrictEqual } from "assert";
+
 import splitWordBreaks from "./splitWordBreaks.mjs";
 import assertBundleSize from "./test/assertBundleSize.mjs";
 

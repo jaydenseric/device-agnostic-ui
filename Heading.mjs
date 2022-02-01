@@ -1,5 +1,6 @@
 import classNameProp from "class-name-prop";
 import React from "react";
+
 import LinkText from "./LinkText.mjs";
 
 const Heading = React.forwardRef(
