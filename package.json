@@ -156,13 +156,13 @@
     "class-name-prop": "^5.0.0"
   },
   "devDependencies": {
-    "coverage-node": "^6.0.1",
-    "esbuild": "^0.14.21",
+    "coverage-node": "^6.1.0",
+    "esbuild": "^0.14.22",
     "eslint": "^8.9.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "gzip-size": "^7.0.0",
-    "next": "^12.0.10",
+    "next": "^12.1.0",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
