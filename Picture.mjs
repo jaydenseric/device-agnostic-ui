@@ -15,7 +15,7 @@ const Picture = React.forwardRef(
     /**
      * @type {PictureProps
      *   & React.ComponentPropsWithoutRef<"picture">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { width, height, className, style, ...props },
 

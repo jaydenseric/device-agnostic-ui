@@ -8,7 +8,7 @@ const Pre = React.forwardRef(
   (
     /**
      * @type {React.ComponentPropsWithoutRef<"pre">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { className, ...props },
 

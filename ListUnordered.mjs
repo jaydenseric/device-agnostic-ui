@@ -8,7 +8,7 @@ const ListUnordered = React.forwardRef(
   (
     /**
      * @type {React.ComponentPropsWithoutRef<"ul">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { className, ...props },
 

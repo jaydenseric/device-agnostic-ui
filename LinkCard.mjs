@@ -9,7 +9,7 @@ const LinkCard = React.forwardRef(
     /**
      * @type {LinkCardProps
      *   & React.ComponentPropsWithoutRef<"a">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { active, className, ...props },
 

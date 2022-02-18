@@ -14,7 +14,7 @@ const Toggle = React.forwardRef(
     /**
      * @type {ToggleProps
      *   & React.ComponentPropsWithoutRef<"label">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     {
       validationMessage,
@@ -79,7 +79,7 @@ export default Toggle;
  *   [`validationMessage`](https://html.spec.whatwg.org/dev/form-control-infrastructure.html#dom-cva-validationmessage).
  *   Defaults to `""`.
  * @prop {React.ComponentPropsWithRef<"input">
- *   & import("./types.mjs").DataAttributes
+ *   & { [dataAttribute: `data-${string}`]: unknown }
  *   & { type: "checkbox" | "radio" }} inputProps Props for the
  *   {@linkcode HTMLInputElement}.
  * @prop {React.ReactNode} [children] Label children. Due to the ancestor

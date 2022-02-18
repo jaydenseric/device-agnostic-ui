@@ -19,7 +19,7 @@ const Heading = React.forwardRef(
      *   & React.ComponentPropsWithoutRef<"h4">
      *   & React.ComponentPropsWithoutRef<"h5">
      *   & React.ComponentPropsWithoutRef<"h6">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { level = 1, size, id, className, style, children, ...props },
 

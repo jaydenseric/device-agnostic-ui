@@ -8,7 +8,7 @@ const ListOrdered = React.forwardRef(
   (
     /**
      * @type {React.ComponentPropsWithoutRef<"ol">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { className, ...props },
 

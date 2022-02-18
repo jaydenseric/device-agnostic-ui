@@ -8,7 +8,7 @@ const Table = React.forwardRef(
   (
     /**
      * @type {React.ComponentPropsWithoutRef<"table">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { className, ...props },
 

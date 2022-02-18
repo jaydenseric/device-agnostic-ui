@@ -9,7 +9,7 @@ const Fieldset = React.forwardRef(
     /**
      * @type {FieldsetProps
      *   & React.ComponentPropsWithoutRef<"fieldset">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { legend, children, className, ...props },
 

@@ -14,7 +14,7 @@ const LinkNav = React.forwardRef(
     /**
      * @type {LinkNavProps
      *   & React.ComponentPropsWithoutRef<"a">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { active, className, ...props },
 

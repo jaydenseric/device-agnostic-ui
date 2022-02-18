@@ -19,7 +19,7 @@ const Textbox = React.forwardRef(
      * @type {TextboxProps
      *   & React.ComponentPropsWithoutRef<"input">
      *   & React.ComponentPropsWithoutRef<"textarea">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { type = "text", validationMessage, className, ...props },
 

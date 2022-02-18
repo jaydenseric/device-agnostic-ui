@@ -15,7 +15,7 @@ const Loading = React.forwardRef(
     /**
      * @type {LoadingProps
      *   & Omit<React.ComponentPropsWithoutRef<"svg">, "children">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { size = "1em", title = "Loading", className, ...props },
 

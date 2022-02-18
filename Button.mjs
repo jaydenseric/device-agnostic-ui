@@ -20,7 +20,7 @@ const Button = React.forwardRef(
   (
     /**
      * @type {React.ComponentPropsWithoutRef<"button">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { disabled, className, ...props },
 

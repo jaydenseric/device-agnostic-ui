@@ -15,7 +15,7 @@ const ButtonSubmit = React.forwardRef(
     /**
      * @type {ButtonSubmitProps
      *   & React.ComponentPropsWithoutRef<typeof Button>
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { loading, success, disabled, children, ...props },
 

@@ -13,7 +13,7 @@ const Select = React.forwardRef(
     /**
      * @type {SelectProps
      *   & React.ComponentPropsWithoutRef<"select">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { validationMessage, className, ...props },
 

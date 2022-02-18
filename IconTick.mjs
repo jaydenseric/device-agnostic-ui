@@ -10,7 +10,7 @@ const IconTick = React.forwardRef(
     /**
      * @type {Omit<import("./Icon.mjs").IconProps, "title">
      *   & Omit<React.ComponentPropsWithoutRef<"svg">, "children">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     props,
 

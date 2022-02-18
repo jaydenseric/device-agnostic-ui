@@ -9,7 +9,7 @@ const Icon = React.forwardRef(
     /**
      * @type {IconProps
      *   & React.ComponentPropsWithoutRef<"svg">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { size = "1em", title, className, children, ...props },
 

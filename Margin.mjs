@@ -7,7 +7,7 @@ const Margin = React.forwardRef(
   (
     /**
      * @type {React.ComponentPropsWithoutRef<"div">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { className, ...props },
 

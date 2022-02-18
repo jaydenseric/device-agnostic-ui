@@ -13,7 +13,7 @@ const Nav = React.forwardRef(
   (
     /**
      * @type {React.ComponentPropsWithoutRef<"nav">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { className, ...props },
 

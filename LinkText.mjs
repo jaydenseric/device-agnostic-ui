@@ -9,7 +9,7 @@ const LinkText = React.forwardRef(
     /**
      * @type {LinkTextProps
      *   & React.ComponentPropsWithoutRef<"a">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { active, className, ...props },
 

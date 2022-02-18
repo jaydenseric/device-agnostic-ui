@@ -8,7 +8,7 @@ const Code = React.forwardRef(
   (
     /**
      * @type {React.ComponentPropsWithoutRef<"code">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { className, ...props },
 

@@ -8,7 +8,7 @@ const Blockquote = React.forwardRef(
   (
     /**
      * @type {React.ComponentPropsWithoutRef<"blockquote">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { className, ...props },
 

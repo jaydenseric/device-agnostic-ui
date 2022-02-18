@@ -8,7 +8,7 @@ const Para = React.forwardRef(
   (
     /**
      * @type {React.ComponentPropsWithoutRef<"p">
-     *   & import("./types.mjs").DataAttributes}
+     *   & { [dataAttribute: `data-${string}`]: unknown }}
      */
     { className, ...props },
 

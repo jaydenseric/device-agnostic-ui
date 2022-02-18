@@ -9,10 +9,6 @@
 - The `Toggle` React component now has a render error if the prop `inputProps.type` isn’t specified.
 - Implemented TypeScript types via JSDoc comments.
 
-### Minor
-
-- Added a new `./types.mjs` module to the package `exports` field. Avoid using the `DataAttributes` type it contains though, as it will hopefully be removed once the React types support HTML/SVG element `data-` attributes.
-
 ### Patch
 
 - Updated dependencies.
