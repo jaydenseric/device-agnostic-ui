@@ -19,6 +19,7 @@
 - Fixed the `WordBreaks` React component not returning the original text string when no word breaks are inserted.
 - Fixed the `Toggle` React component implementation for the prop `inputProps.className`.
 - Added a `license.md` MIT License file.
+- Improved documentation.
 
 ## 9.0.0
 
