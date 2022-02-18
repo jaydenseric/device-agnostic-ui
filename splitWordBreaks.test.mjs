@@ -1,8 +1,14 @@
+// @ts-check
+
 import { deepStrictEqual } from "assert";
 
 import splitWordBreaks from "./splitWordBreaks.mjs";
 import assertBundleSize from "./test/assertBundleSize.mjs";
 
+/**
+ * Adds `splitWordBreaks` tests.
+ * @param {import("test-director").default} tests Test director.
+ */
 export default (tests) => {
   tests.add("`splitWordBreaks` bundle size.", async () => {
     await assertBundleSize(

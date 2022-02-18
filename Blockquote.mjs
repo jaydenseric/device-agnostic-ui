@@ -1,12 +1,25 @@
+// @ts-check
+
 import classNameProp from "class-name-prop";
 import React from "react";
 
-const Blockquote = React.forwardRef(({ className, ...props }, ref) =>
-  React.createElement("blockquote", {
-    className: classNameProp("daui-Blockquote", className),
-    ...props,
-    ref,
-  })
+/** React component for a {@link HTMLQuoteElement blockquote}. */
+const Blockquote = React.forwardRef(
+  (
+    /**
+     * @type {React.ComponentPropsWithoutRef<"blockquote">
+     *   & import("./types.mjs").DataAttributes}
+     */
+    { className, ...props },
+
+    /** @type {React.ForwardedRef<HTMLQuoteElement>} */
+    ref
+  ) =>
+    React.createElement("blockquote", {
+      className: classNameProp("daui-Blockquote", className),
+      ...props,
+      ref,
+    })
 );
 
 Blockquote.displayName = "Blockquote";

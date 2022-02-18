@@ -1,3 +1,5 @@
+// @ts-check
+
 import classNameProp from "class-name-prop";
 import React from "react";
 
@@ -6,15 +8,23 @@ import useCustomValidity from "./useCustomValidity.mjs";
 import useMergedRef from "./useMergedRef.mjs";
 import useOnFocusReportValidity from "./useOnFocusReportValidity.mjs";
 
+/** React component for a checkbox or radio {@link HTMLInputElement input}. */
 const Toggle = React.forwardRef(
   (
+    /**
+     * @type {ToggleProps
+     *   & React.ComponentPropsWithoutRef<"label">
+     *   & import("./types.mjs").DataAttributes}
+     */
     {
       validationMessage,
-      inputProps: { inputClassName, ...inputProps } = {},
+      inputProps: { className: inputClassName, ...inputProps },
       className,
       children,
       ...props
     },
+
+    /** @type {React.ForwardedRef<HTMLLabelElement>} */
     ref
   ) => {
     const inputRef = useMergedRef([inputProps.ref]);
@@ -60,3 +70,20 @@ const Toggle = React.forwardRef(
 Toggle.displayName = "Toggle";
 
 export default Toggle;
+
+/**
+ * Props for the {@linkcode Toggle} React component, excluding additional props
+ * for the {@linkcode HTMLLabelElement} container.
+ * @typedef {object} ToggleProps
+ * @prop {string} [validationMessage] Sets the {@linkcode HTMLInputElement}
+ *   [`validationMessage`](https://html.spec.whatwg.org/dev/form-control-infrastructure.html#dom-cva-validationmessage).
+ *   Defaults to `""`.
+ * @prop {React.ComponentPropsWithRef<"input">
+ *   & import("./types.mjs").DataAttributes
+ *   & { type: "checkbox" | "radio" }} inputProps Props for the
+ *   {@linkcode HTMLInputElement}.
+ * @prop {React.ReactNode} [children] Label children. Due to the ancestor
+ *   {@linkcode HTMLLabelElement}, it may only contain
+ *   [phrasing content](https://html.spec.whatwg.org/dev/dom.html#phrasing-content)
+ *   except {@linkcode HTMLLabelElement}.
+ */

@@ -1,8 +1,21 @@
+// @ts-check
+
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** React component for a {@link HTMLFieldSetElement fieldset}. */
 const Fieldset = React.forwardRef(
-  ({ legend, children, className, ...props }, ref) =>
+  (
+    /**
+     * @type {FieldsetProps
+     *   & React.ComponentPropsWithoutRef<"fieldset">
+     *   & import("./types.mjs").DataAttributes}
+     */
+    { legend, children, className, ...props },
+
+    /** @type {React.ForwardedRef<HTMLFieldSetElement>} */
+    ref
+  ) =>
     React.createElement(
       "fieldset",
       {
@@ -27,3 +40,14 @@ const Fieldset = React.forwardRef(
 Fieldset.displayName = "Fieldset";
 
 export default Fieldset;
+
+/**
+ * Props for the {@linkcode Fieldset} React component, excluding additional
+ * props for the {@linkcode HTMLFieldSetElement} container.
+ * @typedef {object} FieldsetProps
+ * @prop {React.ReactNode} [legend] {@link HTMLLegendElement Legend} children.
+ *   May only contain
+ *   [phrasing content](https://html.spec.whatwg.org/dev/dom.html#phrasing-content)
+ *   and
+ *   [heading content](https://html.spec.whatwg.org/dev/dom.html#heading-content).
+ */

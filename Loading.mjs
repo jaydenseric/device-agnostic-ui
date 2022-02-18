@@ -1,3 +1,5 @@
+// @ts-check
+
 import classNameProp from "class-name-prop";
 import React from "react";
 
@@ -7,8 +9,19 @@ const CIRCLE_STROKE_WIDTH = 12;
 const circleRadius = VIEW_BOX_SIZE / 2 - CIRCLE_STROKE_WIDTH / 2;
 const circleCircumference = Math.PI * circleRadius * 2;
 
+/** React component for an animated loading icon. */
 const Loading = React.forwardRef(
-  ({ size = "1em", title = "Loading", className, ...props }, ref) =>
+  (
+    /**
+     * @type {LoadingProps
+     *   & Omit<React.ComponentPropsWithoutRef<"svg">, "children">
+     *   & import("./types.mjs").DataAttributes}
+     */
+    { size = "1em", title = "Loading", className, ...props },
+
+    /** @type {React.ForwardedRef<SVGElement>} */
+    ref
+  ) =>
     React.createElement(
       "svg",
       {
@@ -35,3 +48,12 @@ const Loading = React.forwardRef(
 Loading.displayName = "Loading";
 
 export default Loading;
+
+/**
+ * Props for the {@linkcode Loading} React component, excluding additional props
+ * for the {@linkcode SVGElement} container.
+ * @typedef {object} LoadingProps
+ * @prop {string} [size] {@link SVGElement SVG} width and height. Some browser
+ *   versions don’t support `rem` units. Defaults to `"1em"`.
+ * @prop {string} [title] Loading title. Defaults to `"Loading"`.
+ */

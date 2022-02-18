@@ -1,12 +1,25 @@
+// @ts-check
+
 import classNameProp from "class-name-prop";
 import React from "react";
 
-const Para = React.forwardRef(({ className, ...props }, ref) =>
-  React.createElement("p", {
-    className: classNameProp("daui-Para", className),
-    ...props,
-    ref,
-  })
+/** React component for a {@link HTMLParagraphElement paragraph}. */
+const Para = React.forwardRef(
+  (
+    /**
+     * @type {React.ComponentPropsWithoutRef<"p">
+     *   & import("./types.mjs").DataAttributes}
+     */
+    { className, ...props },
+
+    /** @type {React.ForwardedRef<HTMLParagraphElement>} */
+    ref
+  ) =>
+    React.createElement("p", {
+      className: classNameProp("daui-Para", className),
+      ...props,
+      ref,
+    })
 );
 
 Para.displayName = "Para";

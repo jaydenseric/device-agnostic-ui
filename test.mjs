@@ -1,3 +1,5 @@
+// @ts-check
+
 import TestDirector from "test-director";
 
 import test_Blockquote from "./Blockquote.test.mjs";
@@ -13,7 +15,8 @@ import test_LinkActive from "./LinkActive.test.mjs";
 import test_LinkCard from "./LinkCard.test.mjs";
 import test_LinkNav from "./LinkNav.test.mjs";
 import test_LinkText from "./LinkText.test.mjs";
-import test_List from "./List.test.mjs";
+import test_ListOrdered from "./ListOrdered.test.mjs";
+import test_ListUnordered from "./ListUnordered.test.mjs";
 import test_Loading from "./Loading.test.mjs";
 import test_Margin from "./Margin.test.mjs";
 import test_Nav from "./Nav.test.mjs";
@@ -46,7 +49,8 @@ test_LinkActive(tests);
 test_LinkCard(tests);
 test_LinkNav(tests);
 test_LinkText(tests);
-test_List(tests);
+test_ListOrdered(tests);
+test_ListUnordered(tests);
 test_Loading(tests);
 test_Margin(tests);
 test_Nav(tests);

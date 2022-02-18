@@ -1,12 +1,25 @@
+// @ts-check
+
 import classNameProp from "class-name-prop";
 import React from "react";
 
-const Table = React.forwardRef(({ className, ...props }, ref) =>
-  React.createElement("table", {
-    className: classNameProp("daui-Table", className),
-    ...props,
-    ref,
-  })
+/** React component for a {@link HTMLTableElement table}. */
+const Table = React.forwardRef(
+  (
+    /**
+     * @type {React.ComponentPropsWithoutRef<"table">
+     *   & import("./types.mjs").DataAttributes}
+     */
+    { className, ...props },
+
+    /** @type {React.ForwardedRef<HTMLTableElement>} */
+    ref
+  ) =>
+    React.createElement("table", {
+      className: classNameProp("daui-Table", className),
+      ...props,
+      ref,
+    })
 );
 
 Table.displayName = "Table";

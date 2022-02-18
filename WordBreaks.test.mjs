@@ -1,32 +1,72 @@
-import { strictEqual } from "assert";
+// @ts-check
+
 import React from "react";
 import ReactDOMServer from "react-dom/server.js";
+import assertSnapshot from "snapshot-assertion";
 
 import assertBundleSize from "./test/assertBundleSize.mjs";
 import WordBreaks from "./WordBreaks.mjs";
 
+/**
+ * Adds `WordBreaks` tests.
+ * @param {import("test-director").default} tests Test director.
+ */
 export default (tests) => {
   tests.add("`WordBreaks` bundle size.", async () => {
     await assertBundleSize(new URL("./WordBreaks.mjs", import.meta.url), 350);
   });
 
-  tests.add("`WordBreaks` with work breaks.", () => {
-    strictEqual(
+  tests.add("`WordBreaks` with minimal props, word breaks.", async () => {
+    await assertSnapshot(
       ReactDOMServer.renderToStaticMarkup(
-        React.createElement(WordBreaks, null, "learnHTML5WithUs")
+        React.createElement(WordBreaks, { text: "learnHTML5WithUs" })
       ),
-      "learn<wbr/>HTML<wbr/>5<wbr/>With<wbr/>Us"
+      new URL(
+        "./test/snapshots/WordBreaks/minimal-props-word-breaks.html",
+        import.meta.url
+      )
     );
   });
 
-  tests.add("`WordBreaks` without word breaks.", () => {
-    const string = "learn HTML 5 With Us";
-
-    strictEqual(
+  tests.add("`WordBreaks` with minimal props, no word breaks.", async () => {
+    await assertSnapshot(
       ReactDOMServer.renderToStaticMarkup(
-        React.createElement(WordBreaks, null, string)
+        React.createElement(WordBreaks, { text: "learn HTML 5 With Us" })
       ),
-      string
+      new URL(
+        "./test/snapshots/WordBreaks/minimal-props-no-word-breaks.html",
+        import.meta.url
+      )
+    );
+  });
+
+  tests.add("`WordBreaks` with props, word breaks.", async () => {
+    await assertSnapshot(
+      ReactDOMServer.renderToStaticMarkup(
+        React.createElement(WordBreaks, {
+          placeholder: "__word_break__",
+          text: "learnHTML5WithUs",
+        })
+      ),
+      new URL(
+        "./test/snapshots/WordBreaks/with-props-word-breaks.html",
+        import.meta.url
+      )
+    );
+  });
+
+  tests.add("`WordBreaks` with props, no word breaks.", async () => {
+    await assertSnapshot(
+      ReactDOMServer.renderToStaticMarkup(
+        React.createElement(WordBreaks, {
+          placeholder: "__word_break__",
+          text: "learn HTML 5 With Us",
+        })
+      ),
+      new URL(
+        "./test/snapshots/WordBreaks/with-props-no-word-breaks.html",
+        import.meta.url
+      )
     );
   });
 };

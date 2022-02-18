@@ -2,12 +2,26 @@
 
 ## Next
 
+### Major
+
+- Replaced the `List` React component with `ListOrdered` and `ListUnordered` React components.
+- The `WordBreaks` React component now accepts a `text` prop instead of `children`.
+- The `Toggle` React component now has a render error if the prop `inputProps.type` isn’t specified.
+- Implemented TypeScript types via JSDoc comments.
+
+### Minor
+
+- Added a new `./types.mjs` module to the package `exports` field. Avoid using the `DataAttributes` type it contains though, as it will hopefully be removed once the React types support HTML/SVG element `data-` attributes.
+
 ### Patch
 
 - Updated dependencies.
+- Check TypeScript types via a new package `types` script.
 - Simplified dev dependencies and config for ESLint.
-- Added tests for the `WordBreaks` React component.
+- Use the `ALLOW_MISSING_COVERAGE` environment variable with the package `tests` script to allow missing code coverage. Tests covering the full React hooks lifecycle can be added in the future.
+- Added React component HTML snapshot tests using a new [`snapshot-assertion`](https://npm.im/snapshot-assertion) dev dependency.
 - Fixed the `WordBreaks` React component not returning the original text string when no word breaks are inserted.
+- Fixed the `Toggle` React component implementation for the prop `inputProps.className`.
 
 ## 9.0.0
 

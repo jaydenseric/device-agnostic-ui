@@ -1,0 +1,34 @@
+.daui-ListOrdered,
+.daui-Html ol {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  padding-left: 2em;
+}
+
+.daui-ListOrdered:first-child,
+.daui-Html ol:first-child {
+  margin-top: 0;
+}
+
+.daui-ListOrdered:last-child,
+.daui-Html ol:last-child {
+  margin-bottom: 0;
+}
+
+.daui-ListOrdered > li,
+.daui-Html ol > li {
+  margin: 0.5em 0;
+  max-width: 30em;
+  line-height: var(--daui-line-height);
+}
+
+.daui-ListOrdered > li:first-child,
+.daui-Html ol > li:first-child {
+  margin-top: 0;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.daui-ListOrdered > li:last-child,
+.daui-Html ol > li:last-child {
+  margin-bottom: 0;
+}

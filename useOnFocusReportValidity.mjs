@@ -1,9 +1,19 @@
+// @ts-check
+
 import React from "react";
 
 /**
  * A React hook that displays an invalid HTML form control element’s validation
  * message on focus, using the standard Constraint Validation API.
- * @param {object|null} ref React ref for the HTML form control element.
+ * @param {React.RefObject<
+ *   | HTMLButtonElement
+ *   | HTMLFieldSetElement
+ *   | HTMLInputElement
+ *   | HTMLObjectElement
+ *   | HTMLOutputElement
+ *   | HTMLSelectElement
+ *   | HTMLTextAreaElement
+ * >} ref React ref for the HTML form control element.
  */
 export default function useOnFocusReportValidity(ref) {
   React.useEffect(() => {
