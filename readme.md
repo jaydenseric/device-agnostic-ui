@@ -16,6 +16,7 @@
 - 🖌 **Style raw HTML.** Special [`<Html>`](https://deviceagnosticui.com/components/Html) component to style rendered markdown.
 - 🧠 **Semantic markup.** Lean use of semantically appropriate HTML elements.
 - ⚛️ **Modern React.** Elegant use of [React](https://reactjs.org) [hooks](https://reactjs.org/docs/react-api.html#hooks), [refs](https://reactjs.org/docs/react-api.html#refs) and [fragments](https://reactjs.org/docs/react-api.html#fragments) makes for a great DX.
+- ⛑ **Type safety.** Modules are typed via [TypeScript](https://typescriptlang.org) JSDoc comments.
 
 ## Installation
 
