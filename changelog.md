@@ -9,6 +9,7 @@
 ### Patch
 
 - Updated dev dependencies.
+- Updated GitHub Actions CI config.
 
 ## 10.0.0
 
