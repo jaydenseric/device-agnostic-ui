@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Button}. */
+export const css = new Set([new URL("./Button.css", import.meta.url).href]);
+
 /**
  * React component for a {@link HTMLButtonElement button}.
  *

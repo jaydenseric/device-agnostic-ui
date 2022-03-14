@@ -2,6 +2,10 @@
 
 ## Next
 
+### Minor
+
+- Modules for React components with CSS dependencies now have a `css` export that’s a `Set` instance containing CSS dependency URLs.
+
 ### Patch
 
 - Updated dev dependencies.

@@ -5,6 +5,9 @@ import React from "react";
 
 /** @typedef {import("./Nav.mjs")["default"]} Nav */
 
+/** CSS dependency URLs for the React component {@linkcode LinkNav}. */
+export const css = new Set([new URL("./LinkNav.css", import.meta.url).href]);
+
 /**
  * React component for a navigation {@link HTMLAnchorElement link}, for use
  * within the {@linkcode Nav} React component.

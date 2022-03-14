@@ -3,7 +3,15 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
-import LinkText from "./LinkText.mjs";
+import LinkText, { css as cssLinkText } from "./LinkText.mjs";
+
+/** CSS dependency URLs for the React component {@linkcode Heading}. */
+export const css = new Set([
+  ...cssLinkText,
+  new URL("./Heading.css", import.meta.url).href,
+]);
+
+// Todo: Split this into 2 components; A simple heading, and an ID link heading.
 
 // Todo: The `level` prop should determine the types for other props, although
 // all levels probably have the same props.

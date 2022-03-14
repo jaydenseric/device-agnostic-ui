@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Blockquote}. */
+export const css = new Set([new URL("./Blockquote.css", import.meta.url).href]);
+
 /** React component for a {@link HTMLQuoteElement blockquote}. */
 const Blockquote = React.forwardRef(
   (

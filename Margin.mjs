@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Margin}. */
+export const css = new Set([new URL("./Margin.css", import.meta.url).href]);
+
 const Margin = React.forwardRef(
   (
     /**

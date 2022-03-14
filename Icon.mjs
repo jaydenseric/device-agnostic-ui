@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Icon}. */
+export const css = new Set([new URL("./Icon.css", import.meta.url).href]);
+
 /** React component for an inline SVG icon. */
 const Icon = React.forwardRef(
   (

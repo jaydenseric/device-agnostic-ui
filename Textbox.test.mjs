@@ -13,7 +13,7 @@ import Textbox from "./Textbox.mjs";
  */
 export default (tests) => {
   tests.add("`Textbox` bundle size.", async () => {
-    await assertBundleSize(new URL("./Textbox.mjs", import.meta.url), 500);
+    await assertBundleSize(new URL("./Textbox.mjs", import.meta.url), 550);
   });
 
   tests.add("`Textbox` without props.", async () => {

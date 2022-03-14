@@ -15,7 +15,7 @@ export default (tests) => {
   tests.add("`ListUnordered` bundle size.", async () => {
     await assertBundleSize(
       new URL("./ListUnordered.mjs", import.meta.url),
-      250
+      300
     );
   });
 

@@ -13,7 +13,7 @@ import Toggle from "./Toggle.mjs";
  */
 export default (tests) => {
   tests.add("`Toggle` bundle size.", async () => {
-    await assertBundleSize(new URL("./Toggle.mjs", import.meta.url), 800);
+    await assertBundleSize(new URL("./Toggle.mjs", import.meta.url), 850);
   });
 
   tests.add("`Toggle` with minimal props, checkbox input.", async () => {

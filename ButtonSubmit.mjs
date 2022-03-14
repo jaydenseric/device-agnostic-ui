@@ -2,9 +2,17 @@
 
 import React from "react";
 
-import Button from "./Button.mjs";
-import IconTick from "./IconTick.mjs";
-import Loading from "./Loading.mjs";
+import Button, { css as cssButton } from "./Button.mjs";
+import IconTick, { css as cssIconTick } from "./IconTick.mjs";
+import Loading, { css as cssLoading } from "./Loading.mjs";
+
+/** CSS dependency URLs for the React component {@linkcode ButtonSubmit}. */
+export const css = new Set([
+  ...cssButton,
+  ...cssIconTick,
+  ...cssLoading,
+  new URL("./ButtonSubmit.css", import.meta.url).href,
+]);
 
 /**
  * React component for a form submit button that displays loading and success

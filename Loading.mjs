@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Loading}. */
+export const css = new Set([new URL("./Loading.css", import.meta.url).href]);
+
 const VIEW_BOX_SIZE = 100;
 const CIRCLE_STROKE_WIDTH = 12;
 

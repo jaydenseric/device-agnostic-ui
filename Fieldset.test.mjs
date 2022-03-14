@@ -13,7 +13,7 @@ import assertBundleSize from "./test/assertBundleSize.mjs";
  */
 export default (tests) => {
   tests.add("`Fieldset` bundle size.", async () => {
-    await assertBundleSize(new URL("./Fieldset.mjs", import.meta.url), 300);
+    await assertBundleSize(new URL("./Fieldset.mjs", import.meta.url), 350);
   });
 
   tests.add("`Fieldset` without props.", async () => {

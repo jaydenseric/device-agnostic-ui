@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Code}. */
+export const css = new Set([new URL("./Code.css", import.meta.url).href]);
+
 /** React component for inline code. */
 const Code = React.forwardRef(
   (

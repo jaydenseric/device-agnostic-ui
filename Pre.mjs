@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Pre}. */
+export const css = new Set([new URL("./Pre.css", import.meta.url).href]);
+
 /** React component for {@link HTMLPreElement preformatted text}. */
 const Pre = React.forwardRef(
   (

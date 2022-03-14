@@ -7,6 +7,9 @@ import useCustomValidity from "./useCustomValidity.mjs";
 import useMergedRef from "./useMergedRef.mjs";
 import useOnFocusReportValidity from "./useOnFocusReportValidity.mjs";
 
+/** CSS dependency URLs for the React component {@linkcode Select}. */
+export const css = new Set([new URL("./Select.css", import.meta.url).href]);
+
 /** React component for an input that provides a selection of options. */
 const Select = React.forwardRef(
   (

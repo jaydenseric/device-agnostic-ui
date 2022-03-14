@@ -3,6 +3,20 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Html}. */
+export const css = new Set([
+  new URL("./Blockquote.css", import.meta.url).href,
+  new URL("./Code.css", import.meta.url).href,
+  new URL("./Heading.css", import.meta.url).href,
+  new URL("./LinkText.css", import.meta.url).href,
+  new URL("./ListOrdered.css", import.meta.url).href,
+  new URL("./ListUnordered.css", import.meta.url).href,
+  new URL("./Para.css", import.meta.url).href,
+  new URL("./Pre.css", import.meta.url).href,
+  new URL("./Table.css", import.meta.url).href,
+  new URL("./Html.css", import.meta.url).href,
+]);
+
 /**
  * React component for displaying simple HTML with styles, typically derived
  * from markdown. Supported HTML:

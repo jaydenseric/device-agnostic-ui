@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Para}. */
+export const css = new Set([new URL("./Para.css", import.meta.url).href]);
+
 /** React component for a {@link HTMLParagraphElement paragraph}. */
 const Para = React.forwardRef(
   (

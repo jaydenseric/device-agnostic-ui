@@ -13,7 +13,7 @@ import assertBundleSize from "./test/assertBundleSize.mjs";
  */
 export default (tests) => {
   tests.add("`Blockquote` bundle size.", async () => {
-    await assertBundleSize(new URL("./Blockquote.mjs", import.meta.url), 250);
+    await assertBundleSize(new URL("./Blockquote.mjs", import.meta.url), 300);
   });
 
   tests.add("`Blockquote` without props.", async () => {

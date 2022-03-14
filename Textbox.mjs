@@ -7,6 +7,9 @@ import useCustomValidity from "./useCustomValidity.mjs";
 import useMergedRef from "./useMergedRef.mjs";
 import useOnFocusReportValidity from "./useOnFocusReportValidity.mjs";
 
+/** CSS dependency URLs for the React component {@linkcode Textbox}. */
+export const css = new Set([new URL("./Textbox.css", import.meta.url).href]);
+
 // Todo: The `type` prop should determine the types for other props and the ref.
 
 /**

@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Scroll}. */
+export const css = new Set([new URL("./Scroll.css", import.meta.url).href]);
+
 /**
  * React component that displays children in a horizontally spaced and
  * scrollable grid.

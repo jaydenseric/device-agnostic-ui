@@ -3,10 +3,16 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
-import IconTick from "./IconTick.mjs";
+import IconTick, { css as cssIconTick } from "./IconTick.mjs";
 import useCustomValidity from "./useCustomValidity.mjs";
 import useMergedRef from "./useMergedRef.mjs";
 import useOnFocusReportValidity from "./useOnFocusReportValidity.mjs";
+
+/** CSS dependency URLs for the React component {@linkcode Toggle}. */
+export const css = new Set([
+  ...cssIconTick,
+  new URL("./Toggle.css", import.meta.url).href,
+]);
 
 /** React component for a checkbox or radio {@link HTMLInputElement input}. */
 const Toggle = React.forwardRef(

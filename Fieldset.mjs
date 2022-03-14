@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Fieldset}. */
+export const css = new Set([new URL("./Fieldset.css", import.meta.url).href]);
+
 /** React component for a {@link HTMLFieldSetElement fieldset}. */
 const Fieldset = React.forwardRef(
   (

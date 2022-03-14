@@ -2,7 +2,10 @@
 
 import React from "react";
 
-import Icon from "./Icon.mjs";
+import Icon, { css as cssIcon } from "./Icon.mjs";
+
+/** CSS dependency URLs for the React component {@linkcode IconTick}. */
+export const css = new Set([...cssIcon]);
 
 /** React component for an inline SVG icon of a tick. */
 const IconTick = React.forwardRef(

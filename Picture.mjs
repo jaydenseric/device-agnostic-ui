@@ -3,6 +3,9 @@
 import classNameProp from "class-name-prop";
 import React from "react";
 
+/** CSS dependency URLs for the React component {@linkcode Picture}. */
+export const css = new Set([new URL("./Picture.css", import.meta.url).href]);
+
 /**
  * React component for a {@link HTMLPictureElement picture} with a responsive
  * width and proportionate height, even while loading.

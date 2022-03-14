@@ -13,7 +13,7 @@ import assertBundleSize from "./test/assertBundleSize.mjs";
  */
 export default (tests) => {
   tests.add("`ListOrdered` bundle size.", async () => {
-    await assertBundleSize(new URL("./ListOrdered.mjs", import.meta.url), 250);
+    await assertBundleSize(new URL("./ListOrdered.mjs", import.meta.url), 300);
   });
 
   tests.add("`ListOrdered` without props.", async () => {

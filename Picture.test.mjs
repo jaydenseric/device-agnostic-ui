@@ -13,7 +13,7 @@ import assertBundleSize from "./test/assertBundleSize.mjs";
  */
 export default (tests) => {
   tests.add("`Picture` bundle size.", async () => {
-    await assertBundleSize(new URL("./Picture.mjs", import.meta.url), 300);
+    await assertBundleSize(new URL("./Picture.mjs", import.meta.url), 350);
   });
 
   tests.add("`Picture` with props.", async () => {
