@@ -1,6 +1,6 @@
 {
   "name": "device-agnostic-ui",
-  "version": "10.0.0",
+  "version": "10.1.0",
   "description": "Device agnostic styles, components and hooks for React and Next.js apps.",
   "license": "MIT",
   "author": {

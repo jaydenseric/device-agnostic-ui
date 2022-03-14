@@ -1,6 +1,6 @@
 # device-agnostic-ui changelog
 
-## Next
+## 10.1.0
 
 ### Minor
 
