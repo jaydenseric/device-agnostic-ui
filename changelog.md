@@ -1,5 +1,11 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Patch
+
+- Updated dev dependencies.
+
 ## 10.0.0
 
 ### Major
