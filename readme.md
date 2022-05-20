@@ -13,7 +13,7 @@
 - 🌗 **Dark mode.** The color scheme [adapts](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) to the operating system’s light or dark mode.
 - 🎨 **CSS variables.** Easily tweak the theme globally or in your components.
 - 🌏 **Few global styles.** No intrusive normalization or resets; just the [`:root`](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) essentials.
-- 🖌 **Style raw HTML.** Special [`<Html>`](./Html.mjs) component to style rendered markdown.
+- 🖌 **Style raw HTML.** Special [`<Html>`](./Html.mjs) component to style rendered Markdown.
 - 🧠 **Semantic markup.** Lean use of semantically appropriate HTML elements.
 - ⚛️ **Modern React.** Elegant use of [React](https://reactjs.org) [hooks](https://reactjs.org/docs/react-api.html#hooks), [refs](https://reactjs.org/docs/react-api.html#refs) and [fragments](https://reactjs.org/docs/react-api.html#fragments) makes for a great DX.
 - ⛑ **Type safety.** Modules are typed via [TypeScript](https://typescriptlang.org) JSDoc comments.

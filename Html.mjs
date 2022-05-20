@@ -18,8 +18,8 @@ export const css = new Set([
 ]);
 
 /**
- * React component for displaying simple HTML with styles, typically derived
- * from markdown. Supported HTML:
+ * React component for rendering simple HTML with styles, typically derived from
+ * Markdown. Supported HTML:
  *
  * - [`<h1>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1),
  *   [`<h2>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h2),

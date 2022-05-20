@@ -1,5 +1,11 @@
 # device-agnostic-ui changelog
 
+## Next
+
+### Patch
+
+- Corrected “Markdown” capitalization in documentation.
+
 ## 10.1.0
 
 ### Minor
