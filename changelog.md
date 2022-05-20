@@ -5,6 +5,7 @@
 ### Patch
 
 - Corrected “Markdown” capitalization in documentation.
+- Added a JSDoc description to the React component `Margin`.
 
 ## 10.1.0
 
