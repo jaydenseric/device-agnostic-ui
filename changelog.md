@@ -4,6 +4,8 @@
 
 ### Patch
 
+- Updated dev dependencies.
+- Changed TypeScript config `compilerOptions.module` to `nodenext`.
 - Corrected “Markdown” capitalization in documentation.
 - Added a JSDoc description to the React component `Margin`.
 
