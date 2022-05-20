@@ -5,6 +5,7 @@
 ### Patch
 
 - Updated dev dependencies.
+- Simplified Stylelint dev dependencies and config.
 - Changed TypeScript config `compilerOptions.module` to `nodenext`.
 - Corrected “Markdown” capitalization in documentation.
 - Added a JSDoc description to the React component `Margin`.
