@@ -13,6 +13,7 @@
 - Changed TypeScript config `compilerOptions.module` to `nodenext`.
 - Updated GitHub Actions CI config:
   - Run tests with Node.js v14, v16, v18.
+- Removed the now redundant `not IE > 0` from the Browserslist query.
 - Corrected “Markdown” capitalization in documentation.
 - Added a JSDoc description to the React component `Margin`.
 
