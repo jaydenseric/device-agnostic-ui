@@ -4,7 +4,7 @@
 
 [![npm version](https://badgen.net/npm/v/device-agnostic-ui)](https://npm.im/device-agnostic-ui) [![CI status](https://github.com/jaydenseric/device-agnostic-ui/workflows/CI/badge.svg)](https://github.com/jaydenseric/device-agnostic-ui/actions)
 
-**Device agnostic** styles, components and hooks for [React](https://reactjs.org) and [Next.js](https://nextjs.org) apps — [deviceagnosticui.com](https://deviceagnosticui.com). One design for any viewport (size, orientation, resolution), input method (touch, mouse) or network speed. Simple to build, test and use.
+**Device agnostic** styles, components and hooks for [React](https://reactjs.org) apps — [deviceagnosticui.com](https://deviceagnosticui.com). One design for any viewport (size, orientation, resolution), input method (touch, mouse) or network speed. Simple to build, test and use.
 
 - 📦 **Tiny bundle size.** The minified and gzipped bundle size of individual modules are tested.
 - 📱 **Mobile first.** Intuitive layouts suitable for any screen size, _without media queries_.
@@ -55,7 +55,6 @@ These ECMAScript modules and CSS files are published to [npm](https://npmjs.com)
 - [`Icon.css`](./Icon.css)
 - [`Icon.mjs`](./Icon.mjs)
 - [`IconTick.mjs`](./IconTick.mjs)
-- [`LinkActive.mjs`](./LinkActive.mjs)
 - [`LinkCard.css`](./LinkCard.css)
 - [`LinkCard.mjs`](./LinkCard.mjs)
 - [`LinkNav.css`](./LinkNav.css)

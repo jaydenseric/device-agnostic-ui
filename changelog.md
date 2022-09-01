@@ -8,10 +8,12 @@
 - Updated the [`react`](https://npm.im/react) and [`react-dom`](https://npm.im/react-dom) peer dependencies to `^18.0.0`.
 - Updated dependencies, some of which require newer Node.js versions than previously supported.
 - Use the `node:` URL scheme for Node.js builtin module imports in tests.
+- Removed the `LinkActive.mjs` module and the [`next`](https://npm.im/next) optional peer dependency.
 
 ### Patch
 
 - Updated dev dependencies.
+- Removed the now redundant [`next`](https://npm.im/next) dev dependency.
 - Simplified Stylelint dev dependencies and config.
 - Updated `jsconfig.json`:
   - Set `compilerOptions.maxNodeModuleJsDepth` to `10`.
@@ -19,6 +21,7 @@
 - Updated GitHub Actions CI config:
   - Run tests with Node.js v14, v16, v18.
 - Removed the now redundant `not IE > 0` from the Browserslist query.
+- Updated the package description and keywords to remove mention of Next.js.
 - Updated `react-dom/server` imports to suit React v18 in tests.
 - Corrected “Markdown” capitalization in documentation.
 - Added a JSDoc description to the React component `Margin`.

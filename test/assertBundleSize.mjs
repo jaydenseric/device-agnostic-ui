@@ -23,7 +23,7 @@ export default async function assertBundleSize(moduleUrl, limit) {
     outputFiles: [bundle],
   } = await esbuild.build({
     entryPoints: [fileURLToPath(moduleUrl)],
-    external: ["next", "react"],
+    external: ["react"],
     write: false,
     bundle: true,
     minify: true,

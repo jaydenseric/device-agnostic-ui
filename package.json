@@ -1,7 +1,7 @@
 {
   "name": "device-agnostic-ui",
   "version": "10.1.0",
-  "description": "Device agnostic styles, components and hooks for React and Next.js apps.",
+  "description": "Device agnostic styles, components and hooks for React apps.",
   "license": "MIT",
   "author": {
     "name": "Jayden Seric",
@@ -17,7 +17,6 @@
     "agnostic",
     "ui",
     "react",
-    "next",
     "css"
   ],
   "files": [
@@ -39,7 +38,6 @@
     "Icon.css",
     "Icon.mjs",
     "IconTick.mjs",
-    "LinkActive.mjs",
     "LinkCard.css",
     "LinkCard.mjs",
     "LinkNav.css",
@@ -100,7 +98,6 @@
     "./Icon.css": "./Icon.css",
     "./Icon.mjs": "./Icon.mjs",
     "./IconTick.mjs": "./IconTick.mjs",
-    "./LinkActive.mjs": "./LinkActive.mjs",
     "./LinkCard.css": "./LinkCard.css",
     "./LinkCard.mjs": "./LinkCard.mjs",
     "./LinkNav.css": "./LinkNav.css",
@@ -147,14 +144,8 @@
   },
   "browserslist": "Node 14.17 - 15 and Node < 15, Node 16 - 17 and Node < 17, Node >= 18, > 0.5%, not OperaMini all, not dead",
   "peerDependencies": {
-    "next": "9.0.4 - 12",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
-  },
-  "peerDependenciesMeta": {
-    "next": {
-      "optional": true
-    }
   },
   "dependencies": {
     "class-name-prop": "^6.0.0"
@@ -169,7 +160,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "gzip-size": "^7.0.0",
-    "next": "^12.2.5",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
