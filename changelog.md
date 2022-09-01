@@ -14,6 +14,7 @@
 
 - Updated dev dependencies.
 - Removed the now redundant [`next`](https://npm.im/next) dev dependency.
+- Updated ESLint config.
 - Simplified Stylelint dev dependencies and config.
 - Updated `jsconfig.json`:
   - Set `compilerOptions.maxNodeModuleJsDepth` to `10`.
