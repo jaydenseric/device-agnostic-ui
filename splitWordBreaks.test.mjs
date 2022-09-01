@@ -1,6 +1,6 @@
 // @ts-check
 
-import { deepStrictEqual } from "assert";
+import { deepStrictEqual } from "node:assert";
 
 import splitWordBreaks from "./splitWordBreaks.mjs";
 import assertBundleSize from "./test/assertBundleSize.mjs";
