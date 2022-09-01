@@ -144,8 +144,7 @@
   },
   "browserslist": "Node 14.17 - 15 and Node < 15, Node 16 - 17 and Node < 17, Node >= 18, > 0.5%, not OperaMini all, not dead",
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^18.0.0"
   },
   "dependencies": {
     "class-name-prop": "^6.0.0"

@@ -5,13 +5,14 @@
 ### Major
 
 - Updated Node.js support to `^14.17.0 || ^16.0.0 || >= 18.0.0`.
-- Updated the [`react`](https://npm.im/react) and [`react-dom`](https://npm.im/react-dom) peer dependencies to `^18.0.0`.
+- Updated the [`react`](https://npm.im/react) peer dependency to `^18.0.0`.
 - Updated dependencies, some of which require newer Node.js versions than previously supported.
 - Use the `node:` URL scheme for Node.js builtin module imports in tests.
 - Removed the `LinkActive.mjs` module and the [`next`](https://npm.im/next) optional peer dependency.
 
 ### Patch
 
+- Removed the redundant [`react-dom`](https://npm.im/react) peer dependency.
 - Updated dev dependencies.
 - Removed the now redundant [`next`](https://npm.im/next) dev dependency.
 - Updated ESLint config.
@@ -26,6 +27,9 @@
 - Updated `react-dom/server` imports to suit React v18 in tests.
 - Corrected “Markdown” capitalization in documentation.
 - Added a JSDoc description to the React component `Margin`.
+- Revamped the readme:
+  - Removed the badges.
+  - Added information about Deno, import maps, TypeScript config and [optimal JavaScript module design](https://jaydenseric.com/blog/optimal-javascript-module-design).
 
 ## 10.1.0
 
