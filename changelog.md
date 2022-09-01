@@ -11,7 +11,9 @@
 
 - Updated dev dependencies.
 - Simplified Stylelint dev dependencies and config.
-- Changed TypeScript config `compilerOptions.module` to `nodenext`.
+- Updated `jsconfig.json`:
+  - Set `compilerOptions.maxNodeModuleJsDepth` to `10`.
+  - Set `compilerOptions.module` to `nodenext`.
 - Updated GitHub Actions CI config:
   - Run tests with Node.js v14, v16, v18.
 - Removed the now redundant `not IE > 0` from the Browserslist query.
