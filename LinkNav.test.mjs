@@ -1,7 +1,7 @@
 // @ts-check
 
 import React from "react";
-import ReactDOMServer from "react-dom/server.js";
+import ReactDOMServer from "react-dom/server";
 import assertSnapshot from "snapshot-assertion";
 
 import LinkNav from "./LinkNav.mjs";

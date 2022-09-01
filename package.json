@@ -148,8 +148,8 @@
   "browserslist": "Node 14.17 - 15 and Node < 15, Node 16 - 17 and Node < 17, Node >= 18, > 0.5%, not OperaMini all, not dead",
   "peerDependencies": {
     "next": "9.0.4 - 12",
-    "react": "16.14.0 - 17",
-    "react-dom": "16.14.0 - 17"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "peerDependenciesMeta": {
     "next": {
@@ -161,8 +161,8 @@
   },
   "devDependencies": {
     "@types/node": "^18.7.14",
-    "@types/react": "^17.0.49",
-    "@types/react-dom": "^17.0.17",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
     "coverage-node": "^8.0.0",
     "esbuild": "^0.15.6",
     "eslint": "^8.23.0",
@@ -171,8 +171,8 @@
     "gzip-size": "^7.0.0",
     "next": "^12.2.5",
     "prettier": "^2.7.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "snapshot-assertion": "^5.0.0",
     "stylelint": "^14.11.0",
     "stylelint-config-recommended": "^9.0.0",
