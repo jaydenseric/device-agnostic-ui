@@ -30,7 +30,7 @@ For [Deno](https://deno.land) and browsers, an example import map:
 {
   "imports": {
     "class-name-prop": "https://unpkg.com/class-name-prop@6.0.0/classNameProp.mjs",
-    "device-agnostic-ui/": "https://unpkg.com/device-agnostic-ui@10.1.0/",
+    "device-agnostic-ui/": "https://unpkg.com/device-agnostic-ui@11.0.0/",
     "react": "https://esm.sh/react@18.2.0"
   }
 }
