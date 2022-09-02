@@ -24,6 +24,7 @@
   - Run tests with Node.js v14, v16, v18.
 - Removed the now redundant `not IE > 0` from the Browserslist query.
 - Updated the package description and keywords to remove mention of Next.js.
+- Added `esm` and `mjs` package keywords.
 - Updated `react-dom/server` imports to suit React v18 in tests.
 - Corrected “Markdown” capitalization in documentation.
 - Added a JSDoc description to the React component `Margin`.

@@ -17,7 +17,9 @@
     "agnostic",
     "ui",
     "react",
-    "css"
+    "css",
+    "esm",
+    "mjs"
   ],
   "files": [
     "Blockquote.css",
